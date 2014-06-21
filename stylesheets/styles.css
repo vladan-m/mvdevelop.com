@@ -8042,6 +8042,11 @@ form {
   text-transform: uppercase;
 }
 /* line 23, ../sass/_header.scss */
+.nav-holder.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 27, ../sass/_header.scss */
 .nav-holder .nav {
   position: static;
   list-style: none;
@@ -8057,14 +8062,14 @@ form {
 .nav-holder .nav:after {
   clear: both;
 }
-/* line 27, ../sass/_header.scss */
+/* line 31, ../sass/_header.scss */
 .nav-holder .nav li {
   margin-left: 20px;
   font-size: 16px;
   line-height: 20px;
   padding-top: 35px;
 }
-/* line 32, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 .nav-holder .nav li a {
   padding: 0;
   text-shadow: none;
@@ -8073,24 +8078,24 @@ form {
   -webkit-transition: color, 0.2s ease;
   transition: color, 0.2s ease;
 }
-/* line 38, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 .nav-holder .nav li a:hover {
   color: #00a5ff;
   background: none;
 }
-/* line 43, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 .nav-holder .nav li.active {
   border-top: 3px solid #00a5ff;
   padding-top: 32px;
 }
-/* line 46, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 .nav-holder .nav li.active a {
   background: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #00a5ff;
 }
-/* line 50, ../sass/_header.scss */
+/* line 54, ../sass/_header.scss */
 .nav-holder .nav li.active a:hover {
   background: none;
   color: #00a5ff;
@@ -8437,72 +8442,48 @@ form {
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  /* line 6, ../sass/_responsive.scss */
-  body,
-  .container-fluid {
-    padding: 0;
-  }
-
-  /* line 10, ../sass/_responsive.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 4, ../sass/_responsive.scss */
   h1 {
     font-size: 22px;
     line-height: 28px;
   }
 
-  /* line 15, ../sass/_responsive.scss */
+  /* line 8, ../sass/_responsive.scss */
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
 
-  /* line 20, ../sass/_responsive.scss */
+  /* line 12, ../sass/_responsive.scss */
   h4 {
     font-size: 16px;
   }
 
-  /* line 25, ../sass/_responsive.scss */
-  .logo,
-  .content {
-    padding-left: 20px;
-  }
-
-  /* line 29, ../sass/_responsive.scss */
-  .content {
-    padding-right: 20px;
-  }
-
-  /* line 33, ../sass/_responsive.scss */
+  /* line 15, ../sass/_responsive.scss */
   .tnx-block {
     margin: 20px 0 0 0;
   }
 
-  /* line 38, ../sass/_responsive.scss */
-  .copyright,
-  .footer-contact {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  /* line 43, ../sass/_responsive.scss */
+  /* line 18, ../sass/_responsive.scss */
   .convincer {
-    padding: 10px 20px;
+    padding: 10px 0;
     margin-bottom: 0;
   }
-  /* line 46, ../sass/_responsive.scss */
+  /* line 21, ../sass/_responsive.scss */
   .convincer h1 {
     font-size: 28px;
     padding-top: 20px;
     line-height: 40px;
   }
-  /* line 51, ../sass/_responsive.scss */
+  /* line 26, ../sass/_responsive.scss */
   .convincer h5 {
     line-height: 30px;
     padding-bottom: 34px;
     padding-right: 0;
   }
 
-  /* line 58, ../sass/_responsive.scss */
+  /* line 32, ../sass/_responsive.scss */
   .navbar-toggle {
     background-image: -webkit-linear-gradient(top, #00a5ff 0%, #0084cc 100%);
     background-image: linear-gradient(to bottom, #00a5ff 0%, #0084cc 100%);
@@ -8514,7 +8495,7 @@ form {
     top: 20px;
     right: 20px;
   }
-  /* line 65, ../sass/_responsive.scss */
+  /* line 39, ../sass/_responsive.scss */
   .navbar-toggle:hover {
     background-image: -webkit-linear-gradient(top, #0084cc 0%, #00a5ff 100%);
     background-image: linear-gradient(to bottom, #0084cc 0%, #00a5ff 100%);
@@ -8522,31 +8503,31 @@ form {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0084CC', endColorstr='#FF00A5FF', GradientType=0);
     background-position: 0 0;
   }
-  /* line 69, ../sass/_responsive.scss */
+  /* line 43, ../sass/_responsive.scss */
   .navbar-toggle:active {
     -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 74, ../sass/_responsive.scss */
+  /* line 47, ../sass/_responsive.scss */
   .nav-holder {
     width: 100%;
   }
-  /* line 76, ../sass/_responsive.scss */
+  /* line 49, ../sass/_responsive.scss */
   .nav-holder .nav {
     padding: 0 0 4px 0;
   }
-  /* line 78, ../sass/_responsive.scss */
+  /* line 51, ../sass/_responsive.scss */
   .nav-holder .nav li {
     padding: 0;
     margin: 0;
   }
-  /* line 81, ../sass/_responsive.scss */
+  /* line 54, ../sass/_responsive.scss */
   .nav-holder .nav li.active {
     padding: 0;
     border: none;
   }
-  /* line 85, ../sass/_responsive.scss */
+  /* line 58, ../sass/_responsive.scss */
   .nav-holder .nav li.active a:hover {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
@@ -8556,13 +8537,13 @@ form {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33B7FF', endColorstr='#FF0084CC', GradientType=0);
     color: white;
   }
-  /* line 92, ../sass/_responsive.scss */
+  /* line 65, ../sass/_responsive.scss */
   .nav-holder .nav li a {
     padding: 10px 20px;
     -webkit-transition: none;
     transition: none;
   }
-  /* line 95, ../sass/_responsive.scss */
+  /* line 68, ../sass/_responsive.scss */
   .nav-holder .nav li a:hover {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
@@ -8575,7 +8556,7 @@ form {
     border-radius: 4px;
     color: white;
   }
-  /* line 101, ../sass/_responsive.scss */
+  /* line 74, ../sass/_responsive.scss */
   .nav-holder .nav li a:active {
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
@@ -8583,135 +8564,112 @@ form {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 115, ../sass/_responsive.scss */
-  body,
-  .container-fluid {
-    padding: 0;
-  }
-
-  /* line 119, ../sass/_responsive.scss */
+  /* line 86, ../sass/_responsive.scss */
   h1 {
     font-size: 22px;
     line-height: 28px;
   }
 
-  /* line 124, ../sass/_responsive.scss */
+  /* line 90, ../sass/_responsive.scss */
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
 
-  /* line 129, ../sass/_responsive.scss */
+  /* line 94, ../sass/_responsive.scss */
   h4 {
     font-size: 16px;
   }
 
-  /* line 134, ../sass/_responsive.scss */
-  .logo,
-  .content {
-    padding-left: 20px;
-  }
-
-  /* line 138, ../sass/_responsive.scss */
+  /* line 97, ../sass/_responsive.scss */
   .tnx-block {
     margin: 20px 0 0 0;
   }
 
-  /* line 142, ../sass/_responsive.scss */
-  .content {
-    padding-right: 20px;
-  }
-  /* line 144, ../sass/_responsive.scss */
+  /* line 101, ../sass/_responsive.scss */
   .content .bordered {
     border-top: 1px dashed #aaaaaa;
     border-left: 0;
     margin-top: 50px;
     padding: 8px 0 0 0;
   }
-  /* line 150, ../sass/_responsive.scss */
+  /* line 107, ../sass/_responsive.scss */
   .content .bordered ul li {
     margin-bottom: 10px;
   }
 
-  /* line 157, ../sass/_responsive.scss */
+  /* line 113, ../sass/_responsive.scss */
   .push {
     height: 166px;
   }
 
-  /* line 161, ../sass/_responsive.scss */
+  /* line 116, ../sass/_responsive.scss */
   .page {
     margin: 0 auto -166px;
   }
 
-  /* line 165, ../sass/_responsive.scss */
+  /* line 119, ../sass/_responsive.scss */
   .footer {
     height: 165px;
   }
-  /* line 167, ../sass/_responsive.scss */
+  /* line 121, ../sass/_responsive.scss */
   .footer p {
     text-align: left;
     margin: 0;
   }
 
-  /* line 174, ../sass/_responsive.scss */
-  .copyright,
-  .footer-contact {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  /* line 179, ../sass/_responsive.scss */
+  /* line 126, ../sass/_responsive.scss */
   .footer-contact {
     padding-bottom: 25px;
   }
 
-  /* line 183, ../sass/_responsive.scss */
+  /* line 129, ../sass/_responsive.scss */
   .convincer {
-    padding: 10px 20px;
+    padding: 10px 0;
     margin-bottom: 0;
   }
-  /* line 186, ../sass/_responsive.scss */
+  /* line 132, ../sass/_responsive.scss */
   .convincer h1 {
     font-size: 28px;
     padding-top: 20px;
     line-height: 40px;
     text-align: center;
   }
-  /* line 192, ../sass/_responsive.scss */
+  /* line 138, ../sass/_responsive.scss */
   .convincer h5 {
     line-height: 30px;
     padding-bottom: 34px;
     padding-right: 0;
     text-align: center;
   }
-  /* line 199, ../sass/_responsive.scss */
+  /* line 145, ../sass/_responsive.scss */
   .convincer.convincer-blue h1 {
     padding-top: 0;
   }
 
-  /* line 205, ../sass/_responsive.scss */
+  /* line 150, ../sass/_responsive.scss */
   .block {
     margin-bottom: 60px;
   }
-  /* line 207, ../sass/_responsive.scss */
+  /* line 152, ../sass/_responsive.scss */
   .block:last-child {
     margin-bottom: 0;
   }
-  /* line 210, ../sass/_responsive.scss */
+  /* line 155, ../sass/_responsive.scss */
   .block p {
     margin-bottom: 10px;
   }
-  /* line 213, ../sass/_responsive.scss */
+  /* line 158, ../sass/_responsive.scss */
   .block .equal {
     text-align: center;
   }
-  /* line 216, ../sass/_responsive.scss */
+  /* line 161, ../sass/_responsive.scss */
   .block .equal p,
   .block .equal h3 {
     text-align: left;
   }
 
-  /* line 222, ../sass/_responsive.scss */
+  /* line 166, ../sass/_responsive.scss */
   .navbar-toggle {
     background-image: -webkit-linear-gradient(top, #00a5ff 0%, #0084cc 100%);
     background-image: linear-gradient(to bottom, #00a5ff 0%, #0084cc 100%);
@@ -8723,7 +8681,7 @@ form {
     top: 20px;
     right: 20px;
   }
-  /* line 229, ../sass/_responsive.scss */
+  /* line 173, ../sass/_responsive.scss */
   .navbar-toggle:hover {
     background-image: -webkit-linear-gradient(top, #0084cc 0%, #00a5ff 100%);
     background-image: linear-gradient(to bottom, #0084cc 0%, #00a5ff 100%);
@@ -8731,31 +8689,31 @@ form {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0084CC', endColorstr='#FF00A5FF', GradientType=0);
     background-position: 0 0;
   }
-  /* line 233, ../sass/_responsive.scss */
+  /* line 177, ../sass/_responsive.scss */
   .navbar-toggle:active {
     -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 238, ../sass/_responsive.scss */
+  /* line 181, ../sass/_responsive.scss */
   .nav-holder {
     width: 100%;
   }
-  /* line 240, ../sass/_responsive.scss */
+  /* line 183, ../sass/_responsive.scss */
   .nav-holder .nav {
     padding: 0 0 4px 0;
   }
-  /* line 242, ../sass/_responsive.scss */
+  /* line 185, ../sass/_responsive.scss */
   .nav-holder .nav li {
     padding: 0;
     margin: 0;
   }
-  /* line 245, ../sass/_responsive.scss */
+  /* line 188, ../sass/_responsive.scss */
   .nav-holder .nav li.active {
     padding: 0;
     border: none;
   }
-  /* line 249, ../sass/_responsive.scss */
+  /* line 192, ../sass/_responsive.scss */
   .nav-holder .nav li.active a:hover {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
@@ -8765,13 +8723,13 @@ form {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33B7FF', endColorstr='#FF0084CC', GradientType=0);
     color: white;
   }
-  /* line 256, ../sass/_responsive.scss */
+  /* line 199, ../sass/_responsive.scss */
   .nav-holder .nav li a {
     padding: 10px 20px;
     -webkit-transition: none;
     transition: none;
   }
-  /* line 259, ../sass/_responsive.scss */
+  /* line 202, ../sass/_responsive.scss */
   .nav-holder .nav li a:hover {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
@@ -8784,27 +8742,26 @@ form {
     border-radius: 4px;
     color: white;
   }
-  /* line 265, ../sass/_responsive.scss */
+  /* line 208, ../sass/_responsive.scss */
   .nav-holder .nav li a:active {
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
   }
 
-  /* line 273, ../sass/_responsive.scss */
+  /* line 215, ../sass/_responsive.scss */
   .portfolio-list {
     margin-bottom: 0;
   }
-  /* line 275, ../sass/_responsive.scss */
+  /* line 217, ../sass/_responsive.scss */
   .portfolio-list ul {
     margin-bottom: 40px;
     padding-bottom: 30px;
     border-bottom: 1px dashed #aaaaaa;
   }
-  /* line 283, ../sass/_responsive.scss */
+  /* line 225, ../sass/_responsive.scss */
   .portfolio-list:last-child .equal:last-child ul {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
   }
 }
-/* Landscape phones and down */

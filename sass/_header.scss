@@ -20,6 +20,10 @@
   font-family: $fontTitle;
   font-size: 15px;
   text-transform: uppercase;
+  &.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .nav {
     position: static;
     @include reset-list();
