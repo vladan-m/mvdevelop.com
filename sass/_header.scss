@@ -1,0 +1,59 @@
+.header {
+  @include box-shadow(0 4px 4px -2px rgba(0,0,0,0.35));
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  padding: 20px 0;
+  h2 {
+    height: 43px;
+    padding-bottom: 0;
+  }
+  a {
+    display: inline-block;
+  }
+}
+
+.nav-holder {
+  margin-bottom: 0;
+  font-family: $fontTitle;
+  font-size: 15px;
+  text-transform: uppercase;
+  .nav {
+    position: static;
+    @include reset-list();
+    @include clearfix();
+    li {
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 35px;
+      a {
+        padding: 0;
+        text-shadow: none;
+        color: $black;
+        text-decoration: none;
+        @include transition(color, 0.2s ease);
+        &:hover {
+          color: $blue;
+          background: none;
+        }
+      }
+      &.active {
+        border-top: 3px solid $blue;
+        padding-top: 32px;
+        a {
+          background: none;
+          @include box-shadow(none);
+          color: $blue;
+          &:hover {
+            background: none;
+            color: $blue;
+            @include box-shadow(none);
+          }
+        }
+      }
+    }
+  }
+}

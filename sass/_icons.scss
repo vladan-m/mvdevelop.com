@@ -1,0 +1,58 @@
+[class^="icon-"] {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: top;
+  background-image: url("../images/icons.png");
+  background-position: -2000px -2000px;
+  background-repeat: no-repeat;
+  @include background-size(296px 296px);
+}
+
+[class^="iconsmall-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: top;
+  background-image: url("../images/small-icons.png");
+  background-position: -2000px -2000px;
+  background-repeat: no-repeat;
+  @include background-size(248px 248px);
+}
+
+[class^="iconfooter-"] {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: top;
+  background-image: url("../images/icons-footer.png");
+  background-position: -2000px -2000px;
+  background-repeat: no-repeat;
+  @include background-size(273px 273px);
+}
+
+.icon-visual {background-position: -8px -8px;}
+.icon-cms {background-position: -40px -8px;}
+.icon-consult {background-position: -72px -8px;}
+.icon-design {background-position: -104px -8px;}
+.icon-develop {background-position: -136px -8px;}
+.icon-responsive {background-position: -168px -8px;}
+.icon-seo {background-position: -200px -8px;}
+.icon-social {background-position: -232px -8px;}
+
+.iconsmall-email {background-position: -8px -8px;}
+.iconsmall-phone {background-position: -32px -8px;}
+.iconsmall-code {background-position: -56px -8px;}
+.iconsmall-web {background-position: -80px -8px;}
+.iconsmall-mobile {background-position: -104px -8px;}
+.iconsmall-design {background-position: -128px -8px;}
+.iconsmall-cms {background-position: -152px -8px;}
+
+.iconfooter-twitter {background-position: -8px -8px;}
+.iconfooter-behance {background-position: -61px -8px;}
+.iconfooter-face {background-position: -114px -8px;}
+.iconfooter-linkedin {background-position: -167px -8px;}
+.iconfooter-bottom {background-position: -220px -8px;}

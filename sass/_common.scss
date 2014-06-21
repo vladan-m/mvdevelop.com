@@ -1,0 +1,193 @@
+body {
+  font-size: 13px;
+  line-height: 21px;
+  color: $text;
+  background: $white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include font-fix();
+}
+
+html,
+body {
+  height: 100%;
+}
+
+// typography
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: $title;
+  font-weight: normal;
+  font-family: $fontTitle;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 14px;
+  color: $white;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 32px;
+  padding-bottom: 10px;
+  font-family: $fontTitleLight;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: $fontTitleBold;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 7px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+p {
+  margin: 0 0 24px 0;
+  line-height: 21px;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: $link;
+  }
+}
+
+.push {
+  height: 193px;
+}
+
+.page {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -193px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.separator {
+  border-top: 1px solid $separator;
+  border-bottom: 1px solid $white;
+  width: 100%;
+  margin: 5px 0 24px 0;
+  &.separator-big {
+    margin-bottom: 40px;
+  }
+}
+
+form {
+  margin: 0;
+}
+
+.convincer {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  @include box-shadow(inset 0 -4px 4px -2px rgba(0,0,0,0.35));
+  h5 {
+    line-height: 30px;
+    color: $white;
+    font-size: 20px;
+    font-family: $fontTitleLight;
+  }
+  .convincer-image {
+    margin-top: 10px;
+    text-align: center;
+    img {
+      display: inline-block;
+    }
+  }
+  &.convincer-bgnd {
+    background: url('../images/main-convincer.jpg') no-repeat 0 0 fixed;
+    text-align: center;
+    padding-top: 93px;
+    padding-bottom: 93px;
+    h1 {
+      margin-bottom: 33px;
+    }
+    h5 {
+      margin-bottom: 28px;
+    }
+    .more-scroll {
+      i {
+        @include opacity(0.5);
+        @include transition(opacity 0.3s ease-in-out);
+      }
+      &:hover {
+        i {
+          @include opacity(1);
+        }
+      }
+    }
+  }
+  &.convincer-yellow {
+    background: $convincerYellow;
+  }
+  &.convincer-green {
+    background: $convincerGreen;
+  }
+  &.convincer-olive {
+    background: $convincerOlive;
+  }
+  &.convincer-orange {
+    background: $convincerOrange;
+  }
+  .slider-wrap {
+    margin: 0 auto 12px auto;
+    width: 260px;
+  }
+  .slider {
+    @include reset-list();
+    li {
+      display: none;
+    }
+  }
+}
+
+.main-wrap {
+  padding: 45px 0 50px 0;
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
+    padding-bottom: 0;
+    margin-bottom: 41px;
+  }
+  p {
+    font-family: $fontTitleLight;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    margin-top: 42px;
+  }
+  &.colored {
+    background: $lighterGray;
+    .rtl {
+      text-align: right;
+    }
+  }
+}

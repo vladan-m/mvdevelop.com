@@ -1,0 +1,13 @@
+// customize bootstrap variables here:
+//@import "variables";
+@import "bootstrap";
+
+// custom files
+@import "setup";
+@import "common";
+@import "icons";
+@import "header";
+@import "content";
+@import "footer";
+
+@import "responsive";
