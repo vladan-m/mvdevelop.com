@@ -29,55 +29,6 @@
       padding-right: 0;
     }
   }
-  .navbar-toggle {
-    @include gradient-vertical($blue, darken($blue,10%));
-    padding: 4px 8px;
-    text-shadow: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    &:hover {
-      @include gradient-vertical(darken($blue,10%), $blue);
-      background-position: 0 0;
-    }
-    &:active {
-      @include box-shadow(inset 0 3px 3px rgba(0,0,0, 0.3));
-    }
-  }
-  .nav-holder {
-    width: 100%;
-    .nav {
-      padding: 0 0 4px 0;
-      li {
-        padding: 0;
-        margin: 0;
-        &.active {
-          padding: 0;
-          border: none;
-          a {
-            &:hover {
-              @include box-shadow (inset 0 1px 4px rgba(0,0,0,0.25));
-              @include gradient-vertical(lighten($blue,10%), darken($blue,10%));
-              color: $white;
-            }
-          }
-        }
-        a { 
-          padding: 10px 20px;
-          @include transition(none);
-          &:hover {
-            @include box-shadow (inset 0 1px 4px rgba(0,0,0,0.25));
-            @include gradient-vertical(lighten($blue,10%), darken($blue,10%));
-            @include border-radius(4px);
-            color: $white;
-          }
-          &:active {
-            @include box-shadow (inset 0 3px 5px rgba(0,0,0,0.4));
-          }
-        }
-      }
-    }
-  }
   
 }
  

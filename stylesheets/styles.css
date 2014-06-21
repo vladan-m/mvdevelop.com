@@ -8362,6 +8362,11 @@ form {
   filter: alpha(opacity=1);
 }
 
+/* line 193, ../sass/_content.scss */
+.about-block .pull-left {
+  margin-right: 20px;
+}
+
 /* line 1, ../sass/_footer.scss */
 .footer {
   background: #3e3e3e;
@@ -8482,194 +8487,115 @@ form {
     padding-bottom: 34px;
     padding-right: 0;
   }
-
-  /* line 32, ../sass/_responsive.scss */
-  .navbar-toggle {
-    background-image: -webkit-linear-gradient(top, #00a5ff 0%, #0084cc 100%);
-    background-image: linear-gradient(to bottom, #00a5ff 0%, #0084cc 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00A5FF', endColorstr='#FF0084CC', GradientType=0);
-    padding: 4px 8px;
-    text-shadow: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  /* line 39, ../sass/_responsive.scss */
-  .navbar-toggle:hover {
-    background-image: -webkit-linear-gradient(top, #0084cc 0%, #00a5ff 100%);
-    background-image: linear-gradient(to bottom, #0084cc 0%, #00a5ff 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0084CC', endColorstr='#FF00A5FF', GradientType=0);
-    background-position: 0 0;
-  }
-  /* line 43, ../sass/_responsive.scss */
-  .navbar-toggle:active {
-    -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
-  }
-
-  /* line 47, ../sass/_responsive.scss */
-  .nav-holder {
-    width: 100%;
-  }
-  /* line 49, ../sass/_responsive.scss */
-  .nav-holder .nav {
-    padding: 0 0 4px 0;
-  }
-  /* line 51, ../sass/_responsive.scss */
-  .nav-holder .nav li {
-    padding: 0;
-    margin: 0;
-  }
-  /* line 54, ../sass/_responsive.scss */
-  .nav-holder .nav li.active {
-    padding: 0;
-    border: none;
-  }
-  /* line 58, ../sass/_responsive.scss */
-  .nav-holder .nav li.active a:hover {
-    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
-    background-image: -webkit-linear-gradient(top, #33b7ff 0%, #0084cc 100%);
-    background-image: linear-gradient(to bottom, #33b7ff 0%, #0084cc 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33B7FF', endColorstr='#FF0084CC', GradientType=0);
-    color: white;
-  }
-  /* line 65, ../sass/_responsive.scss */
-  .nav-holder .nav li a {
-    padding: 10px 20px;
-    -webkit-transition: none;
-    transition: none;
-  }
-  /* line 68, ../sass/_responsive.scss */
-  .nav-holder .nav li a:hover {
-    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
-    background-image: -webkit-linear-gradient(top, #33b7ff 0%, #0084cc 100%);
-    background-image: linear-gradient(to bottom, #33b7ff 0%, #0084cc 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33B7FF', endColorstr='#FF0084CC', GradientType=0);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    color: white;
-  }
-  /* line 74, ../sass/_responsive.scss */
-  .nav-holder .nav li a:active {
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
-  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 86, ../sass/_responsive.scss */
+  /* line 37, ../sass/_responsive.scss */
   h1 {
     font-size: 22px;
     line-height: 28px;
   }
 
-  /* line 90, ../sass/_responsive.scss */
+  /* line 41, ../sass/_responsive.scss */
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
 
-  /* line 94, ../sass/_responsive.scss */
+  /* line 45, ../sass/_responsive.scss */
   h4 {
     font-size: 16px;
   }
 
-  /* line 97, ../sass/_responsive.scss */
+  /* line 48, ../sass/_responsive.scss */
   .tnx-block {
     margin: 20px 0 0 0;
   }
 
-  /* line 101, ../sass/_responsive.scss */
+  /* line 52, ../sass/_responsive.scss */
   .content .bordered {
     border-top: 1px dashed #aaaaaa;
     border-left: 0;
     margin-top: 50px;
     padding: 8px 0 0 0;
   }
-  /* line 107, ../sass/_responsive.scss */
+  /* line 58, ../sass/_responsive.scss */
   .content .bordered ul li {
     margin-bottom: 10px;
   }
 
-  /* line 113, ../sass/_responsive.scss */
+  /* line 64, ../sass/_responsive.scss */
   .push {
     height: 166px;
   }
 
-  /* line 116, ../sass/_responsive.scss */
+  /* line 67, ../sass/_responsive.scss */
   .page {
     margin: 0 auto -166px;
   }
 
-  /* line 119, ../sass/_responsive.scss */
+  /* line 70, ../sass/_responsive.scss */
   .footer {
     height: 165px;
   }
-  /* line 121, ../sass/_responsive.scss */
+  /* line 72, ../sass/_responsive.scss */
   .footer p {
     text-align: left;
     margin: 0;
   }
 
-  /* line 126, ../sass/_responsive.scss */
+  /* line 77, ../sass/_responsive.scss */
   .footer-contact {
     padding-bottom: 25px;
   }
 
-  /* line 129, ../sass/_responsive.scss */
+  /* line 80, ../sass/_responsive.scss */
   .convincer {
     padding: 10px 0;
     margin-bottom: 0;
   }
-  /* line 132, ../sass/_responsive.scss */
+  /* line 83, ../sass/_responsive.scss */
   .convincer h1 {
     font-size: 28px;
     padding-top: 20px;
     line-height: 40px;
     text-align: center;
   }
-  /* line 138, ../sass/_responsive.scss */
+  /* line 89, ../sass/_responsive.scss */
   .convincer h5 {
     line-height: 30px;
     padding-bottom: 34px;
     padding-right: 0;
     text-align: center;
   }
-  /* line 145, ../sass/_responsive.scss */
+  /* line 96, ../sass/_responsive.scss */
   .convincer.convincer-blue h1 {
     padding-top: 0;
   }
 
-  /* line 150, ../sass/_responsive.scss */
+  /* line 101, ../sass/_responsive.scss */
   .block {
     margin-bottom: 60px;
   }
-  /* line 152, ../sass/_responsive.scss */
+  /* line 103, ../sass/_responsive.scss */
   .block:last-child {
     margin-bottom: 0;
   }
-  /* line 155, ../sass/_responsive.scss */
+  /* line 106, ../sass/_responsive.scss */
   .block p {
     margin-bottom: 10px;
   }
-  /* line 158, ../sass/_responsive.scss */
+  /* line 109, ../sass/_responsive.scss */
   .block .equal {
     text-align: center;
   }
-  /* line 161, ../sass/_responsive.scss */
+  /* line 112, ../sass/_responsive.scss */
   .block .equal p,
   .block .equal h3 {
     text-align: left;
   }
 
-  /* line 166, ../sass/_responsive.scss */
+  /* line 117, ../sass/_responsive.scss */
   .navbar-toggle {
     background-image: -webkit-linear-gradient(top, #00a5ff 0%, #0084cc 100%);
     background-image: linear-gradient(to bottom, #00a5ff 0%, #0084cc 100%);
@@ -8681,7 +8607,7 @@ form {
     top: 20px;
     right: 20px;
   }
-  /* line 173, ../sass/_responsive.scss */
+  /* line 124, ../sass/_responsive.scss */
   .navbar-toggle:hover {
     background-image: -webkit-linear-gradient(top, #0084cc 0%, #00a5ff 100%);
     background-image: linear-gradient(to bottom, #0084cc 0%, #00a5ff 100%);
@@ -8689,31 +8615,31 @@ form {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0084CC', endColorstr='#FF00A5FF', GradientType=0);
     background-position: 0 0;
   }
-  /* line 177, ../sass/_responsive.scss */
+  /* line 128, ../sass/_responsive.scss */
   .navbar-toggle:active {
     -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 181, ../sass/_responsive.scss */
+  /* line 132, ../sass/_responsive.scss */
   .nav-holder {
     width: 100%;
   }
-  /* line 183, ../sass/_responsive.scss */
+  /* line 134, ../sass/_responsive.scss */
   .nav-holder .nav {
     padding: 0 0 4px 0;
   }
-  /* line 185, ../sass/_responsive.scss */
+  /* line 136, ../sass/_responsive.scss */
   .nav-holder .nav li {
     padding: 0;
     margin: 0;
   }
-  /* line 188, ../sass/_responsive.scss */
+  /* line 139, ../sass/_responsive.scss */
   .nav-holder .nav li.active {
     padding: 0;
     border: none;
   }
-  /* line 192, ../sass/_responsive.scss */
+  /* line 143, ../sass/_responsive.scss */
   .nav-holder .nav li.active a:hover {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
@@ -8723,13 +8649,13 @@ form {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33B7FF', endColorstr='#FF0084CC', GradientType=0);
     color: white;
   }
-  /* line 199, ../sass/_responsive.scss */
+  /* line 150, ../sass/_responsive.scss */
   .nav-holder .nav li a {
     padding: 10px 20px;
     -webkit-transition: none;
     transition: none;
   }
-  /* line 202, ../sass/_responsive.scss */
+  /* line 153, ../sass/_responsive.scss */
   .nav-holder .nav li a:hover {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
@@ -8742,23 +8668,23 @@ form {
     border-radius: 4px;
     color: white;
   }
-  /* line 208, ../sass/_responsive.scss */
+  /* line 159, ../sass/_responsive.scss */
   .nav-holder .nav li a:active {
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
   }
 
-  /* line 215, ../sass/_responsive.scss */
+  /* line 166, ../sass/_responsive.scss */
   .portfolio-list {
     margin-bottom: 0;
   }
-  /* line 217, ../sass/_responsive.scss */
+  /* line 168, ../sass/_responsive.scss */
   .portfolio-list ul {
     margin-bottom: 40px;
     padding-bottom: 30px;
     border-bottom: 1px dashed #aaaaaa;
   }
-  /* line 225, ../sass/_responsive.scss */
+  /* line 176, ../sass/_responsive.scss */
   .portfolio-list:last-child .equal:last-child ul {
     margin-bottom: 0;
     padding-bottom: 0;
