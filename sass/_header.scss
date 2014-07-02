@@ -61,3 +61,33 @@
     }
   }
 }
+
+/* Mobile nav*/
+.mob-menu-trigger {
+  display: none;
+  z-index: 9999;
+  &:active {
+    outline: 0;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &.btn {
+    padding: 0;
+    width: 30px;
+    @include border-radius(0);
+    border: none;
+    @include box-shadow(none);
+    background: none;
+  }
+  .icon-bar {
+    background: $black;
+    height: 4px;
+    width: 30px;
+    margin: 0 0 4px 0;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
