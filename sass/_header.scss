@@ -74,7 +74,7 @@
   }
   &.btn {
     padding: 0;
-    width: 30px;
+    width: 38px;
     @include border-radius(0);
     border: none;
     @include box-shadow(none);
@@ -82,9 +82,9 @@
   }
   .icon-bar {
     background: $black;
-    height: 4px;
-    width: 30px;
-    margin: 0 0 4px 0;
+    height: 3px;
+    width: 38px;
+    margin: 0 0 6px 0;
     display: block;
     &:last-child {
       margin-bottom: 0;

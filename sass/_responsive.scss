@@ -53,12 +53,23 @@
   }
   .mob-menu-trigger {
     display: block;
+    position: absolute;
+    top: -52px;
+    left: 15px;
+  }
+  .logo {
+    text-align: right;
   }
   .mob-menu-nav {
     position: fixed;
-    background: $text;
+    background: #333;
+    /*
     ul {
       @include reset-list();
+      &.pull-right {
+        float: none !important;
+        clear: both;
+      }
       li {
         &:first-child {
           a {
@@ -69,13 +80,6 @@
           a {
             border-bottom: none;
           }
-        }
-        &.nav-title {
-          color: $white;
-          background: $black;
-          font-weight: bold;
-          padding: 8px 10px;
-          font-size: 16px;
         }
         a {
           color: #acacac;
@@ -118,6 +122,7 @@
         }
       }
     }
+    */
   }
   .mob-menu-vertical {
     width: 200px;
@@ -143,6 +148,71 @@
   .mob-menu,
   .mob-menu-nav {
     @include transition(all 0.2s ease);
+  }
+  .nav-holder {
+    .nav {
+      &.pull-right {
+        float: none !important;
+        clear: both;
+      }
+      li {
+        margin-left: 0;
+        padding-top: 0;
+        &:first-child {
+          a {
+            border-top: none;
+          }
+        }
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+        }
+        &.active {
+          border-top: none;
+          padding-top: 0;
+        }
+        a {
+          color: #acacac;
+          display: block;
+          padding: 10px 10px;
+          border-bottom: 1px solid #232323;
+          border-top: 1px solid #3d3d3d;
+          line-height: 16px;
+          background: $text;
+          i {
+            margin-right: 10px;
+            @include opacity(0.6);
+            @include transition(opacity 0.2s ease-in-out);
+          }
+          &:hover {
+            text-decoration: none;
+            background: $black;
+            color: $white;
+            i {
+              @include opacity(1);
+            }
+          }
+          &:active {
+            color: $white;
+            background: $black;
+            i {
+              @include opacity(1);
+            }
+          }
+        }
+        &.active {
+          a {
+            color: $white;
+            font-weight: bold;
+            background: $black;
+            i {
+              @include opacity(1);
+            }
+          }
+        }
+      }
+    }
   }
   .content {
     .bordered {
