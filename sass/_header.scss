@@ -66,12 +66,6 @@
 .mob-menu-trigger {
   display: none;
   z-index: 9999;
-  &:active {
-    outline: 0;
-  }
-  &:focus {
-    outline: 0;
-  }
   &.btn {
     padding: 0;
     width: 38px;
@@ -79,6 +73,9 @@
     border: none;
     @include box-shadow(none);
     background: none;
+    &:focus {
+      outline: 0;
+    }
   }
   .icon-bar {
     background: $black;
@@ -88,6 +85,17 @@
     display: block;
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+  &:hover,
+  &:active {
+    .icon-bar {
+      background: $blue;
+    }
+  }
+  &.active {
+    .icon-bar {
+      background: $blue;
     }
   }
 }

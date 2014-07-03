@@ -117,3 +117,7 @@ $icon-font-path: "../stylesheets/fonts/bootstrap/" !default;
   opacity: $opacity / 1;
   filter: alpha(opacity=$opacity);
 }
+
+*:focus {
+  outline: 0;
+}
