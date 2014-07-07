@@ -5,6 +5,9 @@ body {
   background: $white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   @include font-fix();
+  &.mob-menu-toright {
+    overflow: hidden;
+  }
 }
 
 html,
@@ -130,6 +133,7 @@ form {
     }
     h5 {
       margin-bottom: 28px;
+      padding: 0 120px;
     }
     .more-scroll {
       i {

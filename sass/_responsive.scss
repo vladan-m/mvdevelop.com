@@ -1,52 +1,30 @@
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
-  body,
-  .container-fluid {
-    padding:0;
-  }
-  
+@media (min-width: 768px) and (max-width: 991px) {
   h1 {
     font-size: 22px;
     line-height: 28px;
   }
-  
   h2 {
     font-size: 22px;
     line-height: 28px;
   }
-  
   h4 {
     font-size: 16px;
   }
-  
-  .logo,
-  .content {
-    padding-left: 20px;
-  }
-  
-  .content {
-    padding-right: 20px;
-  }
-  
   .tnx-block {
     margin: 20px 0 0 0;
   }
-  
-  .copyright,
-  .footer-contact {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  
   .convincer {
-    padding: 10px 20px;
+    padding: 10px 0;
     margin-bottom: 0;
+    &.convincer-bgnd {
+      background: url('../images/main-convincer.jpg') no-repeat 0 0;
+    }
     h1 {
-      font-size: 28px;
+      font-size: 42px;
+      line-height: 50px;
       padding-top: 20px;
-      line-height: 40px;
     }
     h5 {
       line-height: 30px;
@@ -55,92 +33,115 @@
     }
   }
   
-  .navbar-toggle {
-    @include gradient-vertical($blue, darken($blue,10%));
-    padding: 4px 8px;
-    text-shadow: none;
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .tnx-block {
+    margin: 20px 0 0 0;
+  }
+  .mob-menu-trigger {
+    display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    &:hover {
-      @include gradient-vertical(darken($blue,10%), $blue);
-      background-position: 0 0;
-    }
-    &:active {
-      @include box-shadow(inset 0 3px 3px rgba(0,0,0, 0.3));
+    top: -52px;
+    left: 15px;
+  }
+  .logo {
+    text-align: right;
+  }
+  .mob-menu-nav {
+    position: fixed;
+    background: #333;
+  }
+  .mob-menu-vertical {
+    width: 200px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .mob-menu-left {
+    left: -200px;
+    &.mob-menu-open {
+      left: 0;
+      overflow: auto;
     }
   }
-
+  .mob-menu {
+    position: relative;
+    left: 0;
+  }
+  .mob-menu-toright {
+    left: 200px;
+  }
+  .mob-menu,
+  .mob-menu-nav {
+    @include transition(all 0.2s ease);
+  }
   .nav-holder {
-    width: 100%;
+    text-transform: none;
     .nav {
-      padding: 0 0 4px 0;
+      padding-top: 23px;
+      &.pull-right {
+        float: none !important;
+        clear: both;
+      }
       li {
-        padding: 0;
-        margin: 0;
-        &.active {
-          padding: 0;
-          border: none;
+        margin-left: 0;
+        padding-top: 0;
+        font-family: $fontTitleLight;
+        &:first-child {
           a {
-            &:hover {
-              @include box-shadow (inset 0 1px 4px rgba(0,0,0,0.25));
-              @include gradient-vertical(lighten($blue,10%), darken($blue,10%));
-              color: $white;
-            }
+            border-top: none;
           }
         }
-        a { 
-          padding: 10px 20px;
-          @include transition(none);
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+        }
+        a {
+          color: #acacac;
+          display: block;
+          padding: 10px 15px;
+          border-bottom: 1px solid #232323;
+          border-top: 1px solid #3d3d3d;
+          line-height: 16px;
           &:hover {
-            @include box-shadow (inset 0 1px 4px rgba(0,0,0,0.25));
-            @include gradient-vertical(lighten($blue,10%), darken($blue,10%));
-            @include border-radius(4px);
+            text-decoration: none;
+            background: $black;
             color: $white;
           }
           &:active {
-            @include box-shadow (inset 0 3px 5px rgba(0,0,0,0.4));
+            color: $white;
+            background: $black;
+          }
+        }
+        &.active {
+          border-top: none;
+          padding-top: 0;
+          font-family: $fontTitle;
+          a {
+            background: $black;
+            &:hover {
+              background: $black;
+            }
           }
         }
       }
     }
   }
-  
-}
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-    
-  body,
-  .container-fluid {
-    padding:0;
-  }
-  
-  h1 {
-    font-size: 22px;
-    line-height: 28px;
-  }
-  
-  h2 {
-    font-size: 22px;
-    line-height: 28px;
-  }
-  
-  h4 {
-    font-size: 16px;
-  }
-  
-  .logo,
   .content {
-    padding-left: 20px;
-  }
-  
-  .tnx-block {
-    margin: 20px 0 0 0;
-  }
-  
-  .content {
-    padding-right: 20px;
     .bordered {
       border-top: 1px dashed $bordered;
       border-left: 0;
@@ -152,37 +153,32 @@
         }
       }
     }
-  }
-  
-  .push {
-    height: 166px;
-  }
-  
-  .page {
-  	margin: 0 auto -166px;
-  }
-  
-  .footer {
-    height: 165px;
-    p {
-      text-align: left;
-      margin: 0;
+    .services {
+      padding-bottom: 0;
+      p {
+        margin-bottom: 42px;
+      }
     }
   }
-  
-  .copyright,
-  .footer-contact {
-    padding-right: 20px;
-    padding-left: 20px;
+  .footer {
+    .footer-nav {
+      font-size: 14px;
+      li {
+        margin-right: 8px;
+      }
+    }
   }
-  
-  .footer-contact {
-    padding-bottom: 25px;
-  }
-  
   .convincer {
-    padding: 10px 20px;
+    padding: 10px 0 34px 0;
     margin-bottom: 0;
+    &.convincer-bgnd {
+      background: url('../images/main-convincer.jpg') no-repeat 0 0;
+      padding-top: 33px;
+      padding-bottom: 33px;
+      h5 {
+        padding: 0;
+      }
+    }
     h1 {
       font-size: 28px;
       padding-top: 20px;
@@ -201,7 +197,6 @@
       }
     }
   }
-  
   .block {
     margin-bottom: 60px;
     &:last-child {
@@ -218,58 +213,6 @@
       }
     }
   }
-  
-  .navbar-toggle {
-    @include gradient-vertical($blue, darken($blue,10%));
-    padding: 4px 8px;
-    text-shadow: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    &:hover {
-      @include gradient-vertical(darken($blue,10%), $blue);
-      background-position: 0 0;
-    }
-    &:active {
-      @include box-shadow(inset 0 3px 3px rgba(0,0,0, 0.3));
-    }
-  }
-  
-  .nav-holder {
-    width: 100%;
-    .nav {
-      padding: 0 0 4px 0;
-      li {
-        padding: 0;
-        margin: 0;
-        &.active {
-          padding: 0;
-          border: none;
-          a {
-            &:hover {
-              @include box-shadow (inset 0 1px 4px rgba(0,0,0,0.25));
-              @include gradient-vertical(lighten($blue,10%), darken($blue,10%));
-              color: $white;
-            }
-          }
-        }
-        a { 
-          padding: 10px 20px;
-          @include transition(none);
-          &:hover {
-            @include box-shadow (inset 0 1px 4px rgba(0,0,0,0.25));
-            @include gradient-vertical(lighten($blue,10%), darken($blue,10%));
-            @include border-radius(4px);
-            color: $white;
-          }
-          &:active {
-            @include box-shadow (inset 0 3px 5px rgba(0,0,0,0.4));
-          }
-        }
-      }
-    }
-  }
-  
   .portfolio-list {
     margin-bottom: 0;
     ul {
@@ -289,10 +232,29 @@
       }
     }
   }
-  
-}
- 
-/* Landscape phones and down */
-@media (max-width: 480px) {
+  .main-wrap {
+    h2 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 31px;
+    }
+    &.colored {
+      .rtl {
+        text-align: left;
+      }
+    }
+    .centered-image {
+      text-align: center;
+      img {
+        display: inline-block;
+      }
+    }
+  }
+  .photo {
+    max-width: 35%;
+    img {
+      margin: 0;
+    }
+  }
   
 }

@@ -20,6 +20,10 @@
   font-family: $fontTitle;
   font-size: 15px;
   text-transform: uppercase;
+  &.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .nav {
     position: static;
     @include reset-list();
@@ -54,6 +58,44 @@
           }
         }
       }
+    }
+  }
+}
+
+/* Mobile nav*/
+.mob-menu-trigger {
+  display: none;
+  z-index: 9999;
+  &.btn {
+    padding: 0;
+    width: 38px;
+    @include border-radius(0);
+    border: none;
+    @include box-shadow(none);
+    background: none;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .icon-bar {
+    background: $black;
+    height: 3px;
+    width: 38px;
+    margin: 0 0 6px 0;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:hover,
+  &:active {
+    .icon-bar {
+      background: $blue;
+    }
+  }
+  &.active {
+    .icon-bar {
+      background: $blue;
     }
   }
 }

@@ -1,5 +1,22 @@
 $(window).load(function() {
 
+  if($('.mob-menu-nav').length > 0) {
+    $('body').on('click', '.mob-menu-trigger', function() {
+      var $this = $(this)
+      ,   $pushMenu = $this.closest('.mob-menu').find('.mob-menu-nav')
+      ,   $body = $this.closest('body');
+      if($this.hasClass('active')) {
+        $this.removeClass('active');
+        $body.removeClass('mob-menu-toright');
+        $pushMenu.removeClass('mob-menu-open');
+      } else {
+        $this.addClass('active');
+        $body.addClass('mob-menu-toright');
+        $pushMenu.addClass('mob-menu-open');
+      }
+    });
+  }
+
   if ( $(window).width() > 767) {
     if($('.equal-holder').length) {
     	function equalHeight(group) {
