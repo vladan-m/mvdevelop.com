@@ -173,6 +173,8 @@
     margin-bottom: 0;
     &.convincer-bgnd {
       background: url('../images/main-convincer.jpg') no-repeat 0 0;
+      padding-top: 33px;
+      padding-bottom: 33px;
       h5 {
         padding: 0;
       }
@@ -239,6 +241,12 @@
     &.colored {
       .rtl {
         text-align: left;
+      }
+    }
+    .centered-image {
+      text-align: center;
+      img {
+        display: inline-block;
       }
     }
   }
