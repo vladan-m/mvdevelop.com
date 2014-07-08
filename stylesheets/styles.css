@@ -7874,6 +7874,20 @@ form {
   text-align: right;
 }
 
+/* line 199, ../sass/_common.scss */
+.side-social {
+  margin-top: 5px;
+}
+/* line 201, ../sass/_common.scss */
+.side-social a {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 204, ../sass/_common.scss */
+.side-social a:last-child {
+  margin-right: 0;
+}
+
 /* line 1, ../sass/_icons.scss */
 [class^="icon-"] {
   display: inline-block;
@@ -8020,6 +8034,21 @@ form {
 /* line 58, ../sass/_icons.scss */
 .iconfooter-bottom {
   background-position: -220px -8px;
+}
+
+/* line 60, ../sass/_icons.scss */
+.iconfooter-twitter-color {
+  background-position: -8px -61px;
+}
+
+/* line 61, ../sass/_icons.scss */
+.iconfooter-face-color {
+  background-position: -114px -61px;
+}
+
+/* line 62, ../sass/_icons.scss */
+.iconfooter-linkedin-color {
+  background-position: -167px -61px;
 }
 
 /* line 1, ../sass/_header.scss */
