@@ -7813,42 +7813,46 @@ form {
   filter: alpha(opacity=1);
 }
 /* line 150, ../sass/_common.scss */
+.convincer.convincer-bg {
+  background: url("../images/page-convincer.jpg") no-repeat 0 0 fixed;
+}
+/* line 153, ../sass/_common.scss */
 .convincer.convincer-yellow {
   background: #b8d30b;
 }
-/* line 153, ../sass/_common.scss */
+/* line 156, ../sass/_common.scss */
 .convincer.convincer-green {
   background: #69c969;
 }
-/* line 156, ../sass/_common.scss */
+/* line 159, ../sass/_common.scss */
 .convincer.convincer-olive {
   background: #3eafbe;
 }
-/* line 159, ../sass/_common.scss */
+/* line 162, ../sass/_common.scss */
 .convincer.convincer-orange {
   background: #e2882f;
 }
-/* line 162, ../sass/_common.scss */
+/* line 165, ../sass/_common.scss */
 .convincer .slider-wrap {
   margin: 0 auto 12px auto;
   width: 260px;
 }
-/* line 166, ../sass/_common.scss */
+/* line 169, ../sass/_common.scss */
 .convincer .slider {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 168, ../sass/_common.scss */
+/* line 171, ../sass/_common.scss */
 .convincer .slider li {
   display: none;
 }
 
-/* line 174, ../sass/_common.scss */
+/* line 177, ../sass/_common.scss */
 .main-wrap {
   padding: 45px 0 50px 0;
 }
-/* line 176, ../sass/_common.scss */
+/* line 179, ../sass/_common.scss */
 .main-wrap h2 {
   text-align: center;
   font-size: 32px;
@@ -7857,7 +7861,7 @@ form {
   padding-bottom: 0;
   margin-bottom: 41px;
 }
-/* line 184, ../sass/_common.scss */
+/* line 187, ../sass/_common.scss */
 .main-wrap p {
   font-family: "Aller Light Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -7865,25 +7869,25 @@ form {
   margin-bottom: 33px;
   margin-top: 42px;
 }
-/* line 191, ../sass/_common.scss */
+/* line 194, ../sass/_common.scss */
 .main-wrap.colored {
   background: #f7f8f9;
 }
-/* line 193, ../sass/_common.scss */
+/* line 196, ../sass/_common.scss */
 .main-wrap.colored .rtl {
   text-align: right;
 }
 
-/* line 199, ../sass/_common.scss */
+/* line 202, ../sass/_common.scss */
 .side-social {
   margin-top: 5px;
 }
-/* line 201, ../sass/_common.scss */
+/* line 204, ../sass/_common.scss */
 .side-social a {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 204, ../sass/_common.scss */
+/* line 207, ../sass/_common.scss */
 .side-social a:last-child {
   margin-right: 0;
 }
