@@ -147,6 +147,9 @@ form {
       }
     }
   }
+  &.convincer-bg {
+    background: url('../images/page-convincer.jpg') no-repeat 0 0 fixed;
+  }
   &.convincer-yellow {
     background: $convincerYellow;
   }
