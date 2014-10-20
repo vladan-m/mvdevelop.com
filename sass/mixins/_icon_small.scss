@@ -1,0 +1,12 @@
+///// Mixin for styling common small icon style. Icons are retina optimized /////
+// -----------------------------------------------------------------------------
+@mixin icon-small($size, $icon_location) {
+	display: inline-block;
+  width: $size;
+  height: $size;
+  line-height: $size;
+  vertical-align: top;
+  background-image: url("#{$icon_location}-small.png");
+  background-position: -2000px -2000px;
+  background-repeat: no-repeat;
+}

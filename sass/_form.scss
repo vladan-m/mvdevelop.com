@@ -1,0 +1,67 @@
+///// Custom form configuration /////
+// -----------------------------------------------------------------------------
+form {
+  margin: 0;
+}
+
+.form-list {
+  @include reset-list();
+  li {
+    margin-bottom: 34px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  input {
+    height: 35px;
+    line-height: 30px;
+    margin-bottom: 0;
+    &.error {
+      border: 1px solid $red;
+      @include box-shadow(inset 0 2px 5px lighten($red,50%));
+    }
+  }
+  input,
+  textarea {
+    @include placeholder($lightGray);
+    color: $text;
+    font-size: 12px;
+    border: 1px solid $inputBorder;
+    @include box-shadow(inset 0 2px 5px lighten($black,80%));
+  }
+  textarea {
+    margin-bottom: 0;
+    &.error {
+      border: 1px solid $red;
+      @include box-shadow(inset 0 2px 5px lighten($red,50%));
+    }
+  }
+  .small-notification {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  label {
+    font-weight: normal;
+    font-size: 14px;
+    &.error {
+      font-size: 11px;
+      font-weight: bold;
+      color: $red;
+      margin-bottom: 0;
+    }
+    .required {
+	    color: $red;
+	    font-weight: bold;
+	  }
+  }
+}
+.small-notification {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: right;
+  span {
+    color: $red;
+    font-size: 14px;
+  }
+}
