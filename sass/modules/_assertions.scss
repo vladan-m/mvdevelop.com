@@ -1,0 +1,26 @@
+///// Assertions styling /////
+// -----------------------------------------------------------------------------
+.assertion-wrap {
+  padding: 45px 0 50px 0;
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
+    padding-bottom: 0;
+    margin-bottom: 41px;
+  }
+  p {
+    font-family: $fontTitleLight;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    margin-top: 42px;
+  }
+  &.colored {
+    background: $lighterGray;
+    .rtl {
+      text-align: right;
+    }
+  }
+}

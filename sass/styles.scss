@@ -10,10 +10,10 @@
 @import "mixins"; // contain import for all mixins
 
 @import "layout"; // configuration file for general page structure
-@import "common";
 @import "icons"; // contain configuration for all types of icons
-@import "form"; // contain custom form configuration
-@import "header";
+
+@import "modules";
+
 @import "content";
 @import "footer";
 
