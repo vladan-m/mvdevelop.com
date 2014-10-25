@@ -1,3 +1,5 @@
+///// Content styling and all small things inside content /////
+// -----------------------------------------------------------------------------
 .content {
   padding: 50px 0 70px 0;
   #more-info & {
@@ -10,9 +12,6 @@
     i {
       margin-right: 11px;
     }
-  }
-  .services {
-    padding-bottom: 22px;
   }
   .main-block {
     padding-bottom: 26px;
@@ -38,10 +37,6 @@
   }
 }
 
-.more {
-  font-weight: bold;
-}
-
 .equal {
   padding-bottom: 1px;
   img {
@@ -65,12 +60,6 @@
   }
 }
 
-.services-holder {
-  h2 {
-    padding-bottom: 29px;
-  }
-}
-
 .photo {
   img {
     @include border-radius(120px);
@@ -87,41 +76,6 @@
       @include border-radius(50px);
       margin: 0;
       width: 100px;
-    }
-  }
-}
-
-.portfolio-list {
-  margin-bottom: 60px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-  .portfolio-image {
-    margin-bottom: 20px;
-    img {
-      border: 1px solid $bordered;
-      @include box-shadow(0 0 5px $bordered);
-    }
-  }
-  h3 {
-    margin-bottom: 3px;
-  }
-  ul {
-    @include reset-list();
-    li {
-      font-size: 12px;
-      line-height: 16px;
-      margin-bottom: 10px;
-      i {
-        @include opacity(0.4);
-        @include transition(opacity 0.2s ease);
-        margin-right: 5px;
-      }
-      &:hover {
-        i {
-          @include opacity(1);
-        }
-      }
     }
   }
 }

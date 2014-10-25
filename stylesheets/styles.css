@@ -7698,6 +7698,11 @@ img {
   max-width: 100%;
 }
 
+/* line 66, ../sass/_typography.scss */
+.more {
+  font-weight: bold;
+}
+
 /* line 3, ../sass/_layout.scss */
 .container-fluid {
   max-width: 1030px;
@@ -8271,98 +8276,143 @@ form {
   margin-right: 0;
 }
 
-/* line 1, ../sass/_content.scss */
+/* line 3, ../sass/modules/_services.scss */
+.services {
+  padding-bottom: 22px;
+}
+
+/* line 8, ../sass/modules/_services.scss */
+.services-holder h2 {
+  padding-bottom: 29px;
+}
+
+/* line 3, ../sass/modules/_portfolio.scss */
+.portfolio-list {
+  margin-bottom: 60px;
+}
+/* line 5, ../sass/modules/_portfolio.scss */
+.portfolio-list:last-child {
+  margin-bottom: 0;
+}
+/* line 8, ../sass/modules/_portfolio.scss */
+.portfolio-list h3 {
+  margin-bottom: 3px;
+}
+/* line 11, ../sass/modules/_portfolio.scss */
+.portfolio-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 13, ../sass/modules/_portfolio.scss */
+.portfolio-list ul i {
+  opacity: 0.4;
+  filter: alpha(opacity=0.4);
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  margin-right: 5px;
+}
+/* line 18, ../sass/modules/_portfolio.scss */
+.portfolio-list ul li {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+/* line 23, ../sass/modules/_portfolio.scss */
+.portfolio-list ul li:hover i {
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+
+/* line 31, ../sass/modules/_portfolio.scss */
+.portfolio-image {
+  margin-bottom: 20px;
+}
+/* line 33, ../sass/modules/_portfolio.scss */
+.portfolio-image img {
+  border: 1px solid #aaaaaa;
+  -webkit-box-shadow: 0 0 5px #aaaaaa;
+  box-shadow: 0 0 5px #aaaaaa;
+}
+
+/* line 3, ../sass/modules/_content.scss */
 .content {
   padding: 50px 0 70px 0;
 }
-/* line 3, ../sass/_content.scss */
+/* line 5, ../sass/modules/_content.scss */
 #more-info .content {
   padding: 0;
 }
-/* line 6, ../sass/_content.scss */
+/* line 8, ../sass/modules/_content.scss */
 .content h3 {
   padding-bottom: 9px;
 }
-/* line 10, ../sass/_content.scss */
+/* line 12, ../sass/modules/_content.scss */
 .content h4 i {
   margin-right: 11px;
 }
-/* line 14, ../sass/_content.scss */
-.content .services {
-  padding-bottom: 22px;
-}
-/* line 17, ../sass/_content.scss */
+/* line 16, ../sass/modules/_content.scss */
 .content .main-block {
   padding-bottom: 26px;
 }
-/* line 19, ../sass/_content.scss */
+/* line 18, ../sass/modules/_content.scss */
 .content .main-block img {
   margin-top: 6px;
 }
-/* line 23, ../sass/_content.scss */
+/* line 22, ../sass/modules/_content.scss */
 .content .bordered {
   border-left: 1px dashed #aaaaaa;
   padding-left: 15px;
 }
-/* line 26, ../sass/_content.scss */
+/* line 25, ../sass/modules/_content.scss */
 .content .bordered ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 28, ../sass/_content.scss */
+/* line 27, ../sass/modules/_content.scss */
 .content .bordered ul li {
   margin-bottom: 30px;
 }
-/* line 30, ../sass/_content.scss */
+/* line 29, ../sass/modules/_content.scss */
 .content .bordered ul li h3 {
   padding-bottom: 0;
 }
-/* line 33, ../sass/_content.scss */
+/* line 32, ../sass/modules/_content.scss */
 .content .bordered ul li p {
   font-size: 12px;
 }
 
-/* line 41, ../sass/_content.scss */
-.more {
-  font-weight: bold;
-}
-
-/* line 45, ../sass/_content.scss */
+/* line 40, ../sass/modules/_content.scss */
 .equal {
   padding-bottom: 1px;
 }
-/* line 47, ../sass/_content.scss */
+/* line 42, ../sass/modules/_content.scss */
 .equal img {
   margin-bottom: 12px;
 }
-/* line 50, ../sass/_content.scss */
+/* line 45, ../sass/modules/_content.scss */
 .equal a {
   display: inline-block;
 }
-/* line 53, ../sass/_content.scss */
+/* line 48, ../sass/modules/_content.scss */
 .equal p {
   margin-bottom: 15px;
 }
 
-/* line 58, ../sass/_content.scss */
+/* line 53, ../sass/modules/_content.scss */
 .tnx-block {
   text-align: center;
   margin: 60px 0 0 0;
 }
-/* line 61, ../sass/_content.scss */
+/* line 56, ../sass/modules/_content.scss */
 .tnx-block h1 {
   font-size: 32px;
   line-height: 36px;
   color: #333333;
 }
 
-/* line 69, ../sass/_content.scss */
-.services-holder h2 {
-  padding-bottom: 29px;
-}
-
-/* line 75, ../sass/_content.scss */
+/* line 64, ../sass/modules/_content.scss */
 .photo img {
   -webkit-border-radius: 120px;
   -moz-border-radius: 120px;
@@ -8373,12 +8423,12 @@ form {
   width: 240px;
 }
 
-/* line 83, ../sass/_content.scss */
+/* line 72, ../sass/modules/_content.scss */
 .visible-phone .photo {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 86, ../sass/_content.scss */
+/* line 75, ../sass/modules/_content.scss */
 .visible-phone .photo img {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -8389,66 +8439,18 @@ form {
   width: 100px;
 }
 
-/* line 94, ../sass/_content.scss */
-.portfolio-list {
-  margin-bottom: 60px;
-}
-/* line 96, ../sass/_content.scss */
-.portfolio-list:last-child {
-  margin-bottom: 0;
-}
-/* line 99, ../sass/_content.scss */
-.portfolio-list .portfolio-image {
-  margin-bottom: 20px;
-}
-/* line 101, ../sass/_content.scss */
-.portfolio-list .portfolio-image img {
-  border: 1px solid #aaaaaa;
-  -webkit-box-shadow: 0 0 5px #aaaaaa;
-  box-shadow: 0 0 5px #aaaaaa;
-}
-/* line 106, ../sass/_content.scss */
-.portfolio-list h3 {
-  margin-bottom: 3px;
-}
-/* line 109, ../sass/_content.scss */
-.portfolio-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 111, ../sass/_content.scss */
-.portfolio-list ul li {
-  font-size: 12px;
-  line-height: 16px;
-  margin-bottom: 10px;
-}
-/* line 115, ../sass/_content.scss */
-.portfolio-list ul li i {
-  opacity: 0.4;
-  filter: alpha(opacity=0.4);
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
-  margin-right: 5px;
-}
-/* line 121, ../sass/_content.scss */
-.portfolio-list ul li:hover i {
-  opacity: 1;
-  filter: alpha(opacity=1);
-}
-
-/* line 130, ../sass/_content.scss */
+/* line 84, ../sass/modules/_content.scss */
 .about-block .pull-left {
   margin-right: 20px;
 }
 
-/* line 1, ../sass/_footer.scss */
+/* line 1, ../sass/modules/_footer.scss */
 .footer {
   background: #3e3e3e;
   height: 193px;
   color: #aaaaaa;
 }
-/* line 5, ../sass/_footer.scss */
+/* line 5, ../sass/modules/_footer.scss */
 .footer .footer-social {
   list-style: none;
   margin: 0;
@@ -8456,28 +8458,28 @@ form {
   text-align: center;
   margin: 25px 0 25px 0;
 }
-/* line 9, ../sass/_footer.scss */
+/* line 9, ../sass/modules/_footer.scss */
 .footer .footer-social li {
   margin-right: 20px;
   display: inline-block;
 }
-/* line 12, ../sass/_footer.scss */
+/* line 12, ../sass/modules/_footer.scss */
 .footer .footer-social li a {
   display: block;
 }
-/* line 14, ../sass/_footer.scss */
+/* line 14, ../sass/modules/_footer.scss */
 .footer .footer-social li a i {
   opacity: 0.6;
   filter: alpha(opacity=0.6);
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-/* line 19, ../sass/_footer.scss */
+/* line 19, ../sass/modules/_footer.scss */
 .footer .footer-social li a:hover i {
   opacity: 1;
   filter: alpha(opacity=1);
 }
-/* line 26, ../sass/_footer.scss */
+/* line 26, ../sass/modules/_footer.scss */
 .footer .footer-nav {
   list-style: none;
   margin: 0;
@@ -8487,33 +8489,33 @@ form {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 32, ../sass/_footer.scss */
+/* line 32, ../sass/modules/_footer.scss */
 .footer .footer-nav li {
   margin-right: 20px;
   display: inline-block;
 }
-/* line 35, ../sass/_footer.scss */
+/* line 35, ../sass/modules/_footer.scss */
 .footer .footer-nav li a {
   color: #aaaaaa;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
-/* line 38, ../sass/_footer.scss */
+/* line 38, ../sass/modules/_footer.scss */
 .footer .footer-nav li a:hover {
   color: #00a5ff;
   text-decoration: none;
 }
-/* line 44, ../sass/_footer.scss */
+/* line 44, ../sass/modules/_footer.scss */
 .footer .footer-nav li.active a {
   color: #00a5ff;
 }
-/* line 50, ../sass/_footer.scss */
+/* line 50, ../sass/modules/_footer.scss */
 .footer .copyright {
   padding-top: 19px;
   margin: 19px 0 21px 0;
   border-top: 1px solid #aaaaaa;
 }
-/* line 55, ../sass/_footer.scss */
+/* line 55, ../sass/modules/_footer.scss */
 .footer p {
   text-align: center;
   font-size: 11px;

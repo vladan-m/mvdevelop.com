@@ -11,10 +11,6 @@
 
 @import "layout"; // configuration file for general page structure
 @import "icons"; // contain configuration for all types of icons
-
-@import "modules";
-
-@import "content";
-@import "footer";
+@import "modules"; // import all modules
 
 @import "responsive";
