@@ -1,0 +1,29 @@
+///// Helpers configuration /////
+// -----------------------------------------------------------------------------
+.equal {
+  padding-bottom: 1px;
+  img {
+    margin-bottom: 12px;
+  }
+  a {
+    display: inline-block;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.more {
+  font-weight: bold;
+}
+
+.separator {
+  border-top: 1px solid $separator;
+  border-bottom: 1px solid $white;
+  width: 100%;
+  margin: 1px 0 39px 0;
+}
+
+*:focus {
+  outline: 0;
+}

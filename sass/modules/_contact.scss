@@ -1,0 +1,15 @@
+///// Contact styling /////
+// -----------------------------------------------------------------------------
+.bordered {
+  border-left: 1px dashed $bordered;
+  padding-left: 15px;
+  ul {
+    @include reset-list();
+    li {
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}

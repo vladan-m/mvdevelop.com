@@ -1,0 +1,23 @@
+///// Footer social styling /////
+// -----------------------------------------------------------------------------
+.footer-social {
+  @include reset-list();
+  text-align: center;
+  margin: 25px 0 25px 0;
+  li {
+    margin-right: 20px;
+    display: inline-block;
+  }
+  a {
+    display: block;
+    i {
+      @include opacity(0.6);
+      @include transition(opacity 0.3s ease-in-out);
+    }
+    &:hover {
+      i {
+        @include opacity(1);
+      }
+    }
+  }
+}

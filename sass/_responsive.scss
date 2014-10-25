@@ -1,5 +1,5 @@
-
-/* Portrait tablet to landscape and desktop */
+///// Portrait tablet to landscape and desktop /////
+// -----------------------------------------------------------------------------
 @media (min-width: 768px) and (max-width: 991px) {
   h1 {
     font-size: 22px;
@@ -35,7 +35,8 @@
   
 }
  
-/* Landscape phone to portrait tablet */
+///// Landscape phone to portrait tablet /////
+// -----------------------------------------------------------------------------
 @media (max-width: 767px) {
   h1 {
     font-size: 22px;
@@ -50,6 +51,30 @@
   }
   .tnx-block {
     margin: 20px 0 0 0;
+  }
+  .convincer {
+    padding: 10px 0 34px 0;
+    margin-bottom: 0;
+    &.big {
+      background: url('../images/main-convincer.jpg') no-repeat 0 0;
+      padding-top: 33px;
+      padding-bottom: 33px;
+      h5 {
+        padding: 0;
+      }
+    }
+    h1 {
+      font-size: 28px;
+      padding-top: 20px;
+      line-height: 40px;
+      text-align: center;
+    }
+    h5 {
+      line-height: 30px;
+      padding-bottom: 34px;
+      padding-right: 0;
+      text-align: center;
+    }
   }
   .mob-menu-trigger {
     display: block;
@@ -141,71 +166,27 @@
       }
     }
   }
-  .content {
-    .bordered {
-      border-top: 1px dashed $bordered;
-      border-left: 0;
-      margin-top: 50px;
-      padding: 8px 0 0 0;
-      ul {
-        li {
-          margin-bottom: 10px;
-        }
-      }
-    }
-    .services {
-      padding-bottom: 0;
-      p {
-        margin-bottom: 42px;
-      }
-    }
-  }
-  .footer {
-    .footer-nav {
-      font-size: 14px;
+  .bordered {
+    border-top: 1px dashed $bordered;
+    border-left: 0;
+    margin-top: 33px;
+    padding: 35px 0 0 0;
+    ul {
       li {
-        margin-right: 8px;
+        margin-bottom: 10px;
       }
     }
   }
-  .convincer {
-    padding: 10px 0 34px 0;
-    margin-bottom: 0;
-    &.big {
-      background: url('../images/main-convincer.jpg') no-repeat 0 0;
-      padding-top: 33px;
-      padding-bottom: 33px;
-      h5 {
-        padding: 0;
-      }
-    }
-    h1 {
-      font-size: 28px;
-      padding-top: 20px;
-      line-height: 40px;
-      text-align: center;
-    }
-    h5 {
-      line-height: 30px;
-      padding-bottom: 34px;
-      padding-right: 0;
-      text-align: center;
-    }
-  }
-  .block {
-    margin-bottom: 60px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .services {
+    padding-bottom: 0;
     p {
-      margin-bottom: 10px;
+      margin-bottom: 42px;
     }
-    .equal {
-      text-align: center;
-      p,
-      h3 {
-        text-align: left;
-      }
+  }
+  .footer-nav {
+    font-size: 14px;
+    li {
+      margin-right: 8px;
     }
   }
   .portfolio-list {
@@ -243,12 +224,6 @@
       img {
         display: inline-block;
       }
-    }
-  }
-  .photo {
-    max-width: 35%;
-    img {
-      margin: 0;
     }
   }
   

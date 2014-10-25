@@ -4,13 +4,14 @@
 
 ///// Import all custom files here /////
 // -----------------------------------------------------------------------------
-@import "config"; // contain all variables and logical definitions
-@import "colors"; // contain all colors variables
-@import "typography"; // contain all font sizes and spacing
-@import "mixins"; // contain import for all mixins
+@import "config"; // configuration for variables and logical definitions
+@import "colors"; // configuration for colors variables
+@import "typography"; // configuration for font sizes and spacings
+@import "mixins"; // import all mixins
+@import "icons"; // configuration for all types of icons
+@import "helpers"; // configuration for all helpers classes
 
-@import "layout"; // configuration file for general page structure
-@import "icons"; // contain configuration for all types of icons
+@import "layout"; // configuration for general page structure
 @import "modules"; // import all modules
 
-@import "responsive";
+@import "responsive"; // responsive configuration for all elements

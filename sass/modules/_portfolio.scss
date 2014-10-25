@@ -2,11 +2,8 @@
 // -----------------------------------------------------------------------------
 .portfolio-list {
   margin-bottom: 60px;
-  &:last-child {
-    margin-bottom: 0;
-  }
   h3 {
-    margin-bottom: 3px;
+    margin-bottom: 12px;
   }
   ul {
     @include reset-list();
@@ -25,6 +22,9 @@
         }
       }
     }
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

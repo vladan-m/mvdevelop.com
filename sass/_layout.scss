@@ -5,6 +5,11 @@
   margin: 0 auto;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-size: $font_size;
   line-height: 21px;
@@ -15,11 +20,6 @@ body {
   &.mob-menu-toright {
     overflow: hidden;
   }
-}
-
-html,
-body {
-  height: 100%;
 }
 
 .push {
@@ -33,16 +33,21 @@ body {
 	margin: 0 auto -193px;
 }
 
-.separator {
-  border-top: 1px solid $separator;
-  border-bottom: 1px solid $white;
-  width: 100%;
-  margin: 5px 0 24px 0;
-  &.separator-big {
-    margin-bottom: 40px;
+.header {
+  @include box-shadow(0 4px 4px -2px rgba(0,0,0,0.35));
+  position: relative;
+  z-index: 1000;
+}
+
+.content {
+  padding: 50px 0 70px 0;
+  #more-info & {
+    padding: 0;
   }
 }
 
-*:focus {
-  outline: 0;
+.footer {
+  background: $footerBgnd;
+  height: 193px;
+  color: $footerText;
 }
