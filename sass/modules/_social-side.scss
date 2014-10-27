@@ -1,0 +1,12 @@
+///// Side social icons styling /////
+// -----------------------------------------------------------------------------
+.side-social {
+  margin-top: 5px;
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+///// Footer navigation styling /////
+// -----------------------------------------------------------------------------
+.footer-nav {
+  @include reset-list();
+  font-family: $fontTitle;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  li {
+      margin-right: 20px;
+      display: inline-block;
+    a {
+      color: $footerText;
+      @include transition(color 0.2s ease-in-out);
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+    &.active {
+      a {
+        color: $blue;
+      }
+    }
+  }
+}

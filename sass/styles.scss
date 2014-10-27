@@ -1,13 +1,17 @@
-// customize bootstrap variables here:
-//@import "variables";
+///// Implement Bootstrap framework here /////
+// -----------------------------------------------------------------------------
 @import "bootstrap";
+//
+///// Import all custom files here /////
+// -----------------------------------------------------------------------------
+@import "config"; // configuration for variables and logical definitions
+@import "colors"; // configuration for colors variables
+@import "typography"; // configuration for font sizes and spacings
+@import "mixins"; // import all mixins
+@import "icons"; // configuration for all types of icons
+@import "helpers"; // configuration for all helpers classes
 
-// custom files
-@import "setup";
-@import "common";
-@import "icons";
-@import "header";
-@import "content";
-@import "footer";
+@import "layout"; // configuration for general page structure
+@import "modules"; // import all modules
 
-@import "responsive";
+@import "responsive"; // responsive configuration for all elements

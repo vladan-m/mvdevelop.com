@@ -1,0 +1,6 @@
+///// Mixin to support cross-browser opacity /////
+// -----------------------------------------------------------------------------
+@mixin opacity($opacity) {
+  opacity: $opacity / 1;
+  filter: alpha(opacity=$opacity);
+}

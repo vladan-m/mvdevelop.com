@@ -1,0 +1,15 @@
+///// All small things inside footer /////
+// -----------------------------------------------------------------------------
+.footer {
+  .copyright {
+    padding-top: 19px;
+    margin: 19px 0 21px 0;
+    border-top: 1px solid $footerText;
+  }
+  p {
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+  }
+}

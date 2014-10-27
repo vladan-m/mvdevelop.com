@@ -1,10 +1,11 @@
 $(window).load(function() {
-
+  
   if($('.mob-menu-nav').length > 0) {
     $('body').on('click', '.mob-menu-trigger', function() {
-      var $this = $(this)
-      ,   $pushMenu = $this.closest('.mob-menu').find('.mob-menu-nav')
-      ,   $body = $this.closest('body');
+      var $this = $(this),
+          $pushMenu = $this.closest('.mob-menu').find('.mob-menu-nav'),
+          $body = $this.closest('body');
+
       if($this.hasClass('active')) {
         $this.removeClass('active');
         $body.removeClass('mob-menu-toright');
@@ -31,12 +32,6 @@ $(window).load(function() {
     	}
     	equalHeight($(".equal"));
     }
-  }
-  
-  if($('.carousel').length) {
-    $('.carousel').carousel({
-      interval: 5000
-    });
   }
   
   if($('.slider').length) {
