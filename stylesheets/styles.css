@@ -8318,12 +8318,16 @@ form {
 .services-holder h2 {
   padding-bottom: 29px;
 }
-/* line 7, ../sass/modules/_services.scss */
+/* line 8, ../sass/modules/_services.scss */
+.services-holder .intro-text h2 {
+  padding-bottom: 10px;
+}
+/* line 12, ../sass/modules/_services.scss */
 .services-holder i {
   margin-right: 11px;
 }
 
-/* line 12, ../sass/modules/_services.scss */
+/* line 17, ../sass/modules/_services.scss */
 .services {
   padding-bottom: 22px;
 }
