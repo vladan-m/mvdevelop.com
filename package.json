@@ -1,4 +1,15 @@
 {
+  "name": "MV Develop",
+  "version": "1.0",
+  "author": {
+    "name": "Vladan Mitevski",
+    "url": "http://mvdevelop.com/"
+  },
+  "homepage": "http://mvdevelop.com/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vladan-m/mvdevelop.com.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
