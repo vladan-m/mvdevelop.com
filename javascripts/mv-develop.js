@@ -64,5 +64,5 @@ $(window).load(function() {
       $('html,body').animate({scrollTop:destination}, 700, 'easeInCubic');
     });
   }
-
+  
 });
