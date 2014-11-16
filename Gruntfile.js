@@ -14,24 +14,13 @@ module.exports = function(grunt) {
     concat: {
       options: {
         banner: '<%= banner %>',
-        stripBanners: true,
-        // define a string to put between each file in the concatenated output
         separator: ';'
       },
       dist: {
         // the files to concatenate
-        src: ['javascripts/<%= pkg.name %>.js'],
+        src: ['javascripts/jquery.js', 'javascripts/easing.js', 'javascripts/bootstrap-collapse.js', 'javascripts/bootstrap-transition.js', 'javascripts/bxslider.js', 'javascripts/validate.js', 'javascripts/mv-develop.js'],
         // the location of the resulting JS file
-        dest: 'javascripts/<%= pkg.name %>.concat.js'
-      }
-    },
-    uglify: {
-      options: {
-        banner: '<%= banner %>'
-      },
-      dist: {
-        src: '<%= concat.dist.dest %>',
-        dest: 'javascripts/<%= pkg.name %>.min.js'
+        dest: 'javascripts/app.js'
       }
     },
     jshint: {
@@ -52,15 +41,37 @@ module.exports = function(grunt) {
           jQuery: true
         }
       },
+      js: {
+        src: '<%= concat.dist.dest %>'
+      },
       gruntfile: {
         src: 'Gruntfile.js'
+      }
+    },
+    uglify: {
+      options: {
+        banner: '<%= banner %>'
+      },
+      dist: {
+        src: '<%= concat.dist.dest %>',
+        dest: 'javascripts/app.min.js'
       }
     },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile']
+      },
+      src: {
+        files: 'javascripts/app.js',
+        tasks: ['concat', 'uglify']
       }
+      /*
+      js: {
+        files: '<%= jshint.js.src %>',
+        tasks: ['jshint:js']
+      },
+      */
     }
   });
 
@@ -71,6 +82,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['concat', 'jshint', 'uglify']);
 
 };
