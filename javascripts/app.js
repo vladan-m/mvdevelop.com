@@ -1,4 +1,4 @@
-/*! MV Develop - v1.0 - 2014-11-16
+/*! MV Develop - v1.0 - 2014-12-24
 * http://mvdevelop.com/
 * Copyright (c) 2014 Vladan Mitevski; Licensed  */
 /*!
