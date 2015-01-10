@@ -1,6 +1,6 @@
-/*! MV Develop - v1.0 - 2014-12-24
+/*! MV Develop - v1.0 - 2015-01-10
 * http://mvdevelop.com/
-* Copyright (c) 2014 Vladan Mitevski; Licensed  */
+* Copyright (c) 2015 Vladan Mitevski; Licensed  */
 /*!
  * jQuery JavaScript Library v1.11.1
  * http://jquery.com/
