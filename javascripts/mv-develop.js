@@ -34,16 +34,6 @@ $(window).load(function() {
     }
   }
 
-  if($('.slider').length) {
-    $('.slider').bxSlider({
-      mode: 'fade',
-      auto: true,
-      controls: false,
-      pause: 5000,
-      pager: false
-    });
-  }
-
   if($('.contact-form').length) {
     $('.contact-form').validate();
   }

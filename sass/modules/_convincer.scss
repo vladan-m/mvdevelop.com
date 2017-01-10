@@ -18,14 +18,19 @@
       display: inline-block;
     }
   }
-  .slider-wrap {
-    margin: 0 auto 12px auto;
-    width: 260px;
-  }
-  .slider {
-    @include reset-list();
-    li {
-      display: none;
+  .badge-wrap {
+    margin: 0 auto 30px auto;
+    width: 304px;
+    ul {
+      @include reset-list();
+      @include clearfix();
+      li {
+        float: left;
+        margin-right: 40px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
   &.big {

@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       dist: {
         // files to concatenate
-        src: ['javascripts/jquery.js', 'javascripts/easing.js', 'javascripts/bootstrap-collapse.js', 'javascripts/bootstrap-transition.js', 'javascripts/bxslider.js', 'javascripts/validate.js', 'javascripts/mv-develop.js'],
+        src: ['javascripts/jquery.js', 'javascripts/easing.js', 'javascripts/bootstrap-collapse.js', 'javascripts/bootstrap-transition.js', 'javascripts/validate.js', 'javascripts/mv-develop.js'],
         // location of the resulting JS file
         dest: 'javascripts/app.js'
       }
