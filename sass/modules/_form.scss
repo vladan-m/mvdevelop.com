@@ -49,10 +49,6 @@ form {
       color: $red;
       margin-bottom: 0;
     }
-    .required {
-	    color: $red;
-	    font-weight: bold;
-	  }
   }
 }
 .small-notification {
@@ -60,8 +56,4 @@ form {
   font-weight: bold;
   margin-bottom: 5px;
   text-align: right;
-  span {
-    color: $red;
-    font-size: 14px;
-  }
 }
