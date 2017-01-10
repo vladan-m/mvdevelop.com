@@ -1,5 +1,5 @@
 $(window).load(function() {
-  
+
   if($('.mob-menu-nav').length > 0) {
     $('body').on('click', '.mob-menu-trigger', function() {
       var $this = $(this),
@@ -33,7 +33,7 @@ $(window).load(function() {
     	equalHeight($(".equal"));
     }
   }
-  
+
   if($('.slider').length) {
     $('.slider').bxSlider({
       mode: 'fade',
@@ -43,7 +43,7 @@ $(window).load(function() {
       pager: false
     });
   }
-  
+
   if($('.contact-form').length) {
     $('.contact-form').validate();
   }
@@ -64,5 +64,10 @@ $(window).load(function() {
       $('html,body').animate({scrollTop:destination}, 700, 'easeInCubic');
     });
   }
-  
+
+  var date = new Date();
+  var year = date.getFullYear();
+
+  $('.current-year').text(year);
+
 });

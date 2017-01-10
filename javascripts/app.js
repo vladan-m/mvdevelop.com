@@ -1,6 +1,6 @@
-/*! MV Develop - v1.0 - 2015-01-10
+/*! MV Develop - v1.0 - 2017-01-10
 * http://mvdevelop.com/
-* Copyright (c) 2015 Vladan Mitevski; Licensed  */
+* Copyright (c) 2017 Vladan Mitevski; Licensed  */
 /*!
  * jQuery JavaScript Library v1.11.1
  * http://jquery.com/
@@ -13439,7 +13439,7 @@ $.extend($.fn, {
 });
 
 }));;$(window).load(function() {
-  
+
   if($('.mob-menu-nav').length > 0) {
     $('body').on('click', '.mob-menu-trigger', function() {
       var $this = $(this),
@@ -13473,7 +13473,7 @@ $.extend($.fn, {
     	equalHeight($(".equal"));
     }
   }
-  
+
   if($('.slider').length) {
     $('.slider').bxSlider({
       mode: 'fade',
@@ -13483,7 +13483,7 @@ $.extend($.fn, {
       pager: false
     });
   }
-  
+
   if($('.contact-form').length) {
     $('.contact-form').validate();
   }
@@ -13504,5 +13504,10 @@ $.extend($.fn, {
       $('html,body').animate({scrollTop:destination}, 700, 'easeInCubic');
     });
   }
-  
+
+  var date = new Date();
+  var year = date.getFullYear();
+
+  $('.current-year').text(year);
+
 });
