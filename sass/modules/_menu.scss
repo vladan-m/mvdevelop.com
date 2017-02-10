@@ -28,10 +28,11 @@
           color: $blue;
           background: none;
         }
+        .header-bgnd & {
+          color: $white;
+        }
       }
       &.active {
-        border-top: 3px solid $blue;
-        padding-top: 32px;
         a {
           background: none;
           @include box-shadow(none);
