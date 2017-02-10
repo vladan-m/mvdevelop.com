@@ -4,7 +4,8 @@
   padding-top: 38px;
   padding-bottom: 38px;
   @include box-shadow(inset 0 -4px 4px -2px rgba(0,0,0,0.35));
-  background: url('../images/page-convincer.jpg') no-repeat 0 0 fixed;
+  background: url('../images/convincer-bgnd-dark.jpg') no-repeat center 0 fixed;
+  background-size: 100%;
   text-align: center;
   h5 {
     line-height: 30px;
@@ -36,16 +37,19 @@
     }
   }
   &.big {
-    background: url('../images/main-convincer.jpg') no-repeat 0 0 fixed;
+    background: url('../images/convincer-bgnd-dark.jpg') no-repeat 0 0 fixed;
     text-align: center;
+    background-size: cover;
     padding-top: 93px;
     padding-bottom: 93px;
     h1 {
       margin-bottom: 33px;
+      text-shadow: 0 0 30px $black;
     }
     h5 {
       margin-bottom: 28px;
       padding: 0 120px;
+      text-shadow: 0 0 20px $black;
     }
     .more-scroll {
       i {
