@@ -8,11 +8,11 @@ $(window).load(function() {
 
       if($this.hasClass('active')) {
         $this.removeClass('active');
-        $body.removeClass('mob-menu-toright');
+        $body.removeClass('mob-menu-toleft');
         $pushMenu.removeClass('mob-menu-open');
       } else {
         $this.addClass('active');
-        $body.addClass('mob-menu-toright');
+        $body.addClass('mob-menu-toleft');
         $pushMenu.addClass('mob-menu-open');
       }
     });

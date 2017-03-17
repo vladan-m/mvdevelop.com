@@ -21,7 +21,7 @@
     &.big {
       background: url('../images/convincer-bgnd.jpg') no-repeat 0 0;
       background-size: cover;
-      padding-top: 40px;
+      padding-top: 90px;
       padding-bottom: 40px;
     }
     h1 {
@@ -61,20 +61,21 @@
     &.big {
       background: url('../images/convincer-bgnd.jpg') no-repeat 0 0;
       background-size: cover;
-      padding-top: 33px;
+      padding-top: 80px;
       padding-bottom: 33px;
       h5 {
         padding: 0;
       }
     }
     h1 {
-      font-size: 28px;
+      font-size: 30px;
       padding-top: 20px;
-      line-height: 40px;
+      line-height: 42px;
       text-align: center;
     }
     h5 {
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 28px;
       padding-bottom: 34px;
       padding-right: 0;
       text-align: center;
@@ -83,11 +84,8 @@
   .mob-menu-trigger {
     display: block;
     position: absolute;
-    top: -52px;
-    left: 15px;
-  }
-  .logo {
-    text-align: right;
+    top: -59px;
+    right: 15px;
   }
   .mob-menu-nav {
     position: fixed;
@@ -99,19 +97,19 @@
     top: 0;
     z-index: 1000;
   }
-  .mob-menu-left {
-    left: -200px;
+  .mob-menu-right {
+    right: -200px;
     &.mob-menu-open {
-      left: 0;
+      right: 0;
       overflow: auto;
     }
   }
   .mob-menu {
     position: relative;
-    left: 0;
+    right: 0;
   }
-  .mob-menu-toright {
-    left: 200px;
+  .mob-menu-toleft {
+    right: 200px;
   }
   .mob-menu,
   .mob-menu-nav {

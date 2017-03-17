@@ -1,4 +1,4 @@
-/*! MV Develop - v1.0 - 2017-01-10
+/*! MV Develop - v1.0 - 2017-03-16
 * http://mvdevelop.com/
 * Copyright (c) 2017 Vladan Mitevski; Licensed  */
 /*!
@@ -12105,11 +12105,11 @@ $.extend($.fn, {
 
       if($this.hasClass('active')) {
         $this.removeClass('active');
-        $body.removeClass('mob-menu-toright');
+        $body.removeClass('mob-menu-toleft');
         $pushMenu.removeClass('mob-menu-open');
       } else {
         $this.addClass('active');
-        $body.addClass('mob-menu-toright');
+        $body.addClass('mob-menu-toleft');
         $pushMenu.addClass('mob-menu-open');
       }
     });
