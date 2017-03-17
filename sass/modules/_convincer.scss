@@ -12,29 +12,6 @@
     font-size: 20px;
     font-family: $fontTitleLight;
   }
-  .convincer-image {
-    display: none;
-    margin-top: 10px;
-    text-align: center;
-    img {
-      display: inline-block;
-    }
-  }
-  .badge-wrap {
-    margin: 0 auto 30px auto;
-    width: 304px;
-    ul {
-      @include reset-list();
-      @include clearfix();
-      li {
-        float: left;
-        margin-right: 35px;
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-  }
   &.big {
     background: url('../images/convincer-bgnd.jpg') no-repeat center center fixed;
     text-align: center;
@@ -51,9 +28,9 @@
       padding: 0 120px;
     }
     .more-scroll {
-      color: $black;
+      color: $white;
       &:hover {
-        color: $black;
+        color: $white;
       }
       i {
         @include opacity(0.5);
@@ -70,24 +47,23 @@
 
 .button-group {
   margin-bottom: 39px;
-}
-
-.convincer-button {
-  @include transition(border 0.2s ease-in-out, background 0.2s ease-in-out);
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 13px;
-  line-height: 16px;
-  padding: 13px 20px 11px;
-  font-family: $fontTitle;
-  margin: 0 4px;
-  background: rgba(0,0,0, 0.5);
-  color: $white;
-  border: 1px solid transparent;
-  &:hover {
-    text-decoration: none;
+  a {
+    @include transition(border 0.2s ease-in-out, background 0.2s ease-in-out);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 13px 20px 11px;
+    font-family: $fontTitle;
+    margin: 0 4px;
+    background: rgba(0,0,0, 0.5);
     color: $white;
-    border: 1px solid $white;
-    background: rgba(0,0,0, 0.7);
+    border: 1px solid transparent;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      border: 1px solid $white;
+      background: rgba(0,0,0, 0.7);
+    }
   }
 }
