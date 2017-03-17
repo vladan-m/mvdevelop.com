@@ -64,13 +64,18 @@
     }
   }
   .icon-bar {
-    background: $white;
+    background: $black;
     height: 3px;
     width: 38px;
     margin: 0 0 6px 0;
     display: block;
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+  &.white-trigger {
+    .icon-bar {
+      background: $white;
     }
   }
   &:hover,

@@ -1,6 +1,7 @@
 ///// Implement Bootstrap framework here /////
 // -----------------------------------------------------------------------------
 @import "bootstrap";
+@import "../font-awesome/scss/font-awesome";
 //
 ///// Import all custom files here /////
 // -----------------------------------------------------------------------------
@@ -8,7 +9,6 @@
 @import "colors"; // configuration for colors variables
 @import "typography"; // configuration for font sizes and spacings
 @import "mixins"; // import all mixins
-@import "icons"; // configuration for all types of icons
 @import "helpers"; // configuration for all helpers classes
 
 @import "layout"; // configuration for general page structure

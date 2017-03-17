@@ -51,6 +51,10 @@
       padding: 0 120px;
     }
     .more-scroll {
+      color: $black;
+      &:hover {
+        color: $black;
+      }
       i {
         @include opacity(0.5);
         @include transition(opacity 0.3s ease-in-out);

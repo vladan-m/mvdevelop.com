@@ -1,10 +1,16 @@
 ///// Side social icons styling /////
 // -----------------------------------------------------------------------------
 .side-social {
-  margin-top: 5px;
+  margin-top: 10px;
   a {
     display: inline-block;
-    margin-right: 10px;
+    @include transition(color 0.2s ease-in-out);
+    font-size: 26px;
+    color: #777;
+    margin-right: 20px;
+    &:hover {
+      color: $black;
+    }
     &:last-child {
       margin-right: 0;
     }

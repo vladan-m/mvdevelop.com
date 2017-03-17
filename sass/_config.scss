@@ -57,24 +57,6 @@ $fontTitleLight: 'Aller Light Regular', "Helvetica Neue", Helvetica, Arial, sans
 $fontTitleBold: 'Aller Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font_base: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-///// Glyphicons configuration /////
-// -----------------------------------------------------------------------------
-$icon_font_path: "../stylesheets/fonts/bootstrap/";
-$icon_font_name: "glyphicons-halflings-regular";
-//
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('#{$icon_font_path}#{$icon_font_name}.eot');
-  src: url('#{$icon_font_path}#{$icon_font_name}.eot?#iefix') format('embedded-opentype'),
-       url('#{$icon_font_path}#{$icon_font_name}.woff') format('woff'),
-       url('#{$icon_font_path}#{$icon_font_name}.ttf') format('truetype'),
-       url('#{$icon_font_path}#{$icon_font_name}.svg##{$icon-font-svg-id}') format('svg');
-}
-
 ///// Grid size /////
 // -----------------------------------------------------------------------------
 $max_width: 1030px;
-
-///// Icons location /////
-// -----------------------------------------------------------------------------
-$icons: "../images/icons";

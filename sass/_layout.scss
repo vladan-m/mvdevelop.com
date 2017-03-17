@@ -23,14 +23,14 @@ body {
 }
 
 .push {
-  height: 193px;
+  height: 167px;
 }
 
 .page {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -193px;
+	margin: 0 auto -167px;
 }
 
 .header {
@@ -47,6 +47,6 @@ body {
 
 .footer {
   background: $footerBgnd;
-  height: 193px;
+  height: 167px;
   color: $footerText;
 }
