@@ -36,20 +36,19 @@
     }
   }
   &.big {
-    background: url('../images/convincer-bgnd.jpg') no-repeat 0 0 fixed;
+    background: url('../images/convincer-bgnd.jpg') no-repeat center center fixed;
     text-align: center;
     background-size: cover;
     padding-top: 176px;
     margin-top: -84px;
     padding-bottom: 93px;
+    position: relative;
     h1 {
       margin-bottom: 33px;
-      text-shadow: 0 0 30px $black;
     }
     h5 {
       margin-bottom: 28px;
       padding: 0 120px;
-      text-shadow: 0 0 20px $black;
     }
     .more-scroll {
       i {
@@ -62,5 +61,29 @@
         }
       }
     }
+  }
+}
+
+.button-group {
+  margin-bottom: 39px;
+}
+
+.convincer-button {
+  @include transition(border 0.2s ease-in-out, background 0.2s ease-in-out);
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 13px 20px 11px;
+  font-family: $fontTitle;
+  margin: 0 4px;
+  background: rgba(0,0,0, 0.5);
+  color: $white;
+  border: 1px solid transparent;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $white;
+    background: rgba(0,0,0, 0.7);
   }
 }
