@@ -2,8 +2,9 @@
 // -----------------------------------------------------------------------------
 .footer-nav {
   @include reset-list();
-  font-family: $fontTitle;
-  font-size: 15px;
+  font-family: $webFont;
+  font-weight: 500;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   li {

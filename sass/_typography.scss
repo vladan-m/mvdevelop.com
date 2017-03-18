@@ -19,20 +19,23 @@ h2 {
   font-size: $heading_2;
   line-height: 32px;
   padding-bottom: 10px;
-  font-family: $fontTitleLight;
+  font-family: $webFont;
 }
 
 h3 {
   font-size: $heading_3;
   line-height: $line_h;
   text-transform: uppercase;
-  font-family: $fontTitleBold;
+  font-family: $webFont;
+  font-weight: 700;
 }
 
 h4 {
   font-size: $heading_4;
   line-height: $line_h;
   padding-bottom: 7px;
+  font-family: $webFont;
+  font-weight: 500;
 }
 
 h5 {

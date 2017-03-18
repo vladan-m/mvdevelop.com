@@ -2,8 +2,7 @@
 // -----------------------------------------------------------------------------
 .nav-holder {
   margin-bottom: 0;
-  font-family: $fontTitle;
-  font-size: 15px;
+  font-family: $webFont;
   text-transform: uppercase;
   &.navbar-collapse {
     padding-left: 0;
@@ -15,7 +14,8 @@
     @include clearfix();
     li {
       margin-left: 20px;
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: 500;
       line-height: 20px;
       padding-top: 35px;
       a {
