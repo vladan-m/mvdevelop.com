@@ -126,7 +126,8 @@
       li {
         margin-left: 0;
         padding-top: 0;
-        font-family: $fontTitleLight;
+        font-family: $fontAlpha;
+        font-weight: 300;
         &:first-child {
           a {
             border-top: none;
@@ -157,7 +158,7 @@
         &.active {
           border-top: none;
           padding-top: 0;
-          font-family: $fontTitle;
+          font-family: $fontAlpha;
           a {
             background: $black;
             &:hover {

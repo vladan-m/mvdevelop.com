@@ -16,46 +16,8 @@ $large_font: 16px;
 
 ///// Web fonts configuration /////
 // -----------------------------------------------------------------------------
-$font_path: "../font/";
-$font_base: "aller_rg-webfont";
-$font_bold: "aller_bd-webfont";
-$font_light: "aller_lt-webfont";
-$webFont: 'Quicksand', sans-serif;
+$fontAlpha: 'Quicksand', sans-serif;
 
-@font-face {
-  font-family: 'Aller Bold';
-  src: url('#{$font_path}#{$font_bold}.eot');
-  src: url('#{$font_path}#{$font_bold}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font_path}#{$font_bold}.woff') format('woff'),
-    url('#{$font_path}#{$font_bold}.ttf') format('truetype'),
-    url('#{$font_path}#{$font_bold}.svg#allerbold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Aller Light Regular';
-  src: url('#{$font_path}#{$font_light}.eot');
-  src: url('#{$font_path}#{$font_light}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font_path}#{$font_light}.woff') format('woff'),
-    url('#{$font_path}#{$font_light}.ttf') format('truetype'),
-    url('#{$font_path}#{$font_light}.svg#aller_lightregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Aller Regular';
-  src: url('#{$font_path}#{$font_base}.eot');
-  src: url('#{$font_path}#{$font_base}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font_path}#{$font_base}.woff') format('woff'),
-    url('#{$font_path}#{$font_base}.ttf') format('truetype'),
-    url('#{$font_path}#{$font_base}.svg#allerregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-$fontTitle: 'Aller Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$fontTitleLight: 'Aller Light Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$fontTitleBold: 'Aller Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font_base: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 ///// Grid size /////
