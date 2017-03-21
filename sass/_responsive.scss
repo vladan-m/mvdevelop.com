@@ -234,11 +234,15 @@
     }
   }
 
+  .btn {
+    display: block;
+    width: 100%;
+  }
+
   .button-group {
     margin-bottom: 20px;
     a {
       display: block;
-      padding: 13px 20px 11px;
       margin: 0 0 10px;
     }
   }

@@ -44,27 +44,3 @@
     }
   }
 }
-
-.button-group {
-  margin-bottom: 39px;
-  a {
-    @include transition(border 0.2s ease-in-out, background 0.2s ease-in-out);
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 16px;
-    padding: 13px 20px 11px;
-    font-family: $fontAlpha;
-    font-weight: 500;
-    margin: 0 4px;
-    background: rgba(0,0,0, 0.5);
-    color: $white;
-    border: 1px solid transparent;
-    &:hover {
-      text-decoration: none;
-      color: $white;
-      border: 1px solid $white;
-      background: rgba(0,0,0, 0.7);
-    }
-  }
-}
