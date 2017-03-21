@@ -50,7 +50,6 @@
 
 /* Mobile nav*/
 .mob-menu-trigger {
-  @include transition(0.3s);
   cursor: pointer;
   display: none;
   z-index: 9999;
