@@ -84,10 +84,11 @@
     }
   }
   .mob-menu-trigger {
-    display: block;
-    position: absolute;
-    top: -59px;
+    display: inline-block;
+    position: fixed;
+    top: 24px;
     right: 15px;
+    z-index: 9999;
   }
   .mob-menu-nav {
     position: fixed;
@@ -112,6 +113,7 @@
   }
   .mob-menu-toleft {
     right: 200px;
+    overflow: hidden;
   }
   .mob-menu,
   .mob-menu-nav {
@@ -120,7 +122,7 @@
   .nav-holder {
     text-transform: none;
     .nav {
-      padding-top: 23px;
+      padding-top: 63px;
       &.pull-right {
         float: none !important;
         clear: both;
@@ -140,7 +142,7 @@
           }
         }
         a {
-          color: #acacac;
+          color: $white;
           display: block;
           padding: 10px 15px;
           border-bottom: 1px solid #232323;
@@ -149,17 +151,15 @@
           &:hover {
             text-decoration: none;
             background: $black;
-            color: $white;
+            color: $blue;
           }
           &:active {
-            color: $white;
             background: $black;
           }
         }
         &.active {
           border-top: none;
           padding-top: 0;
-          font-family: $fontAlpha;
           a {
             background: $black;
             &:hover {

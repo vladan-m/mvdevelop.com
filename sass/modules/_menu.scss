@@ -50,11 +50,13 @@
 
 /* Mobile nav*/
 .mob-menu-trigger {
+  @include transition(0.3s);
+  cursor: pointer;
   display: none;
   z-index: 9999;
   &.btn {
-    padding: 0;
-    width: 38px;
+    padding: 0 0 5px 0;
+    width: 30px;
     @include border-radius(0);
     border: none;
     @include box-shadow(none);
@@ -62,31 +64,70 @@
     &:focus {
       outline: 0;
     }
+    &:hover {
+      @include opacity(0.6);
+    }
   }
   .icon-bar {
+    @include transition(0.3s);
     background: $black;
     height: 3px;
-    width: 38px;
-    margin: 0 0 6px 0;
-    display: block;
-    &:last-child {
-      margin-bottom: 0;
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    &:before,
+    &:after {
+      @include transition(0.3s);
+      display: inline-block;
+      width: 30px;
+      height: 3px;
+      background: $black;
+      content: '';
+      left: 0;
+      position: absolute;
+      transform-origin: 2.14286px center;
+      transform: rotate(0deg);
+    }
+    &:before {
+      top: 8px;
+    }
+    &:after {
+      top: -8px;
+    }
+    .mob-menu-toleft & {
+      background: transparent;
+      &:after,
+      &:before {
+        top: 0;
+        left: 0;
+        transform-origin: 50% 50%;
+      }
+      &:before { transform: rotate(45deg); }
+      &:after { transform: rotate(-45deg); }
+    }
+  }
+  &.active {
+    .icon-bar {
+      background: $white;
+      .mob-menu-toleft & {
+        background: transparent;
+      }
+      &:before,
+      &:after {
+        background: $white;
+      }
     }
   }
   &.white-trigger {
     .icon-bar {
       background: $white;
-    }
-  }
-  &:hover,
-  &:active {
-    .icon-bar {
-      background: $blue;
-    }
-  }
-  &.active {
-    .icon-bar {
-      background: $blue;
+      .mob-menu-toleft & {
+        background: transparent;
+      }
+      &:before,
+      &:after {
+        background: $white;
+      }
     }
   }
 }
