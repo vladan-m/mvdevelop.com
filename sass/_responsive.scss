@@ -18,6 +18,8 @@
   .convincer {
     padding: 10px 0;
     margin-bottom: 0;
+    background: url('../images/convincer-bgnd.jpg') no-repeat center center;
+    background-size: cover;
     &.big {
       background: url('../images/convincer-bgnd.jpg') no-repeat 0 0;
       background-size: cover;
