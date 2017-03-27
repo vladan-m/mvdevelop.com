@@ -1,0 +1,18 @@
+// Gallery styling
+// ---------------
+.image-gallery {
+  @include reset-list();
+  li {
+    border: 1px solid $commentBorder;
+    padding: 5px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    background: $offWhite;
+    a {
+      display: block;
+    }
+    img {
+      margin-bottom: 0;
+    }
+  }
+}

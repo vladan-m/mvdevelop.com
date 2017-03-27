@@ -1,0 +1,80 @@
+// Main search styling
+// -------------------
+.main-search {
+  .top-header & {
+    float: right;
+    padding-top: 39px;
+  }
+  form {
+    margin-bottom: 0;
+    height: 24px;
+    .input-prepend {
+      @include clearfix();
+      .btn {
+        padding: 3px 10px 2px 15px;
+        border: none;
+        background-color: $white;
+        @include box-shadow(none);
+        @include border-radius(12px 0 0 12px);
+        float: left;
+        color: $blue;
+        &:focus,
+        &:active {
+          outline: none;
+          outline: 0;
+        }
+      }
+      input[type="text"] {
+        padding: 3px 12px 0 0;
+        float: left;
+        border: none;
+        height: 24px;
+        @include box-shadow(none);
+        @include border-radius(0 12px 12px 0);
+        font-size: 11px;
+        color: $blue;
+        text-transform: uppercase;
+        @include placeholder($blue);
+        width: 230px;
+        font-weight: normal;
+        &:focus,
+        &:active {
+          outline: none;
+          outline: 0;
+        }
+      }
+    }
+  }
+  &.search-wide {
+    margin: 0 auto;
+    width: 457px;
+    form {
+      height: 46px;
+      .input-prepend {
+        @include clearfix();
+        .btn {
+          padding: 12px 10px 12px 30px;
+          background: $blue;
+          i {
+            color: $white;
+            font-size: 18px
+          }
+        }
+        input[type="text"] {
+          padding: 12px 12px;
+          background: $blue;
+          width: 400px;
+          height: 44px;
+          @include placeholder($white);
+          color: $white;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.try-search {
+  margin: 95px 0 160px 0;
+  text-align: center;
+}

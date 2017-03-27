@@ -1,0 +1,35 @@
+// Footer styling
+// --------------
+.footer {
+  background: $darkGray;
+  padding: 19px 0 13px 0;
+  position: relative;
+  z-index: 5000;
+  font-size: 13px;
+  line-height: 20px;
+  h4 {
+    font-size: 22px;
+    line-height: 24px;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: 0 0 10px 0;
+    font-family: $fontTitleTempCondensed;
+    @include font-fix();
+    color: $white;
+  }
+  ul {
+    @include reset-list();
+    margin-bottom: 20px;
+    li {
+      a {
+        color: $gray;
+      }
+    }
+  }
+  p.copy {
+    color: $gray;
+    font-size: 11px;
+    line-height: 18px;
+    padding-bottom: 0;
+  }
+}

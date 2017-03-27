@@ -1,0 +1,184 @@
+.menu-main-nav-container {
+  display: none;
+}
+
+.main-nav {
+  @include reset-list();
+  @include clearfix();
+  margin: 0 auto;
+  width: 500px;
+  li {
+    float: left;
+    width: 100px;
+    border-right: 1px solid $catDescBgnd;
+    min-height: 49px;
+    box-sizing: border-box;
+    text-align: center;
+    &:first-child {
+      border-left: 1px solid $catDescBgnd;
+    }
+    a {
+      display: block;
+      line-height: 28px;
+      color: $darkGray;
+      i {
+        display: block;
+        padding-top: 10px;
+        @include opacity(0.6);
+        @include transition(opacity 0.2s ease-in-out);
+      }
+      &:hover {
+        background: $darkGray;
+        color: $white;
+        text-decoration: none;
+        i {
+          color: $white;
+          @include opacity(1);
+        }
+      }
+    }
+    &.active {
+      a {
+        background: $darkGray;
+        color: $white;
+        i {
+          color: $white;
+          @include opacity(1);
+        }
+      }
+    }
+  }
+}
+
+/* Mobile nav*/
+.mob-menu-trigger {
+  display: none;
+  &:active {
+    outline: 0;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &.btn {
+    padding: 0;
+    width: 30px;
+    @include border-radius(0);
+    border: none;
+    @include box-shadow(none);
+    background: none;
+  }
+  .icon-bar {
+    background: $white;
+    height: 4px;
+    width: 30px;
+    margin: 0 0 4px 0;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.mob-menu-nav {
+	position: fixed;
+	background: $text;
+	ul {
+  	@include reset-list();
+    li {
+      &:first-child {
+        a {
+          border-top: none;
+        }
+      }
+      &:last-child {
+        a {
+          border-bottom: none;
+        }
+      }
+      &.nav-title {
+        color: $white;
+        background: $black;
+        font-weight: bold;
+        padding: 8px 10px;
+        font-size: 16px;
+      }
+      a {
+        color: #acacac;
+        display: block;
+        padding: 10px 10px;
+        border-bottom: 1px solid #232323;
+        border-top: 1px solid #3d3d3d;
+        line-height: 16px;
+        background: $text;
+        i {
+          margin-right: 10px;
+          @include opacity(0.6);
+          @include transition(opacity 0.2s ease-in-out);
+        }
+        &:hover {
+          text-decoration: none;
+          background: $black;
+          color: $white;
+          i {
+            @include opacity(1);
+          }
+        }
+        &:active {
+          color: $white;
+          background: $black;
+          i {
+            @include opacity(1);
+          }
+        }
+      }
+      &.active {
+        a {
+          color: $white;
+          font-weight: bold;
+          background: $black;
+          i {
+            @include opacity(1);
+          }
+        }
+      }
+      &.main-search {
+        margin: 10px 0 10px 10px;
+      }
+    }
+	}
+}
+
+.mob-menu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.mob-menu-left {
+	left: -240px;
+	&.mob-menu-open {
+  	left: 0;
+  	overflow: auto;
+  }
+}
+
+.mob-menu {
+	position: relative;
+	left: 0;
+}
+
+.mob-menu-toright {
+	left: 240px;
+  overflow: hidden;
+}
+
+.mob-menu,
+.mob-menu-nav {
+  @include transition(all 0.2s ease);
+}
+
+.topics-list {
+  background: $offWhite;
+  font-size: 12px;
+  min-height: 49px;
+}

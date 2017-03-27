@@ -1,0 +1,69 @@
+// Declare all mixins here //
+// --------------------------
+
+// Typography style mixin
+// ----------------------
+@mixin font-style ($size, $line, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+}
+
+// Position mixin
+// --------------
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// Font fix mixin
+// --------------
+@mixin font-fix() {
+  -webkit-font-smoothing: antialiased;
+  text-rendering:optimizelegibility;
+}
+
+// Select mixin
+// ------------
+@mixin select-appearance($appearance) {
+  -webkit-appearance: $appearance;
+  -moz-appearance: $appearance;
+  -ms-appearance: $appearance;
+  -o-appearance: $appearance;
+  appearance: $appearance;
+}
+
+// Reset list mixin
+// ----------------
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Background size mixin
+// ---------------------
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+// Border radius mixin
+// -------------------
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Opacity mixin
+// -------------
+@mixin opacity($opacity) {
+  opacity: $opacity / 1;
+  filter: alpha(opacity=$opacity);
+}

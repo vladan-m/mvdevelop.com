@@ -1,0 +1,21 @@
+// Description styling
+// -------------------
+.category-description {
+  background: $offWhite;
+  padding: 30px 33px 30px 33px;
+  margin-bottom: 35px;
+  border: 1px solid $catDescBgnd;
+  @include box-shadow(inset 0 0 5px $catDescBgnd);
+  h3 {
+    margin-bottom: 0;
+    span {
+      color: $blue;
+    }
+  }
+  p {
+    padding-bottom: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

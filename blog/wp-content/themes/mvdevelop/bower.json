@@ -1,0 +1,22 @@
+{
+  "name": "Superior Develop",
+  "homepage": "https://github.com/vladan-m/superior-develop",
+  "authors": ["Vladan Mitevski <vladan@mvdevelop.com>"],
+  "description": "Resources for Web Designers and Web Developers",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "3.3.6",
+    "fontawesome": "~4.5.0",
+    "jquery": "~1.12.2",
+    "html5shiv": "~3.7.3",
+    "prism": "~1.4.1"
+  }
+}

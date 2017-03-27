@@ -1,0 +1,14 @@
+// Import vendor files
+// -------------------
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Import your files
+// -----------------
+@import "utils/global";
+@import "base/global";
+@import "layouts/global";
+@import "components/global";
+
+
+@import "icons";
+@import "responsive";

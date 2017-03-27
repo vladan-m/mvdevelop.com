@@ -1,0 +1,68 @@
+[class^="icon-"] {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: top;
+  background-image: url("../images/icons.png");
+  background-position: -2000px -2000px;
+  background-repeat: no-repeat;
+  @include background-size(296px 296px);
+}
+[class^="iconsmall-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: top;
+  background-image: url("../images/icons-small.png");
+  background-position: -2000px -2000px;
+  background-repeat: no-repeat;
+  @include background-size(80px 80px);
+}
+
+[class^="icontopics-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: top;
+  background-image: url("../images/icons-topics.png");
+  background-position: -2000px -2000px;
+  background-repeat: no-repeat;
+  @include background-size(128px 128px);
+}
+
+.icon-github { background-position: -104px -8px; }
+.icon-face { background-position: -136px -8px; }
+.icon-twitter { background-position: -168px -8px; }
+.icon-rss { background-position: -200px -8px; }
+.icon-web { background-position: -72px -40px; }
+.icon-mail { background-position: -232px -8px; }
+.icon-github-color { background-position: -104px -40px; }
+.icon-face-color { background-position: -136px -40px; }
+.icon-twitter-color { background-position: -168px -40px; }
+.icon-rss-color { background-position: -200px -40px; }
+.icon-mail-color { background-position: -232px -40px; }
+
+.iconsmall-github { background-position: -8px -8px; }
+.iconsmall-rss { background-position: -32px -8px; }
+.iconsmall-twitter { background-position: -56px -8px; }
+.iconsmall-face { background-position: -8px -32px; }
+.iconsmall-mail { background-position: -32px -32px; }
+.iconsmall-download { background-position: -56px -32px; }
+.iconsmall-view { background-position: -8px -56px; }
+
+.icontopics-design { background-position: -32px -8px; }
+.icontopics-develop { background-position: -8px -32px; }
+.icontopics-resources { background-position: -8px -8px; }
+.icontopics-wordpress { background-position: -56px -32px; }
+.icontopics-ux { background-position: -104px -8px; }
+.icontopics-news { background-position: -80px -8px; }
+.icontopics-lab { background-position: -32px -32px; }
+.icontopics-mobile-dev { background-position: -56px -8px; }
+
+.icontopics-archive { background-position: -80px -32px; }
+.icontopics-contact { background-position: -104px -32px; }
+.icontopics-about { background-position: -8px -56px; }
+.icontopics-topic { background-position: -32px -56px; }

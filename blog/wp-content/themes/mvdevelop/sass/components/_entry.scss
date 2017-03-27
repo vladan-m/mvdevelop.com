@@ -1,0 +1,94 @@
+// Entry styling
+// -------------
+.entry {
+  margin-bottom: 38px;
+  img {
+    margin-bottom: 27px;
+  }
+  .main-divider {
+    background: $blue;
+    height: 4px;
+    width: 80%;
+    margin-top: 45px;
+  }
+  h2 {
+    margin-bottom: 18px;
+    a {
+      color: $text;
+      @include transition(color 0.2s ease-in-out);
+      &:hover {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+    span {
+      display: block;
+      font-size: 13px;
+      font-family: $fontGeneral;
+      font-weight: normal;
+      line-height: 27px;
+      color: $textGray;
+      a {
+        color: $blue;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &.last {
+    margin-bottom: 0;
+    .main-divider {
+      display: none;
+    }
+  }
+}
+
+.single-entry {
+  a {
+    display: inline-block;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 18px;
+    a {
+      color: $text;
+      @include transition(color 0.2s ease-in-out);
+      &:hover {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+    span {
+      display: block;
+      font-size: 13px;
+      font-family: $fontGeneral;
+      font-weight: normal;
+      line-height: 27px;
+      color: $textGray;
+      a {
+        color: $blue;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  h3 {
+    a {
+      color: $text;
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.page-entry {
+  h2 {
+    margin-bottom: 18px;
+  }
+}

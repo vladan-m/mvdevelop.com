@@ -1,0 +1,57 @@
+// Font sizes
+// ----------
+$heading-2: 48px;
+$heading-3: 18px;
+$heading-4: 34px;
+// $heading-5: 18px;
+$heading-6: 16px;
+
+$font-base: 14px;
+$font-large: 16px;
+$font-larger: 18px;
+$font-large-icon: 20px;
+$font-small: 12px;
+
+$line: 1.5;
+
+// Web fonts
+// ---------
+@font-face {
+  font-family: 'Alegreya Extra Bold';
+  src: url('../font/alegreyasans-extrabold-webfont.eot');
+  src: url('../font/alegreyasans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/alegreyasans-extrabold-webfont.woff') format('woff'),
+       url('../font/alegreyasans-extrabold-webfont.ttf') format('truetype'),
+       url('../font/alegreyasans-extrabold-webfont.svg#alegreya_sansextrabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$fontTitleTempCondensed: 'Alegreya Extra Bold', 'Georgia', 'Times New Roman', serif;
+$fontGeneral: Helvetica, Arial,sans-serif;
+
+// Colors
+// ------
+$gray: #ccc;
+$black: #000;
+$white: #fff;
+$blue: #2dafcf;
+$orange: #ff9000;
+$text: #333;
+$darkGray: #3b3b3b;
+$textBorder: #111;
+$commentBorder: #dedede;
+$navText: #3b3b3b;
+$textGray: #999;
+$lightGray: #e9e9e9;
+$fTextGray: #808080;
+$offWhite: #f4f4f4;
+$extraLight: #fbfbfb;
+$catDescBgnd: #d5d5d5;
+$activePage: #004f79;
+$red: #9d261d;
+
+// Defaults
+// --------
+$base-width: 1200px;
+$default-border-radius: 6px;

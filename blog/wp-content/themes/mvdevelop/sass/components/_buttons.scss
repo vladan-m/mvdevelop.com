@@ -1,0 +1,27 @@
+// Buttons styling
+// ---------------
+.btn {
+  &.btn-custom {
+    background: $blue;
+    border: 1px solid $blue;
+    @include border-radius(0);
+    @include box-shadow(none);
+    padding: 0 20px;
+    color: $white;
+    text-shadow: none;
+    line-height: 38px;
+    height: 38px;
+    &:hover {
+      background: lighten($blue,10%);
+      background-position: 0 0;
+    }
+    &.btn-lg {
+      font-size: 20px;
+    }
+  }
+  &.btn-info {
+    &:hover {
+      background: 1px solid $blue;
+    }
+  }
+}

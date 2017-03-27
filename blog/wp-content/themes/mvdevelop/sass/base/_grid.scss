@@ -1,0 +1,29 @@
+// Grid configuration //
+// ---------------------
+.container-fluid {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fixed-wrap {
+  position: relative;
+  .fluid {
+    width: auto;
+    margin-right: 374px;
+    min-height: 1650px;
+    padding-left: 15px;
+    @include clearfix();
+  }
+  .fixed {
+    width: 312px;
+    position: absolute;
+    top: -33px;
+    bottom: 0;
+    right: 0;
+    border-left: 1px solid $catDescBgnd;
+    border-right: 1px solid $catDescBgnd;
+    @include box-shadow (0 5px 0px 0px $white, 0 -5px 0px 0px $white, 5px 0 5px -4px $catDescBgnd, -5px 0 5px -4px $catDescBgnd);
+  }
+}

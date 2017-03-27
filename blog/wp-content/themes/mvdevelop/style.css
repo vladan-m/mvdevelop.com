@@ -1,0 +1,49 @@
+/*
+	Theme Name: MV Develop
+	Theme URI: http://mvdevelop.com/blog
+	Description: Responsive custom blog theme with right sidebars, widget ready.
+	Version: v1.0
+	Author:	Vladan Mitevski
+	Author URI: http://mvdevelop.com/
+	Tags: widget ready, responsive design, footer widget ready, custom Bootstrap WP theme
+*/
+
+/* Captions & aligment */
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}

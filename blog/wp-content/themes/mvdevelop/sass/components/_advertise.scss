@@ -1,0 +1,26 @@
+// Advertise styling
+// -----------------
+.advertise {
+  .advertise-note {
+    font-size: 10px;
+    color: $gray;
+    line-height: 13px;
+    padding: 3px 5px 3px 0;
+    text-align: right;
+  }
+  .ads-125x125 {
+    @include reset-list();
+    @include clearfix();
+    margin-left: 10px;
+    li {
+      float: left;
+      margin: 0 10px 20px 10px;
+    }
+  }
+  .ads-300x250 {
+    @include reset-list();
+    li {
+      margin: 0 0 20px 5px;
+    }
+  }
+}

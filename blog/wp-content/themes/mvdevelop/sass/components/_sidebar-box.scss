@@ -1,0 +1,19 @@
+// Sidebar box styling
+// -------------------
+.sidebar-box {
+  .latest-tweets {
+    ul {
+      @include reset-list();
+      li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $commentBorder;
+        p {
+          font-size: 13px;
+          line-height: 20px;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
