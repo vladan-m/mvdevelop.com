@@ -1,0 +1,27 @@
+// Helpers styling
+// ---------------
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.equal {
+  padding-bottom: 1px;
+  img {
+    margin-bottom: 12px;
+  }
+  a {
+    display: inline-block;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.more {
+  font-weight: bold;
+}
+
+*:focus {
+  outline: 0;
+}

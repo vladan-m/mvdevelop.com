@@ -1,0 +1,13 @@
+// Footer styling
+// --------------
+.footer {
+  background: $footerBgnd;
+  height: 167px;
+  color: $footerText;
+  p {
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+  }
+}

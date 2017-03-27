@@ -21,6 +21,11 @@ module.exports = function(grunt) {
         // files to concatenate
         src: [
           'bower_components/jquery/dist/jquery.js',
+          'javascripts/easing.js',
+          'javascripts/bootstrap-collapse.js',
+          'javascripts/bootstrap-transition.js',
+          'javascripts/validate.js',
+          'javascripts/mv-develop.js',
           'bower_components/prism/components/prism-core.js',
           'bower_components/prism/components/prism-markup.js',
           'bower_components/prism/components/prism-css.js',

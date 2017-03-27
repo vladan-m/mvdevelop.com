@@ -1,0 +1,50 @@
+// Mixin configuration
+// -------------------
+
+// Reset list mixin
+// ----------------
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Outline mixin
+// -------------
+@mixin outline-fix() {
+  outline:0;
+}
+
+// Opacity mixin
+// -------------
+@mixin opacity($opacity) {
+  opacity: $opacity / 1;
+  filter: alpha(opacity=$opacity);
+}
+
+// Font fix mixin
+// --------------
+@mixin font-fix() {
+  -webkit-font-smoothing: antialiased;
+  text-rendering:optimizelegibility;
+}
+
+// Border radius mixin
+// -------------------
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Background size mixin
+// ---------------------
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  -ms-background-size: $size;
+  background-size: $size;
+}

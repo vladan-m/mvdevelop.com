@@ -1,0 +1,18 @@
+// Body styling
+// ------------
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: $font_size;
+  line-height: 21px;
+  color: $text;
+  background: $white;
+  font-family: $font_base;
+  @include font-fix();
+  &.mob-menu-toright {
+    overflow: hidden;
+  }
+}

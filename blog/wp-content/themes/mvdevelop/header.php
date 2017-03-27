@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.min.css"> -->
 
-  <link rel="stylesheet" href="../stylesheets/styles.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+  <link rel="stylesheet" href="../css/styles.min.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 
   <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url'); ?>/bower_components/html5shiv/dist/html5shiv.min.js"></script>

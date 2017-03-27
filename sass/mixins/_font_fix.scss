@@ -1,6 +1,0 @@
-///// Mixin for fixing anti alias for web fonts /////
-// -----------------------------------------------------------------------------
-@mixin font-fix() {
-  -webkit-font-smoothing: antialiased;
-  text-rendering:optimizelegibility;
-}

@@ -1,7 +1,7 @@
 {
-  "name": "MV Develop",
+  "name": "superior-develop",
   "nick": "app",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Vladan Mitevski",
     "url": "http://mvdevelop.com/"
@@ -9,7 +9,7 @@
   "homepage": "http://mvdevelop.com/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:vladan-m/mvdevelop.com.git"
+    "url": "git@github.com:vladan-m/superior-develop.git"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -17,6 +17,8 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1"
   }

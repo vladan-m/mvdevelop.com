@@ -1,0 +1,19 @@
+// Content styling
+// ---------------
+.push {
+  height: 167px;
+}
+
+.page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -167px;
+}
+
+.content {
+  padding: 50px 0 70px 0;
+  #more-info & {
+    padding: 0;
+  }
+}

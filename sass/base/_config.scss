@@ -1,0 +1,48 @@
+// Font sizes
+// ----------
+$font_size: 13px;
+
+$heading_1: 42px;
+$heading_2: 26px;
+$heading_3: 15px;
+$heading_4: 18px;
+$heading_5: 16px;
+$heading_6: 14px;
+
+$line_h: floor(($font_size * 1.5));
+
+$small_font: 11px;
+$large_font: 16px;
+$x_large_font: 20px;
+
+// Web fonts
+// ---------
+$fontAlpha: 'Quicksand', sans-serif;
+$font_base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Colors
+// ------
+$text: #555;
+$inputBgnd: #fafafa;
+$darkGray: #434343;
+$link: #00a5ff;
+$title: #333;
+$separator: #d7d7d7;
+$footerBgnd: #3e3e3e;
+$grayText: #858585;
+$sliderIndicator: #dbdbdb;
+$sliderIndicatorActive: #b3b3b3;
+$inputBorder: #909090;
+$bordered: #aaa;
+$footerText: #aaa;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+$red: #cc0000;
+$blue: #00a5ff;
+$lightGray: #a8a8a8;
+$lighterGray: #f0f0f0;
+
+// Defaults
+// --------
+$max_width: 1030px;
