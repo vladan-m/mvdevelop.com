@@ -7668,6 +7668,9 @@ a:hover {
   opacity: 1;
   filter: alpha(opacity=1);
 }
+.convincer-blog {
+  padding-bottom: 0;
+}
 
 .copyright {
   padding: 19px 0 21px;
@@ -7973,6 +7976,28 @@ form {
   box-shadow: none;
 }
 
+.blog-nav {
+  margin: 38px 0 0;
+  padding: 10px 0 9px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.blog-nav .nav {
+  margin: 0 auto;
+  float: none;
+}
+.blog-nav .nav li {
+  margin-left: 16px;
+  padding-top: 0;
+  display: inline-block;
+  float: none;
+}
+.blog-nav .nav li:first-child {
+  margin-left: 0;
+}
+.blog-nav .nav li a {
+  color: #fff;
+}
+
 /* Mobile nav*/
 .mob-menu-trigger {
   cursor: pointer;
@@ -8228,6 +8253,16 @@ form {
     padding-bottom: 34px;
     padding-right: 0;
   }
+  .convincer-blog {
+    padding: 0;
+  }
+  .convincer-blog h5 {
+    padding-bottom: 0;
+  }
+
+  .blog-nav {
+    margin: 14px 0 0;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .convincer {
@@ -8285,6 +8320,12 @@ form {
     padding-bottom: 34px;
     padding-right: 0;
     text-align: center;
+  }
+  .convincer-blog {
+    padding-bottom: 0;
+  }
+  .convincer-blog h5 {
+    padding-bottom: 0;
   }
 
   .mob-menu-trigger {
@@ -8382,6 +8423,47 @@ form {
   }
   .nav-holder .nav li.active a:hover {
     background: #000;
+  }
+
+  .blog-nav {
+    padding: 0;
+    background: none;
+  }
+  .blog-nav .nav-holder {
+    text-transform: uppercase;
+  }
+  .blog-nav .nav-holder .nav {
+    padding-top: 0;
+  }
+  .blog-nav .nav-holder .nav li {
+    margin-left: 0;
+    display: block;
+  }
+  .blog-nav .nav-holder .nav li a {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 10px 0 9px;
+    border: 1px solid transparent;
+    line-height: 16px;
+    margin: 0 10px 10px 10px;
+  }
+  .blog-nav .nav-holder .nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .blog-nav .nav-holder .nav li a:active {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .blog-nav .nav-holder .nav li.active a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.7);
   }
 
   .bordered {

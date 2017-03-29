@@ -90,7 +90,7 @@
     </div>
   </header>
 
-  <div class="convincer">
+  <div class="convincer convincer-blog">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
@@ -101,6 +101,11 @@
           </h5>
         </div>
       </div>
+    </div>
+    <div class="blog-nav">
+      <nav id="nav" class="nav-holder">
+        <?php wp_nav_menu( array( 'menu' => 'Secondary nav', 'menu_class' => 'nav navbar-nav', 'theme_location' => 'secondary' ) ); ?>
+      </nav>
     </div>
   </div>
 
