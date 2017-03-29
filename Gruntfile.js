@@ -24,6 +24,7 @@ module.exports = function(grunt) {
           'javascripts/easing.js',
           'bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
           'bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+          'bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
           'javascripts/validate.js',
           'bower_components/prism/components/prism-core.js',
           'bower_components/prism/components/prism-markup.js',

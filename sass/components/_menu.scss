@@ -60,10 +60,22 @@
   }
 }
 
-.blog-nav {
+.blog-nav-wrap {
   margin: 38px 0 0;
+  height: 40px;
+}
+
+.blog-nav {
   padding: 10px 0 9px;
   background: rgba(0,0,0, 0.5);
+  @include transition(background 0.2s ease-in-out);
+  &.affix {
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgba(0,0,0, 1);
+  }
   .nav {
     margin: 0 auto;
     float: none;
