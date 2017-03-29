@@ -14198,6 +14198,46 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
     }).height(maxHeight);
   };
 
+  if ( $(window).width() >= 992) {
+    $('.blog-nav').affix({
+      offset: 323
+    });
+  }
+
+  if ( $(window).width() < 992) {
+    $('.blog-nav').affix({
+      offset: 241
+    });
+  }
+
+  if ( $(window).width() < 768) {
+    $(window).off('.affix');
+    $(".blog-nav")
+        .removeClass("affix affix-top affix-bottom")
+        .removeData("bs.affix");
+  }
+
+  $(window).resize(function(){
+    if ( $(window).width() >= 992) {
+      $('.blog-nav').affix({
+        offset: 323
+      });
+    }
+
+    if ( $(window).width() < 992) {
+      $('.blog-nav').affix({
+        offset: 241
+      });
+    }
+
+    if ( $(window).width() < 768) {
+      $(window).off('.affix');
+      $(".blog-nav")
+          .removeClass("affix affix-top affix-bottom")
+          .removeData("bs.affix");
+    }
+  });
+
   if ( $(window).width() > 767) {
     $(document).ready(function() {
       $('.grid-view .grid-item').equalHeightRow();

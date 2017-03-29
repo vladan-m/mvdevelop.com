@@ -103,7 +103,7 @@
       </div>
     </div>
     <div class="blog-nav-wrap">
-      <div class="blog-nav" data-spy="affix" data-offset-top="323">
+      <div class="blog-nav">
         <nav id="nav" class="nav-holder">
           <?php wp_nav_menu( array( 'menu' => 'Secondary nav', 'menu_class' => 'nav navbar-nav', 'theme_location' => 'secondary' ) ); ?>
         </nav>
