@@ -44,6 +44,18 @@
           }
         }
       }
+      &.blog-page {
+        a {
+          background: none;
+          @include box-shadow(none);
+          color: $blue;
+          &:hover {
+            background: none;
+            color: $blue;
+            @include box-shadow(none);
+          }
+        }
+      }
     }
   }
 }

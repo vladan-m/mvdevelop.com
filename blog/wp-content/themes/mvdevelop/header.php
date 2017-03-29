@@ -83,13 +83,6 @@
 
           <nav id="nav" class="nav-holder mob-menu-nav mob-menu-vertical mob-menu-right">
             <?php wp_nav_menu( array( 'menu' => 'Main nav', 'menu_class' => 'nav navbar-nav pull-right', 'theme_location' => 'primary' ) ); ?>
-            <!-- <ul class="nav navbar-nav pull-right">
-              <li><a href="index.html" title="Home">Home</a></li>
-              <li><a href="services.html" title="Services">Services</a></li>
-              <li><a href="about.html" title="About">About</a></li>
-              <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
-              <li class="active"><a href="contact.html" title="Contact">Contact</a></li>
-            </ul> -->
           </nav>
         </div>
 

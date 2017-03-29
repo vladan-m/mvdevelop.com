@@ -7960,6 +7960,18 @@ form {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.nav-holder .nav li.blog-page a {
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #00a5ff;
+}
+.nav-holder .nav li.blog-page a:hover {
+  background: none;
+  color: #00a5ff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 /* Mobile nav*/
 .mob-menu-trigger {
