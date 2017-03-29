@@ -91,7 +91,7 @@ module.exports = function(grunt) {
         files: [
           'Gruntfile.js',
           'javascripts/*.js',
-          'sass/*.scss',
+          'sass/**/*.scss',
         ],
         // tasks to perform if change occur
         tasks: [

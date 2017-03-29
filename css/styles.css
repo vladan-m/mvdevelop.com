@@ -7338,8 +7338,9 @@ button.close {
   }
 }
 img {
-  display: block;
   max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .equal {
@@ -7386,11 +7387,15 @@ body.mob-menu-toright {
   margin: 0 auto;
 }
 
+#disqus_thread {
+  margin-top: 50px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: #333;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -7670,6 +7675,61 @@ a:hover {
   border-top: 1px solid #aaa;
 }
 
+.entry {
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.entry img {
+  margin-bottom: 20px;
+}
+.entry p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.entry h2 {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+.entry h2 a {
+  color: #555;
+}
+.entry h2 a:hover {
+  text-decoration: none;
+}
+.entry h2 span {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 16px;
+  color: #858585;
+}
+.entry h2 span a {
+  color: #00a5ff;
+}
+.entry h2 span a:hover {
+  text-decoration: underline;
+}
+.entry h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.entry.last {
+  margin-bottom: 0;
+}
+.entry.last .main-divider {
+  display: none;
+}
+.entry.single-entry h2 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
 form {
   margin: 0;
 }
@@ -7739,6 +7799,59 @@ form {
   font-size: 11px;
   font-weight: bold;
   margin: -10px 0 5px;
+}
+
+.grid-view {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.grid-view:before, .grid-view:after {
+  content: " ";
+  display: table;
+}
+.grid-view:after {
+  clear: both;
+}
+
+.grid-item {
+  float: left;
+  width: 33.3333333333%;
+  position: relative;
+  padding-bottom: 35px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+.grid-item:hover {
+  background: #f0f0f0;
+}
+.grid-item .entry {
+  margin-bottom: 0;
+}
+.grid-item .feature-image {
+  display: block;
+}
+.grid-item img {
+  margin-bottom: 10px;
+}
+.grid-item h2 {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+.grid-item .trimmed-content {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .intro-text {

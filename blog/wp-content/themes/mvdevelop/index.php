@@ -1,50 +1,56 @@
 <?php get_header(); ?>
 
-  <section class="fluid">
-    <main role="main" class="content">
+  <main role="main" class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
 
-  		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <ul class="grid-view">
 
-  		<article class="entry">
-  			<h2>
-  				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a><br>
-          <span>
-            By: <?php the_author_posts_link(); ?> | <?php _e("Category:"); ?> <?php the_category(',') ?> | <?php the_time('F j, Y'); ?> | <?php _e('Tags: '); ?> <?php the_tags('', ', ', ''); ?> | <?php comments_popup_link(__('No Comments'), __('Comment (1)'), __('Comments (%)')); ?>
-          </span>
-  			</h2>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  			<?php the_excerpt(); ?>
+              <li class="grid-item">
+                <article class="entry">
+                  <?php if ( has_post_thumbnail()) : ?>
+                    <a class="feature-image" href="<?php the_permalink() ?>">
+                      <?php the_post_thumbnail(); ?>
+                    </a>
+                  <?php endif; ?>
+                  <h2>
+                    <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+                    <span>
+                      Written in <?php the_category(',') ?> on <?php the_time('F j, Y'); ?>
+                    </span>
+                  </h2>
+                  <!-- <div class="trimmed-content">
+                    <?php
+                      $content = get_the_content();
+                      $trimmed_content = wp_trim_words( $content, 14 );
+                      echo $trimmed_content;
+                    ?>
+                  </div> -->
+                </article>
+              </li>
 
-        <?php if ( has_post_thumbnail()) : ?>
-    		  <a class="feature-image" href="<?php the_permalink() ?>">
-            <?php the_post_thumbnail(); ?>
-          </a>
-        <?php endif; ?>
-        <div class="read-more-btn">
-          <a class="btn btn-info btn-custom" href="<?php the_permalink() ?>">
-            <strong>Read More</strong>
-          </a>
+            <?php endwhile; else: ?>
+
+              <li>
+                <article class="entry">
+                  <h3 class="main-title"><?php _e('No posts found by this author.'); ?></h3>
+                </article>
+              </li>
+
+            <?php endif; ?>
+
+          </ul>
+
+          <section class="post_nav">
+            <?php if(function_exists('wp_page_numbers')) { wp_page_numbers(); } ?>
+          </section>
+
         </div>
-  			<div class="main-divider"></div>
-  		</article><!-- entry end -->
-
-  		<?php endwhile; else: ?>
-
-  		<article class="entry">
-  			<h3 class="main-title"><?php _e('Sorry, no posts matched your criteria.'); ?></h3>
-  		</article>
-
-  		<?php endif; ?>
-
-  		<section class="post_nav">
-  			<?php if(function_exists('wp_page_numbers')) { wp_page_numbers(); } ?>
-  		</section>
-
-    </main><!-- content end-->
-	</section>
-
-	<section class="fixed">
-  	<?php include(TEMPLATEPATH."/sidebar_r.php");?>
-	</section>
+      </div>
+    </div>
+  </main>
 
 <?php get_footer(); ?>

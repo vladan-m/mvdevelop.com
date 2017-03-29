@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.min.css"> -->
 
-  <link rel="stylesheet" href="../css/styles.min.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+  <link rel="stylesheet" href="<?php bloginfo('url'); ?>/../css/styles.min.css">
 
   <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url'); ?>/bower_components/html5shiv/dist/html5shiv.min.js"></script>
@@ -26,7 +26,7 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
   <!-- For everything else. Regular 16x16 px favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('url'); ?>/../favicon.ico">
   <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
   <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
@@ -42,7 +42,7 @@
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
   <!-- For Android with high-resolution display -->
-  <link rel="shortcut icon" sizes="196x196" href="icon.png">
+  <link rel="shortcut icon" sizes="196x196" href="<?php bloginfo('url'); ?>/../icon.png">
 
   <?php wp_get_archives('type=monthly&format=link'); ?>
   <?php wp_head(); ?>
@@ -61,56 +61,55 @@
 
 <body class="mob-menu">
 
-  <section class="page">
 
-    <header id="header" class="header">
-      <div class="container-fluid">
-        <div class="row">
+  <header id="header" class="header">
+    <div class="container-fluid">
+      <div class="row">
 
-          <div class="col-sm-4">
-            <div class="logo">
-              <h2>
-                <a title="MV Develop - Web Development Company" href="index.html"><img src="../images/mv-develop-logo.png" alt="MV Develop - Web Development Company" title="MV Develop - Web Development Company" width="205" height="43"></a>
-              </h2>
-            </div>
+        <div class="col-sm-4">
+          <div class="logo">
+            <h2>
+              <a title="MV Develop - Web Development Company" href="index.html"><img src="<?php bloginfo('url'); ?>/../images/mv-develop-logo.png" alt="MV Develop - Web Development Company" title="MV Develop - Web Development Company" width="205" height="43"></a>
+            </h2>
           </div>
-
-          <div class="col-sm-8">
-            <div class="navbar-header">
-              <button class="mob-menu-trigger btn" type="button">
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-
-            <nav id="nav" class="nav-holder mob-menu-nav mob-menu-vertical mob-menu-right">
-              <?php wp_nav_menu( array( 'menu' => 'Main nav', 'menu_class' => 'nav navbar-nav pull-right', 'theme_location' => 'primary' ) ); ?>
-              <!-- <ul class="nav navbar-nav pull-right">
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="services.html" title="Services">Services</a></li>
-                <li><a href="about.html" title="About">About</a></li>
-                <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
-                <li class="active"><a href="contact.html" title="Contact">Contact</a></li>
-              </ul> -->
-            </nav>
-          </div>
-
         </div>
-      </div>
-    </header>
 
-    <div class="convincer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1>MV Develop Blog</h1>
-            <h5>
-              Let's get in touch. I'm sure we will create wonderful project. Just let me know what you have in mind
-              so we can start collaborate and make your wish come true
-            </h5>
+        <div class="col-sm-8">
+          <div class="navbar-header">
+            <button class="mob-menu-trigger btn" type="button">
+              <span class="icon-bar"></span>
+            </button>
           </div>
+
+          <nav id="nav" class="nav-holder mob-menu-nav mob-menu-vertical mob-menu-right">
+            <?php wp_nav_menu( array( 'menu' => 'Main nav', 'menu_class' => 'nav navbar-nav pull-right', 'theme_location' => 'primary' ) ); ?>
+            <!-- <ul class="nav navbar-nav pull-right">
+              <li><a href="index.html" title="Home">Home</a></li>
+              <li><a href="services.html" title="Services">Services</a></li>
+              <li><a href="about.html" title="About">About</a></li>
+              <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+              <li class="active"><a href="contact.html" title="Contact">Contact</a></li>
+            </ul> -->
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="convincer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>MV Develop Blog</h1>
+          <h5>
+            Let's get in touch. I'm sure we will create wonderful project. Just let me know what you have in mind
+            so we can start collaborate and make your wish come true
+          </h5>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- <nav class="mob-menu-nav mob-menu-vertical mob-menu-left">
       <ul>
@@ -182,7 +181,3 @@
         <?php wp_nav_menu( array( 'menu' => 'Main nav', 'menu_class' => 'main-nav', 'theme_location' => 'primary' ) ); ?>
       </div>
     </header> -->
-
-    <section class="content-wrap">
-      <div class="container-fluid fixed-wrap">
-        <div class="row">

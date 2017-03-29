@@ -1,10 +1,3 @@
-
-    	  </div>
-      </div>
-    </section>
-
-  </section>
-
   <footer class="footer">
     <div class="container-fluid">
       <div class="row">
@@ -28,7 +21,7 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/javascripts/app.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('url'); ?>/../javascripts/app.min.js"></script>
 
 <?php wp_footer(); ?>
 

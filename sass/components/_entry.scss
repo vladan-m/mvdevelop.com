@@ -1,0 +1,58 @@
+// Entry styling
+// -------------
+.entry {
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 26px;
+  img {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  h2 {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    a {
+      color: $text;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    span {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      font-family: $font_base;
+      font-weight: normal;
+      line-height: 16px;
+      color: $grayText;
+      a {
+        color: $blue;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  &.last {
+    margin-bottom: 0;
+    .main-divider {
+      display: none;
+    }
+  }
+  &.single-entry {
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+}
