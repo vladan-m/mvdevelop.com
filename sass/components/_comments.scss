@@ -1,0 +1,88 @@
+// Comments styling
+// ----------------
+.comments {
+  margin-top: 50px;
+  h3 {
+    font-size: 26px;
+    line-height: 34px;
+    margin: 0 0 15px 0;
+    // border-bottom: none;
+    // padding-bottom: 0;
+    // font-family: $fontTitleTempCondensed;
+    // @include font-fix();
+  }
+  .comment {
+    .comment-block {
+      @include box-shadow(1px 1px 1px rgba(0,0,0, 0.2));
+      margin-bottom: 40px;
+      padding-bottom: 10px;
+      position: relative;
+      .comment-counter {
+        color: $lightGray;
+        position: absolute;
+        top: 4px;
+        right: 10px;
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+    .comment-info {
+      @include clearfix();
+      .comment-image {
+        float: left;
+        margin-right: 10px;
+        img {
+          @include border-radius(30px);
+        }
+      }
+      .comment-author {
+        overflow: hidden;
+        zoom: 1;
+        h5 {
+          line-height: 60px;
+          font-size: 18px;
+          font-family: $fontAlpha;
+          // @include font-fix();
+          // margin: 0;
+          font-weight: 700;
+          span {
+            font-size: 14px;
+            font-family: $font_base;
+            margin-left: 12px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .comment-text {
+      padding-right: 20px;
+      margin-top: 12px;
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 14px;
+      }
+    }
+    .admin-comment {
+      .comment-text {
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.add-comment {
+  h3 {
+    font-size: 26px;
+    line-height: 34px;
+    margin: 0 0 5px 0;
+  }
+  .note-message {
+    font-size: 12px;
+    line-height: 15px;
+    color: $gray;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+}
