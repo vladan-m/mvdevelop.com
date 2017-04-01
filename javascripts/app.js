@@ -1,4 +1,4 @@
-/*! superior-develop - v1.0.0 - 2017-04-01
+/*! superior-develop - v1.0.0 - 2017-04-02
 * http://mvdevelop.com/
 * Copyright (c) 2017 Vladan Mitevski; Licensed  */
 /*!
@@ -14198,27 +14198,6 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
     }).height(maxHeight);
   };
 
-  var offset = $('.blog-nav').offset();
-
-  if ( $(window).width() >= 992) {
-    $('.blog-nav').affix({
-      offset: offset.top
-    });
-  }
-
-  if ( $(window).width() < 992) {
-    $('.blog-nav').affix({
-      offset: offset.top
-    });
-  }
-
-  if ( $(window).width() < 768) {
-    $(window).off('.affix');
-    $(".blog-nav")
-        .removeClass("affix affix-top affix-bottom")
-        .removeData("bs.affix");
-  }
-
   if ( $(window).width() > 767) {
     $(document).ready(function() {
       $('.grid-view .grid-item').equalHeightRow();
@@ -14297,24 +14276,35 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
 
 });
 
-$(window).resize(function(){
-  var offset = $('.blog-nav').offset();
-  if ( $(window).width() >= 992) {
-    $('.blog-nav').affix({
-      offset: offset.top
-    });
+if ( $(window).width() < 768) {
+    $(window).off('.affix');
+    $(".blog-nav")
+      .removeClass("affix affix-top affix-bottom")
+      .removeData("bs.affix");
   }
 
-  if ( $(window).width() < 992) {
-    $('.blog-nav').affix({
-      offset: offset.top
-    });
-  }
+$.fn.affixCalc = function() {
+  var offset = this.offset();
+  this.affix({
+    offset: {
+      top: offset.top
+    }
+  });
 
   if ( $(window).width() < 768) {
     $(window).off('.affix');
-    $(".blog-nav")
-        .removeClass("affix affix-top affix-bottom")
-        .removeData("bs.affix");
+    this
+      .removeClass("affix affix-top affix-bottom")
+      .removeData("bs.affix");
   }
+
+  return this;
+};
+
+$(window).on('load', function(){
+  $(".blog-nav").affixCalc();
+});
+
+$(window).on('resize', function(){
+  $(".blog-nav").affixCalc();
 });
