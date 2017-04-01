@@ -145,18 +145,19 @@ $(window).load(function() {
 
 });
 
-if ( $(window).width() < 768) {
-    $(window).off('.affix');
-    $(".blog-nav")
-      .removeClass("affix affix-top affix-bottom")
-      .removeData("bs.affix");
-  }
 
 $.fn.affixCalc = function() {
   var offset = this.offset();
+
+  $(window).off('.affix');
+  this
+    .removeClass('affix affix-top affix-bottom')
+    .removeData('bs.affix');
   this.affix({
     offset: {
-      top: offset.top
+      top: function() {
+        return (offset.top);
+      }
     }
   });
 
@@ -166,8 +167,6 @@ $.fn.affixCalc = function() {
       .removeClass("affix affix-top affix-bottom")
       .removeData("bs.affix");
   }
-
-  return this;
 };
 
 $(window).on('load', function(){
