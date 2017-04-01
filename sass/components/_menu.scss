@@ -87,6 +87,14 @@
       &:first-child {
         margin-left: 0;
       }
+      &.current-post-parent {
+        a {
+          color: $blue;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
       a {
         color: $white;
       }

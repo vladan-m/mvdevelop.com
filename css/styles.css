@@ -8099,6 +8099,12 @@ form {
 .blog-nav .nav li:first-child {
   margin-left: 0;
 }
+.blog-nav .nav li.current-post-parent a {
+  color: #00a5ff;
+}
+.blog-nav .nav li.current-post-parent a:hover {
+  color: #00a5ff;
+}
 .blog-nav .nav li a {
   color: #fff;
 }
