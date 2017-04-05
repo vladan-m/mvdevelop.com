@@ -8046,6 +8046,9 @@ form {
 .footer-nav li.active a {
   color: #00a5ff;
 }
+.footer-nav li.blog-page a {
+  color: #00a5ff;
+}
 
 .nav-holder {
   margin-bottom: 0;
