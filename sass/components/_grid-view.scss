@@ -41,4 +41,14 @@
     font-size: 13px;
     line-height: 16px;
   }
+  @media (max-width: 767px) {
+    height: auto !important;
+    float: none;
+    clear: both;
+    width: 100%;
+    h2 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
 }

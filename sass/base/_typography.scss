@@ -36,6 +36,9 @@ h3 {
     span {
       font-weight: 500;
     }
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
   }
 }
 

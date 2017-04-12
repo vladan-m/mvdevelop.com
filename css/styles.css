@@ -7429,6 +7429,11 @@ h3.main-title {
 h3.main-title span {
   font-weight: 500;
 }
+@media (max-width: 767px) {
+  h3.main-title {
+    font-size: 22px;
+  }
+}
 
 h4 {
   font-size: 18px;
@@ -7871,6 +7876,12 @@ pre {
   font-weight: 500;
   margin-bottom: 8px;
 }
+@media (max-width: 767px) {
+  .entry h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
 .entry.last {
   margin-bottom: 0;
 }
@@ -7880,6 +7891,12 @@ pre {
 .entry.single-entry h2 {
   font-size: 36px;
   line-height: 42px;
+}
+@media (max-width: 767px) {
+  .entry.single-entry h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 form {
@@ -8030,6 +8047,18 @@ form {
   right: 15px;
   font-size: 13px;
   line-height: 16px;
+}
+@media (max-width: 767px) {
+  .grid-item {
+    height: auto !important;
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+  .grid-item h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .intro-text {
