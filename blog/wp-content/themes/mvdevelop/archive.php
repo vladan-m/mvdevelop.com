@@ -9,7 +9,7 @@
             <?php /* If this is a category archive */ if (is_category()) { ?>
               <section class="category-description">
                 <h3 class="main-title">Category <span><?php single_cat_title(); ?></span></h3>
-                <?php echo category_description(); ?>
+                <!-- <?php echo category_description(); ?> -->
               </section>
             <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
               <section class="category-description">
@@ -29,16 +29,18 @@
                     </a>
                   <?php endif; ?>
                   <h2>
-                    <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a><br />
-                    <span><?php the_author_posts_link(); ?> | <?php the_time('F j, Y'); ?></span>
+                    <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+                    <span>
+                      Wrote by <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?>
+                    </span>
                   </h2>
-                  <div class="trimmed-content">
+                  <!-- <div class="trimmed-content">
                     <?php
                       $content = get_the_content();
                       $trimmed_content = wp_trim_words( $content, 14 );
                       echo $trimmed_content;
                     ?>
-                  </div>
+                  </div> -->
                 </article>
               </li>
 

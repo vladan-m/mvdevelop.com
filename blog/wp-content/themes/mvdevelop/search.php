@@ -25,16 +25,18 @@
                     </a>
                   <?php endif; ?>
                   <h2>
-                    <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a><br />
-                    <span><?php the_category(',') ?> | <?php the_time('F j, Y'); ?></span>
+                    <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+                    <span>
+                      Written in <?php the_category(',') ?> on <?php the_time('F j, Y'); ?>
+                    </span>
                   </h2>
-                  <div class="trimmed-content">
+                  <!-- <div class="trimmed-content">
                     <?php
                       $content = get_the_content();
                       $trimmed_content = wp_trim_words( $content, 14 );
                       echo $trimmed_content;
                     ?>
-                  </div>
+                  </div> -->
                 </article>
               </li>
 

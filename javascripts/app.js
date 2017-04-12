@@ -1,4 +1,4 @@
-/*! superior-develop - v1.0.0 - 2017-04-10
+/*! superior-develop - v1.0.0 - 2017-04-12
 * http://mvdevelop.com/
 * Copyright (c) 2017 Vladan Mitevski; Licensed  */
 /*!
@@ -14153,16 +14153,6 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
     $('.entry:last').addClass('last');
   }
 
-  if(window.location.href == "http://superiordevelop.com/archive/"){
-    $('.mob-menu-nav').find('.archive').addClass('active');
-  }
-  if(window.location.href == "http://superiordevelop.com/about-us/"){
-    $('.mob-menu-nav').find('.about').addClass('active');
-  }
-  if(window.location.href == "http://superiordevelop.com/contact-us/"){
-    $('.mob-menu-nav').find('.contact').addClass('active');
-  }
-
   $.fn.equalHeightRow = function() {
     if($('.grid-view').length > 0) {
       var currentTallest = 0;
@@ -14200,8 +14190,7 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
 
   if ( $(window).width() > 767) {
     $(document).ready(function() {
-      $('.grid-view .grid-item').equalHeightRow();
-      $('.cta-wrap .cta-box').equalHeight();
+      $('.grid-view').equalHeightRow();
       $('.archive-wrap ul li').equalHeight();
       if($('.equal-holder').length) {
         $('.equal').equalHeight();
@@ -14210,38 +14199,14 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
 
     $(window).resize(function(){
       $('.grid-view .grid-item').css('height','auto');
-      $('.grid-view .grid-item').equalHeight();
-      $('.cta-wrap .cta-box').css('height','auto');
-      $('.cta-wrap .cta-box').equalHeight();
+      $('.grid-view').equalHeightRow();
       $('.archive-wrap ul li').css('height','auto');
       $('.archive-wrap ul li').equalHeight();
     });
-
-    // if($('.equal-holder').length) {
-    // 	function equalHeight(group) {
-    // 		var tallest = 0;
-    // 		group.each(function() {
-    // 			var thisHeight = $(this).height();
-    // 			if(thisHeight > tallest) {
-    // 				tallest = thisHeight;
-    // 			}
-    // 		});
-    // 		group.height(tallest);
-    // 	}
-    // 	equalHeight($(".equal"));
-    // }
   }
 
   if($('.contact-form').length) {
     $('.contact-form').validate();
-
-    // function updateCountdown() {
-    //   var remaining = 1200 - $('.contact-text').val().length;
-    //   $('.char-counter').text(remaining);
-    // }
-    // updateCountdown();
-    // $('.contact-text').change(updateCountdown);
-    // $('.contact-text').keyup(updateCountdown);
   }
 
   if($(".more-scroll").length) {
@@ -14265,14 +14230,6 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
   var year = date.getFullYear();
 
   $('.current-year').text(year);
-
-  if($('.menu-main-nav-container').length > 0) {
-    $('.develop a').prepend('<i class="fa fa-code fa-lg"></i>');
-    $('.design a').prepend('<i class="fa fa-paint-brush fa-lg"></i>');
-    $('.collections a').prepend('<i class="fa fa-archive fa-lg"></i>');
-    $('.lab a').prepend('<i class="fa fa-flask fa-lg"></i>');
-    $('.news a').prepend('<i class="fa fa-newspaper-o fa-lg"></i>');
-  }
 
 });
 
