@@ -7960,6 +7960,25 @@ form {
   margin: -10px 0 5px;
 }
 
+.image-gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.image-gallery li {
+  border: 1px solid #d7d7d7;
+  padding: 5px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  background: #f4f4f4;
+}
+.image-gallery li a {
+  display: block;
+}
+.image-gallery li img {
+  margin-bottom: 0;
+}
+
 .grid-view {
   list-style: none;
   margin: 0;
