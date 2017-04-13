@@ -7364,6 +7364,15 @@ img {
   outline: 0;
 }
 
+.lab-cta br {
+  display: none;
+}
+@media (max-width: 767px) {
+  .lab-cta a {
+    margin-bottom: 10px;
+  }
+}
+
 html,
 body {
   height: 100%;

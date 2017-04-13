@@ -26,3 +26,14 @@ img {
 *:focus {
   outline: 0;
 }
+
+.lab-cta {
+  br {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    a {
+      margin-bottom: 10px;
+    }
+  }
+}
