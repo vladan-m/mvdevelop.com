@@ -239,7 +239,8 @@
               background: rgba(0,0,0, 0.7);
             }
           }
-          &.active {
+          &.active,
+          &.current-post-parent {
             a {
               text-decoration: none;
               color: $white;

@@ -8740,7 +8740,7 @@ form {
     border: 1px solid #fff;
     background: rgba(0, 0, 0, 0.7);
   }
-  .blog-nav .nav-holder .nav li.active a {
+  .blog-nav .nav-holder .nav li.active a, .blog-nav .nav-holder .nav li.current-post-parent a {
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
