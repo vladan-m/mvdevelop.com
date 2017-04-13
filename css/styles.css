@@ -8825,6 +8825,9 @@ form {
     margin: 0 0 10px 0;
     display: block;
   }
+  .footer-nav li:last-child {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

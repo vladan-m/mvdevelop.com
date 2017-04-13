@@ -338,6 +338,9 @@
     li {
       margin: 0 0 10px 0;
       display: block;
+      &:last-child {
+        margin: 0;
+      }
     }
   }
 }
