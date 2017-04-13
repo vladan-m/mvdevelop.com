@@ -40,7 +40,7 @@ function special_nav_class($classes, $item){
   return $classes;
 }
 
-remove_filter( 'the_content', 'wpautop' );
+// remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
 if ( function_exists('register_sidebar') )

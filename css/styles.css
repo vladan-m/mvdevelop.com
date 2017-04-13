@@ -7468,6 +7468,9 @@ a:hover {
 pre {
   font-size: 16px;
 }
+pre[class*=language-] {
+  margin-bottom: 24px !important;
+}
 
 .header {
   position: relative;
