@@ -7923,7 +7923,8 @@ form {
 .form-list input.error {
   border: 1px solid #cc0000;
 }
-.form-list input {
+.form-list input,
+.form-list textarea {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -o-border-radius: 0;
@@ -7934,14 +7935,17 @@ form {
   font-size: 14px;
   border: 1px solid #ccc;
 }
-.form-list input::-moz-placeholder {
+.form-list input::-moz-placeholder,
+.form-list textarea::-moz-placeholder {
   color: #a8a8a8;
   opacity: 1;
 }
-.form-list input:-ms-input-placeholder {
+.form-list input:-ms-input-placeholder,
+.form-list textarea:-ms-input-placeholder {
   color: #a8a8a8;
 }
-.form-list input::-webkit-input-placeholder {
+.form-list input::-webkit-input-placeholder,
+.form-list textarea::-webkit-input-placeholder {
   color: #a8a8a8;
 }
 

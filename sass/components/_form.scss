@@ -21,7 +21,8 @@ form {
       border: 1px solid $red;
     }
   }
-  input {
+  input,
+  textarea {
     @include placeholder($lightGray);
     @include border-radius(0);
     background: $inputBgnd;
