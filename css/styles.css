@@ -7574,6 +7574,11 @@ pre[class*=language-] {
   color: #858585;
   margin-right: 6%;
 }
+@media (max-width: 767px) {
+  .archive-wrap ul li span {
+    margin-right: 0;
+  }
+}
 .archive-wrap ul li a {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
@@ -7581,6 +7586,18 @@ pre[class*=language-] {
   color: #00a5ff;
   display: inline-block;
   margin-right: 6%;
+}
+@media (max-width: 767px) {
+  .archive-wrap ul li a {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .archive-wrap ul li {
+    float: none;
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 .assertion-wrap {
@@ -7663,6 +7680,12 @@ pre[class*=language-] {
   margin: 0 0 15px 0;
   text-transform: none;
 }
+@media (max-width: 767px) {
+  .comments h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
 .comments .comment:last-child .comment-block {
   margin-bottom: 0;
 }
@@ -7709,11 +7732,24 @@ pre[class*=language-] {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .comments .comment .comment-info .comment-author h5 {
+    line-height: 22px;
+    margin-top: -4px;
+  }
+}
 .comments .comment .comment-info .comment-author h5 span {
   font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: 12px;
   font-weight: 400;
+}
+@media (max-width: 767px) {
+  .comments .comment .comment-info .comment-author h5 span {
+    display: block;
+    margin-left: 0;
+    line-height: 18px;
+  }
 }
 .comments .comment .comment-text {
   padding-right: 20px;
@@ -7738,6 +7774,12 @@ pre[class*=language-] {
   line-height: 34px;
   margin: 0 0 5px 0;
   text-transform: none;
+}
+@media (max-width: 767px) {
+  .add-comment h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 .add-comment .note-message {
   font-size: 12px;
@@ -8774,9 +8816,14 @@ form {
     margin: 0 0 10px;
   }
 }
-@media (max-width: 358px) {
-  .footer-nav {
-    font-size: 12px;
+@media (max-width: 411px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer-nav li {
+    margin: 0 0 10px 0;
+    display: block;
   }
 }
 

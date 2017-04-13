@@ -8,6 +8,10 @@
     line-height: 34px;
     margin: 0 0 15px 0;
     text-transform: none;
+    @media (max-width: 767px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
   }
   .comment {
     &:last-child {
@@ -45,14 +49,21 @@
           line-height: 60px;
           font-size: 18px;
           font-family: $fontAlpha;
-          // @include font-fix();
-          // margin: 0;
           font-weight: 700;
+          @media (max-width: 767px) {
+            line-height: 22px;
+            margin-top: -4px;
+          }
           span {
             font-size: 14px;
             font-family: $font_base;
             margin-left: 12px;
             font-weight: 400;
+            @media (max-width: 767px) {
+              display: block;
+              margin-left: 0;
+              line-height: 18px;
+            }
           }
         }
       }
@@ -83,6 +94,10 @@
     line-height: 34px;
     margin: 0 0 5px 0;
     text-transform: none;
+    @media (max-width: 767px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
   }
   .note-message {
     font-size: 12px;

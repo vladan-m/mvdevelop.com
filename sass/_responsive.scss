@@ -330,8 +330,14 @@
 
 }
 
-@media (max-width: 358px) {
+@media (max-width: 411px) {
+  .footer {
+    height: auto;
+  }
   .footer-nav {
-    font-size: 12px;
+    li {
+      margin: 0 0 10px 0;
+      display: block;
+    }
   }
 }
