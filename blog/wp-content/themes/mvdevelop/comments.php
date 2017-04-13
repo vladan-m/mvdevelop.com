@@ -22,10 +22,11 @@
     <?php $comment_cnt=$comment_cnt+1; ?>
     <div class="comment" id="comment-<?php comment_ID() ?>">
       <?php
-        if(the_author('', false) == get_comment_author()){
-          echo "<div class='admin-comment comment-block'>";}
-        else {
-          echo "<div class='user-comment comment-block'>";}
+        if( $comment->user_id > 0 ) {
+          echo "<div class='admin-comment comment-block'>";
+        } else {
+          echo "<div class='user-comment comment-block'>";
+        }
       ?>
         <div class="comment-info">
           <div class="comment-image">
@@ -87,11 +88,11 @@
       <?php else : ?>
 
       <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform" class="blog-add-comment">
+        <ul class="form-list">
         <?php if ( $user_ID ) : ?>
           <p class="submit-button">Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a></p>
-        <?php else : ?>
+          <?php else : ?>
 
-          <ul class="form-list">
             <li class="row">
               <div class="col-sm-9">
                 <input class="form-control required" type="text" name="author" value="" id="comment-name" placeholder="Your Name">
@@ -102,22 +103,21 @@
                 <input class="form-control required email" type="text" name="email" value="" id="comment-email" placeholder="Your Email Address (will be hidden)">
               </div>
             </li>
-          </ul>
-
           <?php endif; ?>
-            <div class="row">
+            <li class="row">
               <div class="col-sm-11">
                 <textarea class="form-control required" name="comment" id="comment" rows="8" placeholder="Put some words..."></textarea>
               </div>
-            </div>
+            </li>
+          </ul>
 
-            <div class="submit-button">
-              <input class="btn btn-info btn-custom" name="submit" type="submit" id="comment-submit" tabindex="5" value="Submit Comment">
-              <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
-            </div>
+          <div class="submit-button">
+            <input class="btn btn-info btn-custom" name="submit" type="submit" id="comment-submit" tabindex="5" value="Submit Comment">
+            <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+          </div>
 
-          <?php do_action('comment_form', $post->ID); ?></form>
+        <?php do_action('comment_form', $post->ID); ?></form>
 
-          <?php endif; // If registration required and not logged in ?>
+        <?php endif; // If registration required and not logged in ?>
     </div><!--/addcomment-->
   <?php endif; // if you delete this the sky will fall on your head ?>

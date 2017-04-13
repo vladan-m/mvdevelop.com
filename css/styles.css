@@ -7956,6 +7956,9 @@ pre[class*=language-] {
 form {
   margin: 0;
 }
+form .error {
+  color: #cc0000;
+}
 
 .form-list {
   list-style: none;
@@ -7973,9 +7976,6 @@ form {
   height: 45px;
   line-height: 30px;
   margin-bottom: 0;
-}
-.form-list input.error {
-  border: 1px solid #cc0000;
 }
 .form-list input,
 .form-list textarea {
@@ -8002,30 +8002,8 @@ form {
 .form-list textarea::-webkit-input-placeholder {
   color: #a8a8a8;
 }
-
-.add-comment textarea {
-  margin-bottom: 34px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  background: #fafafa;
-  color: #555;
-  font-size: 14px;
-  border: 1px solid #ccc;
-}
-.add-comment textarea::-moz-placeholder {
-  color: #a8a8a8;
-  opacity: 1;
-}
-.add-comment textarea:-ms-input-placeholder {
-  color: #a8a8a8;
-}
-.add-comment textarea::-webkit-input-placeholder {
-  color: #a8a8a8;
-}
-.add-comment textarea.error {
+.form-list input.error,
+.form-list textarea.error {
   border: 1px solid #cc0000;
 }
 

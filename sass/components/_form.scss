@@ -2,6 +2,9 @@
 // -----------------------------------------------------------------------------
 form {
   margin: 0;
+  .error {
+    color: $red;
+  }
 }
 
 .form-list {
@@ -17,9 +20,6 @@ form {
     height: 45px;
     line-height: 30px;
     margin-bottom: 0;
-    &.error {
-      border: 1px solid $red;
-    }
   }
   input,
   textarea {
@@ -29,23 +29,26 @@ form {
     color: $text;
     font-size: 14px;
     border: 1px solid $gray;
-  }
-}
-
-.add-comment {
-  textarea {
-    margin-bottom: 34px;
-    @include placeholder($lightGray);
-    @include border-radius(0);
-    background: $inputBgnd;
-    color: $text;
-    font-size: 14px;
-    border: 1px solid $gray;
     &.error {
       border: 1px solid $red;
     }
   }
 }
+
+// .add-comment {
+//   textarea {
+//     margin-bottom: 34px;
+//     @include placeholder($lightGray);
+//     @include border-radius(0);
+//     background: $inputBgnd;
+//     color: $text;
+//     font-size: 14px;
+//     border: 1px solid $gray;
+//     &.error {
+//       border: 1px solid $red;
+//     }
+//   }
+// }
 
 .small-notification {
   font-size: 11px;
