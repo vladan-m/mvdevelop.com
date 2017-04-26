@@ -17,6 +17,18 @@
             </h2>
 
             <?php the_content(); ?>
+
+            <?php if ( in_category( 'Lab' ) ) : ?>
+              <div class="lab-cta">
+                <a href="<?php the_field('view_demo'); ?>" class="btn btn-info btn-custom btn-lg" title="View Demo">
+                  View Demo
+                </a>
+                <a href="<?php the_field('fork_on_github'); ?>" target="_blank" class="btn btn-info btn-custom btn-lg" title="Fork on Github">
+                  Fork on Github
+                </a>
+              </div>
+            <?php endif; ?>
+
           </article><!-- entry end -->
 
           <?php comments_template(); ?>
