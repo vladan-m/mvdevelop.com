@@ -96,8 +96,7 @@
         <div class="col-sm-12">
           <h1>MV Develop Blog</h1>
           <h5>
-            Let's get in touch. I'm sure we will create wonderful project. Just let me know what you have in mind
-            so we can start collaborate and make your wish come true
+            MV Develop builds cutting-edge websites using only latest techniques such as HTML5 and CSS3 to deliver better websites compliant to Web standards
           </h5>
         </div>
       </div>
