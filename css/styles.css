@@ -8108,7 +8108,7 @@ form .error {
   padding: 20px 0;
 }
 .logo h2 {
-  height: 43px;
+  height: 40px;
   padding-bottom: 0;
 }
 .logo a {
@@ -8176,7 +8176,7 @@ form .error {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 .nav-holder .nav li a {
   padding: 0;
@@ -8594,12 +8594,12 @@ form .error {
   .mob-menu-trigger {
     display: inline-block;
     position: absolute;
-    top: -59px;
+    top: -52px;
     right: 15px;
     z-index: 9999;
   }
   .mob-menu-trigger.active {
-    top: 24px;
+    top: 28px;
     position: fixed;
   }
 

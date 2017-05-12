@@ -69,7 +69,7 @@
         <div class="col-sm-4">
           <div class="logo">
             <h2>
-              <a title="MV Develop - Web Development Company" href="index.html"><img src="<?php bloginfo('url'); ?>/../images/mv-develop-logo.png" alt="MV Develop - Web Development Company" title="MV Develop - Web Development Company" width="205" height="43"></a>
+              <a title="MV Develop - Web Development Company" href="index.html"><img src="<?php bloginfo('url'); ?>/../images/mv-develop-logo.png" alt="MV Develop - Web Development Company" title="MV Develop - Web Development Company" width="200" height="40"></a>
             </h2>
           </div>
         </div>

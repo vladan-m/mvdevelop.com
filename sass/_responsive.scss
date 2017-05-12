@@ -117,11 +117,11 @@
   .mob-menu-trigger {
     display: inline-block;
     position: absolute;
-    top: -59px;
+    top: -52px;
     right: 15px;
     z-index: 9999;
     &.active {
-      top: 24px;
+      top: 28px;
       position: fixed;
     }
   }

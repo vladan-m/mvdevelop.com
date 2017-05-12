@@ -1,4 +1,4 @@
-/*! superior-develop - v1.0.0 - 2017-04-13
+/*! superior-develop - v1.0.0 - 2017-05-12
 * http://mvdevelop.com/
 * Copyright (c) 2017 Vladan Mitevski; Licensed  */
 /*!
