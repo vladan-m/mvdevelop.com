@@ -4,43 +4,93 @@
   margin-bottom: 0;
   font-family: $fontAlpha;
   text-transform: uppercase;
+  @media (max-width: 767px) {
+    text-transform: none;
+  }
   &.navbar-collapse {
     padding-left: 0;
     padding-right: 0;
   }
   .nav {
-    position: static;
     @include reset-list();
     @include clearfix();
+    position: static;
+    @media (max-width: 767px) {
+      padding-top: 63px;
+      &.pull-right {
+        float: none !important;
+        clear: both;
+      }
+    }
     li {
       margin-left: 20px;
       font-size: 14px;
       font-weight: 500;
       line-height: 20px;
       padding-top: 30px;
+      @media (max-width: 767px) {
+        margin-left: 0;
+        padding-top: 0;
+        font-family: $fontAlpha;
+        &:first-child {
+          a {
+            border-top: none;
+          }
+        }
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+        }
+      }
       a {
         padding: 0;
         text-shadow: none;
         color: $black;
         text-decoration: none;
         @include transition(color, 0.2s ease);
+        @media (max-width: 767px) {
+          color: $white;
+          display: block;
+          padding: 10px 15px;
+          border-bottom: 1px solid #232323;
+          border-top: 1px solid #3d3d3d;
+          line-height: 16px;
+          &:active {
+            background: $black;
+          }
+        }
         &:hover {
           color: $blue;
           background: none;
+          @media (max-width: 767px) {
+            text-decoration: none;
+            background: $black;
+          }
         }
         .header-bgnd & {
           color: $white;
         }
       }
       &.active {
+        @media (max-width: 767px) {
+          border-top: none;
+          padding-top: 0;
+        }
         a {
           background: none;
           @include box-shadow(none);
           color: $blue;
+          @media (max-width: 767px) {
+            background: $black;
+          }
           &:hover {
+            @include box-shadow(none);
             background: none;
             color: $blue;
-            @include box-shadow(none);
+            @media (max-width: 767px) {
+              background: $black;
+            }
           }
         }
       }
@@ -63,6 +113,12 @@
 .blog-nav-wrap {
   margin: 38px 0 0;
   height: 40px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin: 14px 0 0;
+  }
+  @media (max-width: 767px) {
+    height: auto;
+  }
 }
 
 .blog-nav {
@@ -107,6 +163,13 @@
   cursor: pointer;
   display: none;
   z-index: 9999;
+  @media (max-width: 767px) {
+    display: inline-block;
+    position: absolute;
+    top: -52px;
+    right: 15px;
+    z-index: 9999;
+  }
   &.btn {
     padding: 0 0 5px 0;
     width: 30px;
@@ -160,6 +223,10 @@
     }
   }
   &.active {
+    @media (max-width: 767px) {
+      top: 28px;
+      position: fixed;
+    }
     .icon-bar {
       background: $white;
       .mob-menu-toleft & {
@@ -183,4 +250,34 @@
       }
     }
   }
+}
+
+.mob-menu-nav {
+  position: fixed;
+  background: #333;
+}
+.mob-menu-vertical {
+  width: 200px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.mob-menu-right {
+  right: -200px;
+  &.mob-menu-open {
+    right: 0;
+    overflow: auto;
+  }
+}
+.mob-menu {
+  position: relative;
+  right: 0;
+}
+.mob-menu-toleft {
+  right: 200px;
+  overflow: hidden;
+}
+.mob-menu,
+.mob-menu-nav {
+  @include transition(all 0.2s ease);
 }

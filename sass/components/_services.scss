@@ -25,4 +25,11 @@
 .services {
   padding-bottom: 22px;
   text-align: center;
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+    p {
+      margin-bottom: 42px;
+    }
+  }
+
 }

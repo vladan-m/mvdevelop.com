@@ -6,10 +6,33 @@
   background: url('../images/convincer-bgnd.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 10px 0;
+    margin-bottom: 0;
+    background: url('../images/convincer-bgnd.jpg') no-repeat center center;
+  }
+  @media (max-width: 767px) {
+    padding: 10px 0 34px 0;
+    margin-bottom: 0;
+    background: url('../images/convincer-bgnd.jpg') no-repeat center center;
+  }
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    background: url('../images/convincer-bgnd.jpg') no-repeat center center;
+  }
   h5 {
     line-height: 30px;
     color: $white;
     font-size: 20px;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 28px;
+      padding-bottom: 34px;
+      padding-right: 0;
+      text-align: center;
+    }
   }
   &.big {
     background: url('../images/convincer-bgnd.jpg') no-repeat center center fixed;
@@ -19,12 +42,47 @@
     margin-top: -84px;
     padding-bottom: 93px;
     position: relative;
+    @media (min-width: 768px) and (max-width: 991px) {
+      background: url('../images/convincer-bgnd.jpg') no-repeat 0 0;
+      padding-top: 90px;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      background: url('../images/convincer-bgnd.jpg') no-repeat 0 0;
+      padding-top: 80px;
+      padding-bottom: 33px;
+    }
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      background: url('../images/convincer-bgnd.jpg') no-repeat 0 0;
+    }
     h1 {
       margin-bottom: 33px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 42px;
+        line-height: 50px;
+        padding-top: 20px;
+      }
+      @media (max-width: 767px) {
+        font-size: 30px;
+        padding-top: 20px;
+        line-height: 42px;
+        text-align: center;
+      }
     }
     h5 {
       margin-bottom: 28px;
       padding: 0 120px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        line-height: 30px;
+        padding-bottom: 34px;
+        padding-right: 0;
+      }
+      @media (max-width: 767px) {
+        padding: 0;
+      }
     }
     .more-scroll {
       color: $white;
@@ -44,5 +102,16 @@
   }
   &-blog {
     padding-bottom: 0;
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding: 0;
+      h5 {
+        padding-bottom: 0;
+      }
+    }
+    @media (max-width: 767px) {
+      h5 {
+        padding-bottom: 0;
+      }
+    }
   }
 }

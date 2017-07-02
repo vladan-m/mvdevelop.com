@@ -3,10 +3,19 @@
 .bordered {
   border-left: 1px dashed $bordered;
   padding-left: 15px;
+  @media (max-width: 767px) {
+    border-top: 1px dashed $bordered;
+    border-left: none;
+    margin-top: 33px;
+    padding: 35px 0 0 0;
+  }
   ul {
     @include reset-list();
     li {
       margin-bottom: 20px;
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
     }
     p {
       font-size: 12px;
