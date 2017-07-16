@@ -8559,26 +8559,27 @@ form .error {
   background: #fff;
 }
 
-.mob-menu-nav {
-  position: fixed;
-  background: #333;
-}
+@media (max-width: 767px) {
+  .mob-menu-nav {
+    position: fixed;
+    background: #333;
+  }
 
-.mob-menu-vertical {
-  width: 200px;
-  height: 100%;
-  top: 0;
-  z-index: 1000;
-}
+  .mob-menu-vertical {
+    width: 200px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+  }
 
-.mob-menu-right {
-  right: -200px;
+  .mob-menu-right {
+    right: -200px;
+  }
+  .mob-menu-right.mob-menu-open {
+    right: 0;
+    overflow: auto;
+  }
 }
-.mob-menu-right.mob-menu-open {
-  right: 0;
-  overflow: auto;
-}
-
 .mob-menu {
   position: relative;
   right: 0;

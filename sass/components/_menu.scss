@@ -252,31 +252,38 @@
   }
 }
 
-.mob-menu-nav {
-  position: fixed;
-  background: #333;
-}
-.mob-menu-vertical {
-  width: 200px;
-  height: 100%;
-  top: 0;
-  z-index: 1000;
-}
-.mob-menu-right {
-  right: -200px;
-  &.mob-menu-open {
-    right: 0;
-    overflow: auto;
+@media (max-width: 767px) {
+  .mob-menu-nav {
+    position: fixed;
+    background: #333;
+  }
+
+  .mob-menu-vertical {
+    width: 200px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .mob-menu-right {
+    right: -200px;
+    &.mob-menu-open {
+      right: 0;
+      overflow: auto;
+    }
   }
 }
+
 .mob-menu {
   position: relative;
   right: 0;
 }
+
 .mob-menu-toleft {
   right: 200px;
   overflow: hidden;
 }
+
 .mob-menu,
 .mob-menu-nav {
   @include transition(all 0.2s ease);
