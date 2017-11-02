@@ -1,5 +1,5 @@
 {
-  "name": "superior-develop",
+  "name": "mvdevelop",
   "nick": "app",
   "version": "1.0.0",
   "author": {
@@ -9,7 +9,7 @@
   "homepage": "http://mvdevelop.com/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:vladan-m/superior-develop.git"
+    "url": "git@github.com:vladan-m/mvdevelop.com.git"
   },
   "engines": {
     "node": ">= 0.10.0"
