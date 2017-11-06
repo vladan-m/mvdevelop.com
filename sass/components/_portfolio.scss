@@ -57,3 +57,143 @@
     @include box-shadow(0 0 5px $bordered);
   }
 }
+
+.portfolio-item {
+  display: flex;
+  margin: 0 -10px 140px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin: 0 0 70px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .item-info {
+    flex: 3;
+    padding: 0 10px;
+    @media (max-width: 767px) {
+      flex: 0;
+      order: 0;
+      padding: 0;
+    }
+    .meta {
+      font-weight: bold;
+    }
+  }
+  .visible-xs-block {
+    @media (max-width: 767px) {
+      order: 2;
+      margin-top: 30px;
+    }
+  }
+  .item-screens {
+    flex: 4;
+    padding: 0 10px;
+    text-align: right;
+    position: relative;
+    @media (max-width: 767px) {
+      flex: 0;
+      text-align: left;
+      order: 1;
+      padding: 0;
+    }
+    &.stacked {
+      img {
+        margin-top: 50px;
+        float: right;
+        z-index: 10;
+        margin-right: -20px;
+        width: 30.5%;
+        @media (max-width: 767px) {
+          max-width: 35%;
+          float: left;
+        }
+        &:first-child {
+          margin-right: 0;
+        }
+        &:nth-child(2) {
+          margin-top: 25px;
+        }
+        &:nth-child(3) {
+          margin-top: 0;
+        }
+      }
+    }
+    &.left {
+      text-align: left;
+      &.stacked {
+        img {
+          margin-top: 50px;
+          margin-right: 0;
+          margin-left: -20px;
+          float: left;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:nth-child(2) {
+            margin-top: 25px;
+          }
+          &:nth-child(3) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    img {
+      max-height: 400px;
+      display: inline-block;
+      box-shadow: 0 0 7px $separator;
+    }
+    &.wide {
+      .small-image {
+        position: absolute;
+        bottom: -30px;
+        left: 70px;
+        @media (max-width: 767px) {
+          left: 40px;
+          bottom: -20px;
+        }
+        img {
+          height: 180px;
+          box-shadow: none;
+        }
+      }
+      &.left {
+        .small-image {
+          right: 70px;
+          left: auto;
+          @media (max-width: 767px) {
+            left: 40px;
+            right: auto;
+          }
+        }
+      }
+    }
+    &.combo {
+      .small-image {
+        position: absolute;
+        bottom: -30px;
+        left: 70px;
+        @media (max-width: 767px) {
+          left: 40px;
+          bottom: -20px;
+        }
+        img {
+          height: 300px;
+          box-shadow: none;
+        }
+      }
+      &.left {
+        .small-image {
+          right: 70px;
+          left: auto;
+          @media (max-width: 767px) {
+            left: 40px;
+            right: auto;
+          }
+        }
+      }
+    }
+  }
+}
