@@ -1,0 +1,29 @@
+// Process list styling
+// --------------------
+.process-list {
+  @include reset-list();
+  margin: 20px 0 50px;
+  display: flex;
+  justify-content: center;
+  li {
+    text-align: center;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .circle {
+      @include border-radius(50%);
+      @include box-shadow(0 0 8px #d1d1d1);
+      display: block;
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      font-size: 40px;
+      color: $text;
+      margin-bottom: 10px;
+    }
+  }
+}
