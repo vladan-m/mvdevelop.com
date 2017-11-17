@@ -8,7 +8,7 @@
     line-height: 38px;
     color: $black;
     padding-bottom: 0;
-    margin-bottom: 41px;
+    margin-bottom: 20px;
   }
   h3 {
     margin-bottom: 15px;
@@ -48,7 +48,7 @@
   .image-preview {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 40px;
+    margin: 40px 0;
     @media (max-width: 767px) {
       flex-wrap: wrap;
     }

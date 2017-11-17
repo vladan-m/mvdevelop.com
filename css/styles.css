@@ -7626,7 +7626,7 @@ pre[class*=language-] {
   line-height: 38px;
   color: #000;
   padding-bottom: 0;
-  margin-bottom: 41px;
+  margin-bottom: 20px;
 }
 .assertion-wrap h3 {
   margin-bottom: 15px;
@@ -7668,7 +7668,7 @@ pre[class*=language-] {
 .assertion-wrap .image-preview {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 @media (max-width: 767px) {
   .assertion-wrap .image-preview {
@@ -8032,7 +8032,7 @@ pre[class*=language-] {
 }
 
 .copyright {
-  padding: 19px 0 21px;
+  padding: 19px 0 18px;
   margin-top: 19px;
   border-top: 1px solid #aaa;
 }
