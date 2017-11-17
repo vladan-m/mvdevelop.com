@@ -45,4 +45,20 @@
       color: $white;
     }
   }
+  .image-preview {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+    img {
+      height: 220px;
+      @media (max-width: 991px) {
+        height: 100%;
+        width: 31%;
+        margin: 0 1%;
+      }
+    }
+  }
 }
