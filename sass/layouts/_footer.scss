@@ -2,8 +2,10 @@
 // --------------
 .footer {
   background: #1e2124;
-  height: 167px;
   color: $footerText;
+  &.footer-small {
+    height: 167px;
+  }
   p {
     text-align: center;
     font-size: 11px;

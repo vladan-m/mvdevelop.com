@@ -7514,8 +7514,10 @@ pre[class*=language-] {
 
 .footer {
   background: #1e2124;
-  height: 167px;
   color: #aaa;
+}
+.footer.footer-small {
+  height: 167px;
 }
 .footer p {
   text-align: center;
@@ -8111,24 +8113,24 @@ form .error {
   color: #cc0000;
 }
 
-.colored-dark .contact-form input,
-.colored-dark .contact-form textarea {
+.footer-contact .contact-form input,
+.footer-contact .contact-form textarea {
   font-size: 14px;
   background: #464b4f;
   color: #fff;
   border: 1px solid #595f63;
 }
-.colored-dark .contact-form input::-moz-placeholder,
-.colored-dark .contact-form textarea::-moz-placeholder {
+.footer-contact .contact-form input::-moz-placeholder,
+.footer-contact .contact-form textarea::-moz-placeholder {
   color: #a8a8a8;
   opacity: 1;
 }
-.colored-dark .contact-form input:-ms-input-placeholder,
-.colored-dark .contact-form textarea:-ms-input-placeholder {
+.footer-contact .contact-form input:-ms-input-placeholder,
+.footer-contact .contact-form textarea:-ms-input-placeholder {
   color: #a8a8a8;
 }
-.colored-dark .contact-form input::-webkit-input-placeholder,
-.colored-dark .contact-form textarea::-webkit-input-placeholder {
+.footer-contact .contact-form input::-webkit-input-placeholder,
+.footer-contact .contact-form textarea::-webkit-input-placeholder {
   color: #a8a8a8;
 }
 
@@ -8177,8 +8179,8 @@ form .error {
 .form-list textarea.error {
   border: 1px solid #cc0000;
 }
-.colored-dark .form-list input,
-.colored-dark .form-list textarea {
+.footer-contact .form-list input,
+.footer-contact .form-list textarea {
   background: #464b4f;
   color: #fff;
   border: 1px solid #595f63;
@@ -8928,6 +8930,26 @@ form .error {
   font-size: 40px;
   color: #555;
   margin-bottom: 10px;
+}
+
+.footer-contact {
+  background: #2f3134;
+  color: #fff;
+  padding: 45px 0 50px 0;
+}
+.footer-contact h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+.footer-contact p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 23px;
 }
 
 @media (max-width: 767px) {

@@ -8,7 +8,7 @@ form {
 }
 
 .contact-form {
-  .colored-dark & {
+  .footer-contact & {
     input,
     textarea {
       @include placeholder($lightGray);
@@ -45,7 +45,7 @@ form {
     &.error {
       border: 1px solid $red;
     }
-    .colored-dark & {
+    .footer-contact & {
       background: #464b4f;
       color: $white;
       border: 1px solid #595f63;
