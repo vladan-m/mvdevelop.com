@@ -1,7 +1,7 @@
 ///// Portfolio styling /////
 // -----------------------------------------------------------------------------
 
-.portfolio-item {
+.custom-media {
   display: flex;
   margin: 0 -10px 140px;
   @media (max-width: 767px) {
@@ -87,6 +87,9 @@
       max-height: 400px;
       display: inline-block;
       box-shadow: 0 0 7px $separator;
+      .no-shadow & {
+        box-shadow: none;
+      }
     }
     &.wide {
       .small-image {

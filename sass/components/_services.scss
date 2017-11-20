@@ -3,7 +3,6 @@
 .services-holder {
   h2 {
     padding-bottom: 29px;
-    text-align: center;
   }
   .intro-text {
   	h2 {
@@ -11,20 +10,10 @@
       text-align: left;
   	}
   }
-  h4 {
-    line-height: 24px;
-    margin-top: 20px;
-    font-size: $x_large_font;
-  }
-  i {
-    font-size: 48px;
-    color: $blue;
-  }
 }
 
 .services {
   padding-bottom: 22px;
-  text-align: center;
   @media (max-width: 767px) {
     padding-bottom: 0;
     p {
