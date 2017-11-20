@@ -9,7 +9,7 @@
     text-align: right;
   }
   .ads-125x125 {
-    @include reset-list();
+    @extend %reset-list;
     @include clearfix();
     margin-left: 10px;
     li {
@@ -18,7 +18,7 @@
     }
   }
   .ads-300x250 {
-    @include reset-list();
+    @extend %reset-list;
     li {
       margin: 0 0 20px 5px;
     }

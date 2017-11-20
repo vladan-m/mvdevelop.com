@@ -1,7 +1,7 @@
-///// Footer social styling /////
-// -----------------------------------------------------------------------------
+// Footer social styling
+// ---------------------
 .footer-social {
-  @include reset-list();
+  @extend %reset-list;
   text-align: center;
   margin: 25px 0 17px 0;
   li {

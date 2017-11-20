@@ -24,7 +24,7 @@
       margin-bottom: 11px;
       margin-top: 0;
       font-family: $fontTitleTempCondensed;
-      @include font-fix();
+      @extend %font-fix;
     }
     .social {
       @include clearfix();
@@ -65,7 +65,7 @@
     &.btn-lg {
       font-size: 22px;
       font-family: $fontTitleTempCondensed;
-      @include font-fix();
+      @extend %font-fix;
       letter-spacing: -1px;
     }
   }

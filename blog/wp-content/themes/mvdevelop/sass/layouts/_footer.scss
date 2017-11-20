@@ -14,11 +14,11 @@
     padding-bottom: 0;
     margin: 0 0 10px 0;
     font-family: $fontTitleTempCondensed;
-    @include font-fix();
+    @extend %font-fix;
     color: $white;
   }
   ul {
-    @include reset-list();
+    @extend %reset-list;
     margin-bottom: 20px;
     li {
       a {

@@ -1,7 +1,7 @@
 // Gallery styling
 // ---------------
 .image-gallery {
-  @include reset-list();
+  @extend %reset-list;
   li {
     border: 1px solid $commentBorder;
     padding: 5px;

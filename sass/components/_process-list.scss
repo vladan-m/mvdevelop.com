@@ -1,7 +1,7 @@
 // Process list styling
 // --------------------
 .process-list {
-  @include reset-list();
+  @extend %reset-list;
   margin: 20px 0 30px;
   display: flex;
   justify-content: center;

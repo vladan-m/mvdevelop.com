@@ -9,7 +9,7 @@
     margin-top: 30px
   }
   ul {
-    @include reset-list();
+    @extend %reset-list;
     @include clearfix();
     margin-bottom: 10px;
     li {
@@ -28,7 +28,7 @@
         color: $blue;
         display: inline-block;
         font-family: $fontTitleTempCondensed;
-        @include font-fix();
+        @extend %font-fix;
         margin-right: 6%;
       }
     }

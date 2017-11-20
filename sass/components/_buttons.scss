@@ -1,8 +1,6 @@
-///// Button styling /////
-// -----------------------------------------------------------------------------
+// Button styling
+// --------------
 .btn {
-  // @include border-radius(0);
-  // font-size: 13px;
   line-height: 19px;
   padding: 13px 20px 11px;
   font-family: $fontAlpha;
@@ -10,9 +8,6 @@
   text-transform: uppercase;
   &.btn-info {
     @include transition(background-color 0.3s ease-in-out, border-color 0.3s ease-in-out);
-  }
-  .colored-dark & {
-    // @include border-radius(4px);
   }
 }
 

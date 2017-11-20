@@ -1,5 +1,5 @@
-///// Custom form styling /////
-// -----------------------------------------------------------------------------
+// Custom form styling
+// -------------------
 form {
   margin: 0;
   .error {
@@ -21,7 +21,7 @@ form {
 }
 
 .form-list {
-  @include reset-list();
+  @extend %reset-list;
   margin-bottom: 34px;
   li {
     margin-bottom: 34px;

@@ -11,7 +11,7 @@
 }
 
 .form-list {
-  @include reset-list();
+  @extend %reset-list;
   li {
     margin-bottom: 26px;
     input {

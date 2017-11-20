@@ -1,5 +1,5 @@
-///// Contact styling /////
-// -----------------------------------------------------------------------------
+// Contact styling
+// ---------------
 .bordered {
   border-left: 1px dashed $bordered;
   padding-left: 15px;
@@ -10,7 +10,7 @@
     padding: 35px 0 0 0;
   }
   ul {
-    @include reset-list();
+    @extend %reset-list;
     li {
       margin-bottom: 20px;
       @media (max-width: 767px) {

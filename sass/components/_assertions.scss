@@ -1,5 +1,5 @@
-///// Assertions styling /////
-// -----------------------------------------------------------------------------
+// Assertions styling
+// ------------------
 .assertion-wrap {
   padding: 45px 0 50px 0;
   h2 {
@@ -23,7 +23,7 @@
     margin-bottom: 23px;
   }
   .content-list {
-    @include reset-list();
+    @extend %reset-list;
     font-weight: 700;
     li {
       margin-bottom: 10px;

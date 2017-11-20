@@ -1,5 +1,5 @@
-///// Menu styling /////
-// -----------------------------------------------------------------------------
+// Menu styling
+// ------------
 .nav-holder {
   margin-bottom: 0;
   font-family: $fontAlpha;
@@ -12,7 +12,7 @@
     padding-right: 0;
   }
   .nav {
-    @include reset-list();
+    @extend %reset-list;
     @include clearfix();
     position: static;
     @media (max-width: 767px) {

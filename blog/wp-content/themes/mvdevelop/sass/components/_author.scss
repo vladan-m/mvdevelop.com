@@ -1,7 +1,7 @@
 // Author styling
 // --------------
 .author-posts {
-  @include reset-list();
+  @extend %reset-list;
   overflow: hidden;
   width: 105%;
   margin-top: 15px;
@@ -57,7 +57,7 @@
     border-bottom: none;
     padding-bottom: 0;
     font-family: $fontTitleTempCondensed;
-    @include font-fix();
+    @extend %font-fix;
   }
   .social-links {
     padding-bottom: 0;

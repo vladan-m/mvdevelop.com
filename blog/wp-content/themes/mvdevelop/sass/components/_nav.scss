@@ -3,7 +3,7 @@
 }
 
 .main-nav {
-  @include reset-list();
+  @extend %reset-list;
   @include clearfix();
   margin: 0 auto;
   width: 500px;
@@ -82,7 +82,7 @@
 	position: fixed;
 	background: $text;
 	ul {
-  	@include reset-list();
+  	@extend %reset-list;
     li {
       &:first-child {
         a {

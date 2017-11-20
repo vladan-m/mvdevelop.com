@@ -7364,6 +7364,17 @@ img {
   }
 }
 
+.archive-wrap ul, .assertion-wrap .content-list, .bordered ul, .form-list, .image-gallery, .grid-view, .footer-nav, .nav-holder .nav, .footer-social, .process-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
 html,
 body {
   height: 100%;
@@ -7375,8 +7386,6 @@ body {
   color: #555;
   background: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
 }
 body.mob-menu-toright {
   overflow: hidden;
@@ -7570,9 +7579,6 @@ pre[class*=language-] {
   margin-top: 30px;
 }
 .archive-wrap ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   margin-bottom: 10px;
 }
 .archive-wrap ul:before, .archive-wrap ul:after {
@@ -7643,9 +7649,6 @@ pre[class*=language-] {
   margin-bottom: 23px;
 }
 .assertion-wrap .content-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   font-weight: 700;
 }
 .assertion-wrap .content-list li {
@@ -7862,11 +7865,6 @@ pre[class*=language-] {
     margin-top: 33px;
     padding: 35px 0 0 0;
   }
-}
-.bordered ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .bordered ul li {
   margin-bottom: 20px;
@@ -8135,9 +8133,6 @@ form .error {
 }
 
 .form-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   margin-bottom: 34px;
 }
 .form-list li {
@@ -8192,11 +8187,6 @@ form .error {
   margin: -10px 0 5px;
 }
 
-.image-gallery {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 .image-gallery li {
   border: 1px solid #d7d7d7;
   padding: 5px;
@@ -8212,9 +8202,6 @@ form .error {
 }
 
 .grid-view {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -8295,9 +8282,6 @@ form .error {
 }
 
 .footer-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -8348,9 +8332,6 @@ form .error {
   padding-right: 0;
 }
 .nav-holder .nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   position: static;
 }
 .nav-holder .nav:before, .nav-holder .nav:after {
@@ -8816,27 +8797,8 @@ form .error {
 .services-holder h2 {
   padding-bottom: 29px;
 }
-.services-holder .intro-text h2 {
-  padding-bottom: 10px;
-  text-align: left;
-}
-
-.services {
-  padding-bottom: 22px;
-}
-@media (max-width: 767px) {
-  .services {
-    padding-bottom: 0;
-  }
-  .services p {
-    margin-bottom: 42px;
-  }
-}
 
 .footer-social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   text-align: center;
   margin: 25px 0 17px 0;
 }
@@ -8890,9 +8852,6 @@ form .error {
 }
 
 .process-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   margin: 20px 0 30px;
   display: flex;
   justify-content: center;

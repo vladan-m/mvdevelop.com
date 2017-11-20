@@ -1,24 +1,7 @@
-///// Services styling /////
-// -----------------------------------------------------------------------------
+// Services styling
+// ----------------
 .services-holder {
   h2 {
     padding-bottom: 29px;
   }
-  .intro-text {
-  	h2 {
-  		padding-bottom: 10px;
-      text-align: left;
-  	}
-  }
-}
-
-.services {
-  padding-bottom: 22px;
-  @media (max-width: 767px) {
-    padding-bottom: 0;
-    p {
-      margin-bottom: 42px;
-    }
-  }
-
 }

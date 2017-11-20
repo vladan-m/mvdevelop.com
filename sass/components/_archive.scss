@@ -9,7 +9,7 @@
     margin-top: 30px
   }
   ul {
-    @include reset-list();
+    @extend %reset-list;
     @include clearfix();
     margin-bottom: 10px;
     li {

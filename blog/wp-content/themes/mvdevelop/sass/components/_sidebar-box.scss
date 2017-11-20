@@ -3,7 +3,7 @@
 .sidebar-box {
   .latest-tweets {
     ul {
-      @include reset-list();
+      @extend %reset-list;
       li {
         padding-bottom: 10px;
         margin-bottom: 10px;
