@@ -8449,7 +8449,7 @@ form .error {
 }
 
 .blog-nav {
-  padding: 10px 0 9px;
+  padding: 8px 0;
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition: background 0.2s ease-in-out;
   -o-transition: background 0.2s ease-in-out;
