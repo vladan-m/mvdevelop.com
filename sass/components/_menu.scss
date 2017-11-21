@@ -2,7 +2,6 @@
 // ------------
 .nav-holder {
   margin-bottom: 0;
-  font-family: $fontAlpha;
   text-transform: uppercase;
   @media (max-width: 767px) {
     text-transform: none;
@@ -25,13 +24,12 @@
     li {
       margin-left: 20px;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 20px;
       padding-top: 30px;
       @media (max-width: 767px) {
         margin-left: 0;
         padding-top: 0;
-        font-family: $fontAlpha;
         &:first-child {
           a {
             border-top: none;

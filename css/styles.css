@@ -7385,7 +7385,8 @@ body {
   line-height: 24px;
   color: #555;
   background: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 body.mob-menu-toright {
   overflow: hidden;
@@ -7405,7 +7406,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   color: #333;
   font-weight: 400;
-  font-family: "Quicksand", sans-serif;
 }
 
 h1 {
@@ -7448,7 +7448,7 @@ h3.main-title {
   text-transform: none;
 }
 h3.main-title span {
-  font-weight: 500;
+  font-weight: 600;
 }
 @media (max-width: 767px) {
   h3.main-title {
@@ -7460,7 +7460,7 @@ h4 {
   font-size: 18px;
   line-height: 24px;
   padding-bottom: 7px;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media (max-width: 991px) {
   h4 {
@@ -7605,7 +7605,6 @@ pre[class*=language-] {
   }
 }
 .archive-wrap ul li a {
-  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #00a5ff;
@@ -7640,7 +7639,6 @@ pre[class*=language-] {
 }
 .assertion-wrap p,
 .assertion-wrap .content-list {
-  font-family: "Quicksand", sans-serif;
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 23px;
@@ -7691,8 +7689,7 @@ pre[class*=language-] {
 .btn {
   line-height: 19px;
   padding: 13px 20px 11px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .btn.btn-info {
@@ -7718,8 +7715,7 @@ pre[class*=language-] {
   font-size: 13px;
   line-height: 16px;
   padding: 13px 20px 11px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 4px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -7791,7 +7787,6 @@ pre[class*=language-] {
 .comments .comment .comment-info .comment-author h5 {
   line-height: 60px;
   font-size: 18px;
-  font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
 @media (max-width: 767px) {
@@ -7802,7 +7797,6 @@ pre[class*=language-] {
 }
 .comments .comment .comment-info .comment-author h5 span {
   font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: 12px;
   font-weight: 400;
 }
@@ -8060,7 +8054,6 @@ pre[class*=language-] {
   display: block;
   margin-top: 6px;
   font-size: 12px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 16px;
   color: #858585;
@@ -8075,7 +8068,7 @@ pre[class*=language-] {
   font-size: 24px;
   line-height: 30px;
   text-transform: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 @media (max-width: 767px) {
@@ -8279,8 +8272,7 @@ form .error {
 }
 
 .footer-nav {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
@@ -8316,7 +8308,6 @@ form .error {
 
 .nav-holder {
   margin-bottom: 0;
-  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -8350,7 +8341,7 @@ form .error {
 .nav-holder .nav li {
   margin-left: 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 20px;
   padding-top: 30px;
 }
@@ -8358,7 +8349,6 @@ form .error {
   .nav-holder .nav li {
     margin-left: 0;
     padding-top: 0;
-    font-family: "Quicksand", sans-serif;
   }
   .nav-holder .nav li:first-child a {
     border-top: none;
@@ -8900,7 +8890,6 @@ form .error {
   margin-bottom: 20px;
 }
 .footer-contact p {
-  font-family: "Quicksand", sans-serif;
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 23px;
