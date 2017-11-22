@@ -321,7 +321,6 @@
       &.btn-lg {
         font-size: 22px;
         font-family: $fontTitleTempCondensed;
-        @extend %font-fix;
         letter-spacing: -1px;
       }
     }

@@ -9,7 +9,6 @@ h2 {
   font-size: 38px;
   line-height: 44px;
   font-family: $fontTitleTempCondensed;
-  @extend %font-fix;
 }
 
 h3 {
@@ -18,13 +17,11 @@ h3 {
   margin: 12px 0 9px 0;
   font-weight: normal;
   font-family: $fontTitleTempCondensed;
-  @extend %font-fix;
   &.main-title {
     margin: 0 0 10px 0;
     border: none;
     padding: 0;
     font-family: $fontTitleTempCondensed;
-    @extend %font-fix;
     font-size: 24px;
   }
   &.author-posts-title {
@@ -43,7 +40,6 @@ h4 {
   margin: 0 0 20px 0;
   .sidebar-title & {
     font-family: $fontTitleTempCondensed !important;
-    @extend %font-fix;
     font-size: 22px;
     line-height: 26px;
     font-weight: bold;

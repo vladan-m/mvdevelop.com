@@ -28,7 +28,6 @@
         color: $blue;
         display: inline-block;
         font-family: $fontTitleTempCondensed;
-        @extend %font-fix;
         margin-right: 6%;
       }
     }

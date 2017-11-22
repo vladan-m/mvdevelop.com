@@ -9,7 +9,6 @@
     border-bottom: none;
     padding-bottom: 0;
     font-family: $fontTitleTempCondensed;
-    @extend %font-fix;
   }
   .comment {
     .comment-block {
@@ -42,7 +41,6 @@
           line-height: 60px;
           font-size: 18px;
           font-family: $fontTitleTempCondensed;
-          @extend %font-fix;
           margin: 0;
           font-weight: normal;
           span {
@@ -78,7 +76,6 @@
     border-bottom: none;
     padding-bottom: 0;
     font-family: $fontTitleTempCondensed;
-    @extend %font-fix;
   }
   .note-message {
     font-size: 12px;

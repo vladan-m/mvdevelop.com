@@ -14,7 +14,6 @@
     padding-bottom: 0;
     margin: 0 0 10px 0;
     font-family: $fontTitleTempCondensed;
-    @extend %font-fix;
     color: $white;
   }
   ul {
