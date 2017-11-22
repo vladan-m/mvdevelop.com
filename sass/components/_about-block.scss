@@ -13,19 +13,28 @@
   }
 }
 
-.photo {
-	.visible-xs & {
-		margin-right: 10px;
-    margin-bottom: 10px;
-	}
-  img {
-    @include border-radius(120px);
-    margin: 0 auto;
+.about-text-wrap {
+  display: flex;
+  justify-content: space-between;
+  .about-info {
+    width: 800px;
+    margin-right: 60px;
+    @media (max-width: 767px) {
+      order: 2;
+      margin-right: 0;
+    }
+  }
+
+  .about-photo {
     width: 240px;
-    .visible-xs & {
-    	@include border-radius(50px);
-      margin: 0;
-      width: 100px;
+    @media (max-width: 767px) {
+      order: 1;
+      margin-right: 20px;
+    }
+    img {
+      @include border-radius(50%);
+      margin: 0 auto;
+      width: 240px;
     }
   }
 }

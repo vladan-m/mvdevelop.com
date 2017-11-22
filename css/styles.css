@@ -7563,27 +7563,37 @@ pre[class*=language-] {
   margin-bottom: 4px;
 }
 
-.visible-xs .photo {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.about-text-wrap {
+  display: flex;
+  justify-content: space-between;
 }
-.photo img {
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -o-border-radius: 120px;
-  -ms-border-radius: 120px;
-  border-radius: 120px;
-  margin: 0 auto;
+.about-text-wrap .about-info {
+  width: 800px;
+  margin-right: 60px;
+}
+@media (max-width: 767px) {
+  .about-text-wrap .about-info {
+    order: 2;
+    margin-right: 0;
+  }
+}
+.about-text-wrap .about-photo {
   width: 240px;
 }
-.visible-xs .photo img {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -o-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px;
-  margin: 0;
-  width: 100px;
+@media (max-width: 767px) {
+  .about-text-wrap .about-photo {
+    order: 1;
+    margin-right: 20px;
+  }
+}
+.about-text-wrap .about-photo img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 240px;
 }
 
 .archive-wrap h5 {
