@@ -6,6 +6,9 @@
   &.footer-small {
     height: 167px;
   }
+  @media (max-width: 411px) {
+    height: auto;
+  }
   p {
     text-align: center;
     font-size: 11px;

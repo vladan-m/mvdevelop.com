@@ -123,6 +123,10 @@
   padding: 8px 0;
   background: rgba(0,0,0, 0.5);
   @include transition(background 0.2s ease-in-out);
+  @media (max-width: 767px) {
+    padding: 0;
+    background: none;
+  }
   &.affix {
     left: 0;
     right: 0;
@@ -130,14 +134,35 @@
     z-index: 9999;
     background: rgba(0,0,0, 1);
   }
+  .nav-holder {
+    @media (max-width: 767px) {
+      text-transform: uppercase;
+    }
+  }
   .nav {
     margin: 0 auto;
     float: none;
+    @media (max-width: 767px) {
+      padding-top: 0;
+    }
     li {
       margin-left: 16px;
       padding-top: 0;
       display: inline-block;
       float: none;
+      @media (max-width: 767px) {
+        margin-left: 0;
+        display: block;
+        &.active,
+        &.current-post-parent {
+          a {
+            text-decoration: none;
+            color: $white;
+            border: 1px solid $white;
+            background: rgba(0,0,0, 0.7);
+          }
+        }
+      }
       &:first-child {
         margin-left: 0;
       }
@@ -151,6 +176,26 @@
       }
       a {
         color: $white;
+        @media (max-width: 767px) {
+          background: rgba(0,0,0, 0.5);
+          display: block;
+          padding: 10px 0 9px;
+          border: 1px solid transparent;
+          line-height: 16px;
+          margin: 0 10px 10px 10px;
+          &:hover {
+            text-decoration: none;
+            color: $white;
+            border: 1px solid $white;
+            background: rgba(0,0,0, 0.7);
+          }
+          &:active {
+            text-decoration: none;
+            color: $white;
+            border: 1px solid $white;
+            background: rgba(0,0,0, 0.7);
+          }
+        }
       }
     }
   }

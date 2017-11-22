@@ -1,4 +1,4 @@
-/*! mvdevelop - v1.0.0 - 2017-11-21
+/*! mvdevelop - v1.0.0 - 2017-11-22
 * http://mvdevelop.com/
 * Copyright (c) 2017 Vladan Mitevski; Licensed  */
 /*!

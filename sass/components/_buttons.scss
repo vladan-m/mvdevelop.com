@@ -5,6 +5,10 @@
   padding: 13px 20px 11px;
   font-weight: 600;
   text-transform: uppercase;
+  @media (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
   &.btn-info {
     @include transition(background-color 0.3s ease-in-out, border-color 0.3s ease-in-out);
   }
@@ -12,6 +16,9 @@
 
 .button-group {
   margin-bottom: 39px;
+  @media (max-width: 767px) {
+     margin-bottom: 20px;
+  }
   a {
     @include transition(border 0.2s ease-in-out, background 0.2s ease-in-out);
     @include border-radius(4px);
@@ -30,6 +37,10 @@
       color: $white;
       border: 1px solid $white;
       background: rgba(0,0,0, 0.7);
+    }
+    @media (max-width: 767px) {
+      display: block;
+      margin: 0 0 10px;
     }
   }
 }
