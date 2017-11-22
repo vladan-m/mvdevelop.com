@@ -7529,7 +7529,7 @@ pre[class*=language-] {
   height: 167px;
 }
 @media (max-width: 411px) {
-  .footer {
+  .footer.footer-small {
     height: auto;
   }
 }
@@ -8136,6 +8136,7 @@ form {
 }
 form .error {
   color: #cc0000;
+  font-size: 11px;
 }
 
 .footer-contact .contact-form input,
@@ -8727,12 +8728,20 @@ form .error {
 
 .custom-media {
   display: flex;
-  margin: 0 -10px 140px;
+  margin: 0 -10px;
+  padding: 70px 0;
+}
+.custom-media:first-child {
+  margin-top: -70px;
 }
 @media (max-width: 767px) {
   .custom-media {
     flex-direction: column;
-    margin: 0 0 70px;
+    padding: 35px 0;
+    margin: 0;
+  }
+  .custom-media:first-child {
+    margin-top: -35px;
   }
 }
 .custom-media .item-info {
