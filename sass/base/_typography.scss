@@ -71,6 +71,9 @@ h6 {
 
 p {
   margin: 0 0 24px 0;
+  &.small-spacing {
+    margin: 0 0 10px 0;
+  }
 }
 
 a {
