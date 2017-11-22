@@ -7950,16 +7950,9 @@ pre[class*=language-] {
   background-size: cover;
   text-align: center;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .convincer {
     padding: 10px 0;
-    margin-bottom: 0;
-    background: url("../images/convincer-bgnd.jpg") no-repeat center center;
-  }
-}
-@media (max-width: 767px) {
-  .convincer {
-    padding: 10px 0 34px 0;
     margin-bottom: 0;
     background: url("../images/convincer-bgnd.jpg") no-repeat center center;
   }
@@ -7969,18 +7962,38 @@ pre[class*=language-] {
     background: url("../images/convincer-bgnd.jpg") no-repeat center center;
   }
 }
+.convincer h1 {
+  margin-bottom: 33px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .convincer h1 {
+    font-size: 42px;
+    line-height: 50px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .convincer h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    line-height: 42px;
+    text-align: center;
+  }
+}
 .convincer h5 {
   line-height: 30px;
   color: #fff;
   font-size: 20px;
 }
+@media (max-width: 991px) {
+  .convincer h5 {
+    padding-bottom: 34px;
+  }
+}
 @media (max-width: 767px) {
   .convincer h5 {
     font-size: 18px;
     line-height: 28px;
-    padding-bottom: 34px;
-    padding-right: 0;
-    text-align: center;
   }
 }
 .convincer.big {
@@ -8009,24 +8022,6 @@ pre[class*=language-] {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .convincer.big {
     background: url("../images/convincer-bgnd.jpg") no-repeat 0 0;
-  }
-}
-.convincer.big h1 {
-  margin-bottom: 33px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .convincer.big h1 {
-    font-size: 42px;
-    line-height: 50px;
-    padding-top: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .convincer.big h1 {
-    font-size: 30px;
-    padding-top: 20px;
-    line-height: 42px;
-    text-align: center;
   }
 }
 .convincer.big h5 {
