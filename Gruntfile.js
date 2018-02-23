@@ -64,7 +64,7 @@ module.exports = function(grunt) {
         },
         files: {
           'css/styles.css': 'sass/styles.scss',
-          'css/font-awesome.css': 'bower_components/fontawesome/scss/font-awesome.scss'
+          'css/font-awesome.css': 'sass/font-awesome.scss'
         }
       }
     },

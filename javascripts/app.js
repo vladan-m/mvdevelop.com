@@ -1,8 +1,8 @@
-/*! mvdevelop - v1.0.0 - 2017-11-22
+/*! mvdevelop - v1.0.0 - 2018-02-23
 * http://mvdevelop.com/
-* Copyright (c) 2017 Vladan Mitevski; Licensed  */
+* Copyright (c) 2018 Vladan Mitevski; Licensed  */
 /*!
- * jQuery JavaScript Library v1.12.2
+ * jQuery JavaScript Library v1.12.4
  * http://jquery.com/
  *
  * Includes Sizzle.js
@@ -12,7 +12,7 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2016-03-17T17:44Z
+ * Date: 2016-05-20T17:17Z
  */
 
 (function( global, factory ) {
@@ -68,7 +68,7 @@ var support = {};
 
 
 var
-	version = "1.12.2",
+	version = "1.12.4",
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
@@ -6675,6 +6675,7 @@ var documentElement = document.documentElement;
 		if ( reliableHiddenOffsetsVal ) {
 			div.style.display = "";
 			div.innerHTML = "<table><tr><td></td><td>t</td></tr></table>";
+			div.childNodes[ 0 ].style.borderCollapse = "separate";
 			contents = div.getElementsByTagName( "td" );
 			contents[ 0 ].style.cssText = "margin:0;border:0;padding:0;display:none";
 			reliableHiddenOffsetsVal = contents[ 0 ].offsetHeight === 0;
@@ -6998,19 +6999,6 @@ function getWidthOrHeight( elem, name, extra ) {
 		styles = getStyles( elem ),
 		isBorderBox = support.boxSizing &&
 			jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
-
-	// Support: IE11 only
-	// In IE 11 fullscreen elements inside of an iframe have
-	// 100x too small dimensions (gh-1764).
-	if ( document.msFullscreenElement && window.top !== window ) {
-
-		// Support: IE11 only
-		// Running getBoundingClientRect on a disconnected node
-		// in IE throws an error.
-		if ( elem.getClientRects().length ) {
-			val = Math.round( elem.getBoundingClientRect()[ name ] * 100 );
-		}
-	}
 
 	// some non-html elements return undefined for offsetWidth, so check for null/undefined
 	// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
@@ -10002,6 +9990,11 @@ function getDisplay( elem ) {
 }
 
 function filterHidden( elem ) {
+
+	// Disconnected elements are considered hidden
+	if ( !jQuery.contains( elem.ownerDocument || document, elem ) ) {
+		return true;
+	}
 	while ( elem && elem.nodeType === 1 ) {
 		if ( getDisplay( elem ) === "none" || elem.type === "hidden" ) {
 			return true;
@@ -10368,13 +10361,6 @@ function createActiveXHR() {
 
 
 
-// Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)
-jQuery.ajaxPrefilter( function( s ) {
-	if ( s.crossDomain ) {
-		s.contents.script = false;
-	}
-} );
-
 // Install script dataType
 jQuery.ajaxSetup( {
 	accepts: {
@@ -10655,7 +10641,7 @@ jQuery.fn.load = function( url, params, callback ) {
 		// If it fails, this function gets "jqXHR", "status", "error"
 		} ).always( callback && function( jqXHR, status ) {
 			self.each( function() {
-				callback.apply( self, response || [ jqXHR.responseText, status, jqXHR ] );
+				callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
 			} );
 		} );
 	}
@@ -14129,9 +14115,32 @@ Prism.languages.insertBefore('scss', 'function', {
 	}
 });
 
-Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.scss);;$(window).load(function() {
+Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.scss);;// $.fn.affixCalc = function() {
+//   var offset = this.offset();
 
-  if($('.mob-menu-nav').length > 0) {
+//   $(window).off('.affix');
+//   this
+//     .removeClass('affix affix-top affix-bottom')
+//     .removeData('bs.affix');
+//   this.affix({
+//     offset: {
+//       top: function() {
+//         return (offset.top);
+//       }
+//     }
+//   });
+
+//   if ( $(window).width() < 768) {
+//     $(window).off('.affix');
+//     this
+//       .removeClass("affix affix-top affix-bottom")
+//       .removeData("bs.affix");
+//   }
+// };
+
+$(window).on('load', function() {
+
+  if($('.mob-menu-nav').length) {
     $('body').on('click', '.mob-menu-trigger', function() {
       var $this = $(this),
           $pushMenu = $this.closest('.mob-menu').find('.mob-menu-nav'),
@@ -14149,7 +14158,7 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
     });
   }
 
-  if($('.entry').length > 0) {
+  if($('.entry').length) {
     $('.entry:last').addClass('last');
   }
 
@@ -14235,36 +14244,10 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
 
   $('.current-year').text(year);
 
+  // $(".blog-nav").affixCalc();
+
 });
 
-
-$.fn.affixCalc = function() {
-  var offset = this.offset();
-
-  $(window).off('.affix');
-  this
-    .removeClass('affix affix-top affix-bottom')
-    .removeData('bs.affix');
-  this.affix({
-    offset: {
-      top: function() {
-        return (offset.top);
-      }
-    }
-  });
-
-  if ( $(window).width() < 768) {
-    $(window).off('.affix');
-    this
-      .removeClass("affix affix-top affix-bottom")
-      .removeData("bs.affix");
-  }
-};
-
-$(window).on('load', function(){
-  $(".blog-nav").affixCalc();
-});
-
-$(window).on('resize', function(){
-  $(".blog-nav").affixCalc();
-});
+// $(window).on('resize', function(){
+//   $(".blog-nav").affixCalc();
+// });
